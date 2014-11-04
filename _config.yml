@@ -1,10 +1,21 @@
 # Site settings
 title: jmarknel
-email: josh@jmarknel.com
+email: josh@joshmarknelson.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm an Interface Designer living in Austin, Texas. I write about design and customer development research. If you have a question, send me an email or get at me on Twitter.
+  I'm an Interface Designer living in Austin, Texas. I write about design and customer development research. 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jmarknel.com" # the base hostname & protocol for your site
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+paginate: 1
+
 twitter_username: jmarknel
 github_username:  nelsonJM
 
