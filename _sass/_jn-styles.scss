@@ -1,3 +1,24 @@
 .site-nav {
 	border: none;
 }
+
+.intro {
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+.brief-bio {
+	overflow: hidden;
+	img {
+		float: left;
+	}
+	p {
+		padding-left: 65px;
+	}
+}
+
+.cpr {
+	text-align: center;
+	color: #e1e1e1;
+	font-size: .75em;
+}

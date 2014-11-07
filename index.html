@@ -3,16 +3,17 @@ layout: default
 ---
 
 <div class="home">
-  <div class="intro" style="text-align: center;">
+  <div class="intro">
+    
     <p class="text">{{ site.description }}</p>
   </div>
 
-  <h1 class="page-heading">Recent Writing</h1>
+  <h1 class="page-heading">Latest Note</h1>
 
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">Written on {{ post.date | date: "%b %-d, %Y" }} | {{post.categories}}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
