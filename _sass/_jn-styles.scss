@@ -1,3 +1,12 @@
+/* base overrides */
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: $cabin;
+}
+
 .site-nav {
 	border: none;
 }
@@ -21,4 +30,27 @@
 	text-align: center;
 	color: #e1e1e1;
 	font-size: .75em;
+}
+
+/* layout overrides */
+
+.page-heading {
+    font-family: $cabin;
+}
+
+.post-list {
+	h2, h3 {
+		font-weight: 700; 
+	}
+}
+
+/* My styles */
+.site-title {
+	font-family: $cabin;
+	font-weight: 700;
+	
+}
+.section-heading {
+	font-weight: 700;
+	font-size: 1em;
 }

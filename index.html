@@ -6,23 +6,47 @@ layout: default
   <div class="intro">
     
     <p class="text">{{ site.description }}</p>
+    <p class="stars">***</p>
   </div>
 
-  <h1 class="page-heading">Latest Note</h1>
+  
+  <h2 class="section-heading">LATEST PROJECT</h2>
+<ul class="post-list">
+    {% for post in site.categories.projects limit:1 %}
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
       <li>
-        <span class="post-meta">Written on {{ post.date | date: "%b %-d, %Y" }} | {{post.categories}}</span>
+        
 
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          "{{ post.excerpt }}"
-        </h2>
+          
+        </h3>
+        <span class="post-meta">Written on {{ post.date | date: "%b %-d, %Y" }} | {{post.categories}}</span>
+        <p>{{ post.excerpt }}</p>
         
       </li>
     {% endfor %}
   </ul>
+  
+  <h2 class="section-heading">RECENT BLOG POSTS</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit:2 %}
+
+      <li>
+        
+
+        <h3>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          
+        </h3>
+        <span class="post-meta">Written on {{ post.date | date: "%b %-d, %Y" }} | {{post.categories}}</span>
+        <p>{{ post.excerpt }}</p>
+        
+      </li>
+    {% endfor %}
+  </ul>
+
+
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

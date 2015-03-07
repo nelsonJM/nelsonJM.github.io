@@ -1,11 +1,11 @@
 # Site settings
-title: jmarknel
+title: JMARKNEL
 email: josh@joshmarknelson.com
 description: > # this means to ignore newlines until "baseurl:"
-  A collection of notes mostly about product design and customer behavior.  
+  A collection of writings mostly about design and customer behavior.  
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jmarknel.com" # the base hostname & protocol for your site
-
+permalink: pretty
 defaults:
   -
     scope:
@@ -14,7 +14,7 @@ defaults:
     values:
       layout: "post"
 
-paginate: 1
+paginate: 5
 
 twitter_username: jmarknel
 github_username:  nelsonJM

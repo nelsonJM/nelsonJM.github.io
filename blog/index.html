@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="blog">
+  <div class="intro">
+    
+    <p class="text">{{ site.description }}</p>
+    <p class="stars">***</p>
+  </div>
+
+  <h1 class="page-heading">All Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.categories.blog %}
+
+    {% unless post.category == "archives" %}
+    
+      <li>
+        <span class="post-meta">Written on {{ post.date | date: "%b %-d, %Y" }} | {{post.tags | join: ' '}}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          
+        </h2>
+        {{ post.excerpt }}
+        
+      </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+
+
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
