@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
     
 
     @include media-query($on-palm) {
-        position: normal;
+        position: relative;
         top: 0;
         right: 0;
         border-radius: 5px;    
@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5, h6 {
         .page-link {
             display: inline;
             padding: 5px;
+
+            &:not(:first-child) {
+            margin-left: 0px;
+        	}
         }
 
        
