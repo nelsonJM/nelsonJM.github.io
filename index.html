@@ -10,7 +10,7 @@ layout: default
   </div>
 
   
-  <h2 class="section-heading">LATEST PROJECT</h2>
+  <h2 class="section-heading">LATEST PROJECT</a></h2>
 <ul class="post-list">
     {% for post in site.categories.projects limit:1 %}
 
@@ -28,9 +28,11 @@ layout: default
     {% endfor %}
   </ul>
   
-  <h2 class="section-heading">RECENT BLOG POSTS</h2>
+  <h2 class="section-heading">BLOG</h2>
   <ul class="post-list">
-    {% for post in site.posts limit:2 %}
+    {% for post in site.categories.blog %}
+
+    {% unless post.category == "archives" %}
 
       <li>
         
@@ -43,11 +45,8 @@ layout: default
         <p>{{ post.excerpt }}</p>
         
       </li>
+      {% endunless %}
     {% endfor %}
   </ul>
-
-
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
