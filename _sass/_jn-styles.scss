@@ -19,6 +19,10 @@ ul {
 	border: none;
 }
 
+ul.no-bull li {
+	list-style: none;
+}
+
 .site-nav {
     
 
@@ -136,4 +140,18 @@ figcaption {
 	color: #A3A2A2;
 	text-align: right;
 	margin: 1em 0;
+}
+
+.forces-list li {
+	color: #A3A2A2; 
+}
+
+.forces-list {
+	li:first-child, li:nth-child(4), li:nth-child(8) {
+		color: #D0021B;
+	}
+	li:nth-child(2), li:nth-child(5), li:nth-child(9) {
+		color: #111;
+		background: #FFFFC7;
+	} 
 }
