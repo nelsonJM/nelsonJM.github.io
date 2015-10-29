@@ -1,0 +1,154 @@
+---
+layout: default-plus
+title: 
+---
+
+		<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">New Comment</h4>
+      </div>
+      <div class="modal-body">
+        <div class="video-preview">
+										<img src="{{ site.url }}/images/nursing-vid.png" class="img-responsive">
+										<div class="select-point">
+			<p>Comment starts at: <span>2:45</span></p>
+		</div>
+									</div>
+		
+		<div class="comment-text">
+			
+			<form>
+			  <div class="form-group">
+			  	<label>Comment title</label>
+			  	<input type="text" class="form-control">
+			    <label>Comment body</label>
+			    <textarea class="form-control"></textarea>
+			  </div>
+			  
+			</form>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save comment</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h1>Video Assessment Tool: Designing the Commenting capability</h1>
+				<p>I decided to make a small challenge for myself to demonstrate my design process/thinking/approach to help give you a better understanding of my capability.</p>
+				<p>I found the video assessment tool while learning more about tk20 at tk20.com.</p>
+
+				<h2>Below are the steps I went through to arrive at the design.</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Model the domain</h3>
+						<p>Taking information from this <a href="http://tk20.com/highered/video_assessment.php" target="_blank">page</a>, I constructed a simple model of the domain. I listed out the concepts and terms in no particular order:</p>
+						<ul>
+							<li>time stamps</li>
+							<li>evaluator</li>
+							<li>student</li>
+							<li>comment</li>
+							<li>shared video</li>
+							<li>etc...</li>
+						</ul>
+						<a href="{{ site.url }}/images/modeling-domain.png" target="_blank"><img src="{{ site.url }}/images/modeling-domain.png" class="img-responsive"></a>
+					</div>
+					<div class="col-md-6">
+						<h3>Sketching out flows</h3>
+						<p>Next, I sketched out the flow for adding a comment to a video and for sharing a video (although I restricted my focus to the commenting capability).</p>
+						<p><strong>Flow for Adding a Comment:</strong> When an evaluator adds a comment, they will be taken to an "add a comment" state where they have the option to create a comment and save or cancel. In this state, they can also see a preview of the video which shows them the time stamp for their comment. After saving a new comment, the evaluator is taken back to the video watching state and the new comment appears below the video.</p> 
+						<p><strong>Flow for Sharing:</strong> 
+							When an evaluator decides to share a video (by clicking a link or button), they will be taken to a 'sharing' view where they will be able to choose with whom they would like to share via email. Possible methods of selecting email recipients include:</p>
+							<ul>
+								<li>select from contacts list</li>
+								<li>select from suggested/frequent contacts</li>
+								<li>manually enter email addresses of select persons</li>
+							</ul>
+							<p>The flow continues with recipients receiving an email with a link to the video and comments.</p> 
+						<a href="{{ site.url }}/images/commenting-flow.png" target="_blank"><img src="{{ site.url }}/images/commenting-flow.png" class="img-responsive"></a>
+						<a href="{{ site.url }}/images/sharing-flow.png" target="_blank"><img src="{{ site.url }}/images/sharing-flow.png" class="img-responsive"></a>
+					</div>
+					<div class="col-md-6">
+						<h3>The Capabilities: Commenting and Sharing</h3>
+						<p>Commenting and sharing are two of the core capabilities that the tool offers evaluators. It is composed of:</p>
+						<ul>
+							<li>ability to create and save comments</li>
+							<li>preview location of their comment via a video preview</li>
+							<li>the recently created comment appears below the video</li>
+				</ul>	
+					</div>
+					<div class="col-md-6">
+						<h3>Sketch out ideas for the interface</h3>
+						<p>Finally, I began to sketch out ideas for the interface, exploring design patterns that might satisfy the requirements of the 'commenting' task:</p>
+						<a href="{{ site.url }}/images/sketching-ui.png" target="_blank"><img src="{{ site.url }}/images/sketching-ui.png" class="img-responsive"></a>
+					</div>
+				</div>
+				<h2>My design for the Commenting capability of the Video Assessment Tool</h2>
+				<div class="watch-area">
+					
+						<div class="row">
+							<div class="col-md-9">
+							
+								<div class="video">
+									<img src="{{ site.url }}/images/nursing-vid.png" class="img-responsive">
+								</div>
+								</div>
+								<div class="col-md-3">
+									<div class="capabilities">
+										
+										<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">+ 
+  Comment
+</button>
+										<a href="">Share</a>
+										<a href="">Download video</a>
+									</div>
+								</div>
+							</div>
+						
+					</div>
+				
+					<div class="comments">
+						<h2>Your recent comments</h2>
+						<div class="panel panel-default comment">
+							
+								<div class="panel-body">
+									<div class="video-preview">
+										<img src="{{ site.url }}/images/nursing-vid.png" class="img-responsive">
+									</div>
+								<div class="comment-text">
+									<h3>Comment Title</h3>
+									<p>Nice example of effective patient-provider interaction!</p>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default comment">
+							
+								<div class="panel-body">
+									<div class="video-preview">
+										<img src="{{ site.url }}/images/nursing-vid.png" class="img-responsive">
+									</div>
+								<div class="comment-text">
+									<h3>Comment Title</h3>
+									<p>Nice example of effective patient-provider interaction!</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+
+	
