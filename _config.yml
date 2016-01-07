@@ -2,7 +2,7 @@
 title: JMARKNEL
 email: josh@joshmarknelson.com
 description: > # this means to ignore newlines until "baseurl:"
-  A collection of design and development projects by Josh Nelson.  
+  A portfolio of design and development projects by Josh Nelson.  
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jmarknel.com" # the base hostname & protocol for your site
 permalink: pretty
