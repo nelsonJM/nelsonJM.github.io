@@ -1,7 +1,7 @@
 ---
-layout: default
-title: Projects
-exclude_from_nav: true
+layout: default-plus
+title: Portfolio
+<!-- exclude_from_nav: true -->
 ---
 
 <div class="projects">
@@ -11,10 +11,29 @@ exclude_from_nav: true
     <p class="stars">***</p>
   </div>
 
-  <h1 class="page-heading">Projects</h1>
-
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 class="page-heading">Projects</h1>
+  
   <ul class="post-list">
-    {% for post in site.categories.projects %}
+    <li>
+      <h2><a href="{{ site.baseurl }}/projects/counter-app">Counter App for iOS</a></h2>
+    </li>
+    <li>
+      <h2><a href="http://jmarknel.com/Font-Identity-Quiz/" target="_blank">Font Identity Quiz</a></h2>
+      <p>Created with Handlebars.js. Test your ability to identify fonts. I also wrote a blog post about the quiz&mdash;<a href="{{ site.baseurl }}/projects/2014/10/17/font-quiz-design-process/">Design Process: Font Quiz</a></p>
+    </li>
+    <li>
+      <h2><a href="http://aacmclinic.com/" target="_blank">Actual Acupuncture &amp; Chinese Medicine</a></h2>
+      <p>Website design and development for local acupuncturist.</p>
+    </li>
+    <li>
+      <h2><a href="http://austinfirewood.com/" target="_blank">Austin Firewood</a></h2>
+      <p>Website design and development for firewood delivery service.</p>
+    </li>
+  </ul>
+  <!-- <ul class="post-list">
+    {% for post in site.categories.projects | unless post.tags == "counter" %}
       <li>
         
 
@@ -27,8 +46,8 @@ exclude_from_nav: true
         
       </li>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </ul>-->
+    </div>
+  </div>
 
 </div>
