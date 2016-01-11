@@ -1,0 +1,51 @@
+---
+layout: default-plus
+title: Counter App for iOS
+exclude_from_nav: true
+---
+<div class="row">
+  <div class="text-center">
+    <h1>A Counter App for iOS</h1>
+    <h2><em>Coming Soon</em></h2>
+  </div>
+  <div class="col-md-4 col-md-offset-2">
+    <figure>
+  <img src="/assets/phone-app-demo.gif" width="250"/>
+  <figcaption>
+    <p></p>
+  </figcaption>
+</figure>
+  </div>
+  <div class="col-md-6">
+    <h2>The Reason This App Exists</h2>
+    <p>Here's the situation that inspired me to build this app: I have to count the attendees in a meeting, so I begin by looking around the room, counting heads and keeping track of the number in my memory. When I'm done, I'll write it down or put it in a note taking app. If someone interrupts me while counting, I sometimes have to start over or ask them to wait. When I'm in a meeting and I need to count attendees, I want to keep track of my count without taking my eyes off of the people I'm counting. This app helps me do that.</p>
+    <h2>The Design Process</h2>
+    <p>Read the following blog posts to learn more about the design process behind the counter app.</p>
+
+    {% for post in site.categories.projects %}
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.categories | join: ' '}}</span>
+        <p>{{ post.excerpt }}</p>
+     {% endfor %}
+
+  </div>
+  
+    <div class="col-md-10 col-md-offset-2">
+      <h3>Updates</h3>
+    
+      
+        {% for post in site.categories.projects %}
+      
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.categories | join: ' '}}</span>
+        <p>{{ post.excerpt }}</p>
+        {% endfor %}
+        
+      </div>
+
+</div>
