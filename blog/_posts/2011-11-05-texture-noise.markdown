@@ -1,30 +1,15 @@
 ---
 layout: post
-status: publish
-published: true
+
 title: Texture & Noise
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
+
 excerpt: Here's a button cover (takes the place of a real button) that I made this
   morning.  The idea comes from the <a href="https://shop.smashingmagazine.com/smashing-ebook-photoshop2.html"
   target="_blank">Mastering Photoshop for Web Design Vol. 2</a> ebook from Smashing
   Magazine.  
-wordpress_id: 237
-wordpress_url: http://www.joshmarknelson.com/?p=237
-date: !binary |-
-  MjAxMS0xMS0wNSAxNTo1Mzo0NCAtMDUwMA==
-date_gmt: !binary |-
-  MjAxMS0xMS0wNSAxNTo1Mzo0NCAtMDUwMA==
-categories:
-- Design
-tags:
-- Photoshop
-comments: []
+
+categories: Design
+tags: Photoshop
 ---
 <p>Here's a button cover (takes the place of a real button) that I made this morning.  The idea comes from the <a href="https://shop.smashingmagazine.com/smashing-ebook-photoshop2.html" target="_blank">Mastering Photoshop for Web Design Vol. 2</a> ebook from Smashing Magazine.  <a id="more"></a><a id="more-237"></a></p>
 <p><a href="/assets/uploads/2011/11/Screen-shot-2011-11-05-at-10.33.31-AM.png"><img class="alignnone size-full wp-image-238" title="Screen shot 2011-11-05 at 10.33.31 AM" src="/assets/uploads/2011/11/Screen-shot-2011-11-05-at-10.33.31-AM.png" alt="a button cover UI element" width="558" height="275" /></a></p>

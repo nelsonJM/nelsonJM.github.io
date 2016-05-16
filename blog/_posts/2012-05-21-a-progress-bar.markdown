@@ -1,26 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: A progress bar
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 457
-wordpress_url: http://www.joshmarknelson.com/?p=457
-date: !binary |-
-  MjAxMi0wNS0yMSAwMDo0NToxNSAtMDUwMA==
-date_gmt: !binary |-
-  MjAxMi0wNS0yMSAwMDo0NToxNSAtMDUwMA==
-categories:
-- Design
-tags:
-- Photoshop
-comments: []
+categories: Design
+tags: Photoshop
 ---
 <p>This weekend I got inspired to build this progress bar. I'm still working on the direction I want to take it, but for now this is all I have.</p>
 <p>&nbsp;</p>

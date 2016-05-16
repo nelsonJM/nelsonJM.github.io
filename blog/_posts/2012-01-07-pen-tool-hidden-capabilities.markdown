@@ -1,26 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Pen tool hidden capabilities
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 260
-wordpress_url: http://www.joshmarknelson.com/?p=260
-date: !binary |-
-  MjAxMi0wMS0wNyAxNDowMDozNSAtMDYwMA==
-date_gmt: !binary |-
-  MjAxMi0wMS0wNyAxNDowMDozNSAtMDYwMA==
-categories:
-- Design
-tags:
-- Photoshop
-comments: []
+categories: Design
+tags: Photoshop
 ---
 <p>Photoshop's Pen Tool has the following hidden capabilities:</p>
 <p>Convert to Point tool (for curvature modification) - Opt while hovering over an anchor pt (creates tangent line)</p>

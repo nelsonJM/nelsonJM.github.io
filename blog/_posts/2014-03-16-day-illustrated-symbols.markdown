@@ -3,6 +3,7 @@ layout: post
 title: Symbol Design
 date: 2014-03-16
 categories: archives
+tags: Illustrator, symbols
 excerpt: I'm taking a Skillshare class called <a href="http://www.skillshare.com/classes/design/Illustrate-Your-Day-An-Intro-to-Symbol-Design/2090276120">Illustrate Your Day An Intro to Symbol Design</a> by The Noun Project.
 ---
 

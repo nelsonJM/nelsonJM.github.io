@@ -1,26 +1,9 @@
 ---
 layout: post
-status: publish
-published: true
 title: Sketching as communication
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 491
-wordpress_url: http://www.joshmarknelson.com/?p=491
-date: !binary |-
-  MjAxMi0wNS0yOSAwMTowODozNCAtMDUwMA==
-date_gmt: !binary |-
-  MjAxMi0wNS0yOSAwMTowODozNCAtMDUwMA==
-categories:
-- Design
-tags:
-- Sketching
-comments: []
+categories: Design
+tags: Sketching
+excerpt: <p>Recently, I attended an <a title="HourSchool" href="http://hourschool.com/">HourSchool</a> class titled 'Sketching As Communication' by Alex Pappas...</p><p><a href="/assets/uploads/2012/05/People.gif"><img class="aligncenter size-large wp-image-493" title="People" src="/assets/uploads/2012/05/People-1024x794.gif" alt="Sketches of people" width="680" height="527" /></a></p>
 ---
 <p>Recently, I attended an <a title="HourSchool" href="http://hourschool.com/">HourSchool</a> class titled 'Sketching As Communication' by Alex Pappas. The class was great and a very helpful introduction to visual note-taking. I took away a few great tips, tricks, and exercises that I've been trying to practice every day. Here are three that come to mind:</p>
 <p>1. If you can draw a cube, pyramid, and sphere, you can draw pretty much anything. I've since made drawing these objects part of my daily routine.</p>

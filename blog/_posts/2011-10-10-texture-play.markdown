@@ -1,27 +1,10 @@
 ---
 layout: post
-status: publish
-published: true
 title: Texture Play
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 216
-wordpress_url: http://www.joshmarknelson.com/?p=216
-date: !binary |-
-  MjAxMS0xMC0xMCAxNjo0MDo0NiAtMDUwMA==
-date_gmt: !binary |-
-  MjAxMS0xMC0xMCAxNjo0MDo0NiAtMDUwMA==
-categories:
-- Design
-tags:
-- Photoshop
-- Textures
-comments: []
+
+categories: Design
+tags: Photoshop, Textures
+excerpt: <p>I recently read an article on Smashing Magazine called <a href="http://www.smashingmagazine.com/2011/10/03/whys-hows-textures-web-design/">The Whys and The Hows of Textures in Web Design</a>.  I decided to follow <a href="http://lostandtaken.com/blog/2011/2/15/how-to-create-subtle-grunge-textures.html">Caleb Kimbrough's process of combining textures</a> and I got these results (please excuse the cheesy names).</p>
 ---
 <p>I recently read an article on Smashing Magazine called <a href="http://www.smashingmagazine.com/2011/10/03/whys-hows-textures-web-design/">The Whys and The Hows of Textures in Web Design</a>.  I decided to follow <a href="http://lostandtaken.com/blog/2011/2/15/how-to-create-subtle-grunge-textures.html">Caleb Kimbrough's process of combining textures</a> and I got these results (please excuse the cheesy names).</p>
 <p>&nbsp;</p>

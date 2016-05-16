@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "The Jony Ive interview with Vanity Fair"
+title:  Takeaways from The Jony Ive interview with Vanity Fair
 date:   2014-10-26
 categories: design, blog
+tags: forever things
 excerpt: I feel so absurdly lucky to be part of a creative process. where on one day, on Tuesday At the beginning of the week, there is no idea. We don't know what we are going to do, there's nothing. Then, by Wednesday, there's an idea that was created...
 ---
 My quick takeaways from [Jony Ive's interview with Vanity Fair](http://www.theverge.com/2014/10/18/6999931/watch-jony-ive-explain-apples-design-process-in-a-rare-public).

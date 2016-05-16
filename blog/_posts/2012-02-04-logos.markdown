@@ -1,25 +1,9 @@
 ---
 layout: post
-status: publish
-published: true
 title: Logos
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 288
-wordpress_url: http://www.joshmarknelson.com/?p=288
-date: !binary |-
-  MjAxMi0wMi0wNCAyMzo1MzoyMCAtMDYwMA==
-date_gmt: !binary |-
-  MjAxMi0wMi0wNCAyMzo1MzoyMCAtMDYwMA==
-categories:
-- Design
-tags: []
-comments: []
+categories: Design
+tags: logo design
+excerpt: <p>One of the books I've been reading is <a href="http://www.smashinglogodesign.net/">Smashing Logo Design by Gareth Hardy</a>. I spent part of my lunch break reading about the different types of logos and drawing logos for a website I'm working on. In this post I'll simply list the main types of logos.</p>
 ---
 <p>One of the books I've been reading is <a href="http://www.smashinglogodesign.net/">Smashing Logo Design by Gareth Hardy</a>. I spent part of my lunch break reading about the different types of logos and drawing logos for a website I'm working on. In this post I'll simply list the main types of logos.</p>
 <p>Here they are:</p>

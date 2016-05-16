@@ -1,26 +1,9 @@
 ---
 layout: post
-status: publish
-published: true
 title: Radial glow
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 376
-wordpress_url: http://www.joshmarknelson.com/?p=376
-date: !binary |-
-  MjAxMi0wNC0wNyAwMzozNDoxMyAtMDUwMA==
-date_gmt: !binary |-
-  MjAxMi0wNC0wNyAwMzozNDoxMyAtMDUwMA==
-categories:
-- Development
-tags:
-- CSS3
-comments: []
+categories: Development
+tags: CSS3
+excerpt: <p>Today I watched a tutorial on styling forms and came away with some knowledge on how to create a glow effect using CSS3 gradients. Here's a radial glow applied to a nice seamless texture of diagonal lines.</p><p><a href="/assets/uploads/2012/04/Radial-Glow-Practice1.png"><img class="alignnone size-medium wp-image-391" title="Radial Glow Practice" src="/assets/uploads/2012/04/Radial-Glow-Practice1-300x127.png" alt="Radial glow effect using CSS." width="300" height="127" /></a></p>
 ---
 <p>Today I watched a tutorial on styling forms and came away with some knowledge on how to create a glow effect using CSS3 gradients. Here's a radial glow applied to a nice seamless texture of diagonal lines.</p>
 <p><a href="/assets/uploads/2012/04/Radial-Glow-Practice1.png"><img class="alignnone size-medium wp-image-391" title="Radial Glow Practice" src="/assets/uploads/2012/04/Radial-Glow-Practice1-300x127.png" alt="Radial glow effect using CSS." width="300" height="127" /></a></p>

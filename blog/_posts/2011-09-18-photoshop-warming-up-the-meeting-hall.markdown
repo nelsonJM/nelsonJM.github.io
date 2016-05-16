@@ -3,7 +3,7 @@ layout: post
 title: Warming up'' an eery green entrance
 excerpt: This photo is on the homepage of churchinaustin.org, a website that I helped revamp over the summer.  I'd like to share the steps I took to arrive at the "After" photo.<img class="alignnone size-full wp-image-171" title="comparison" src="/assets/uploads/2011/09/comparison1.png" alt="" width="300" height="501" />.
 category: design
-tags: photoshop
+tags: Photoshop
 ---
 <p style="text-align: center;">This photo is on the homepage of churchinaustin.org, a website that I helped revamp over the summer.  I'd like to share the steps I took to arrive at the "After" photo.</p>
 <p style="text-align: center;"><img class="alignnone size-full wp-image-171" title="comparison" src="/assets/uploads/2011/09/comparison1.png" alt="" width="300" height="501" /></p>

@@ -1,27 +1,9 @@
 ---
 layout: post
-status: publish
-published: true
 title: Centering icons
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 524
-wordpress_url: http://www.joshmarknelson.com/?p=524
-date: !binary |-
-  MjAxMi0wNy0wOSAxMTo1OToxNyAtMDUwMA==
-date_gmt: !binary |-
-  MjAxMi0wNy0wOSAxMTo1OToxNyAtMDUwMA==
-categories:
-- Development
-tags:
-- CSS
-- Tips
-comments: []
+categories: Development
+tags: CSS, Tips
+excerpt: <p>Recently, someone asked me how to display a group of icons on one line, rather than the default vertical list. My answer was based on a general idea of how to do it and so it probably wasn't very helpful. This inspired me to figure out the solution and add a little extra to it. Below is the solution that I came up with. It places a group of icons on one line and centers each icon within it's list-item.</p>
 ---
 <p>Recently, someone asked me how to display a group of icons on one line, rather than the default vertical list. My answer was based on a general idea of how to do it and so it probably wasn't very helpful. This inspired me to figure out the solution and add a little extra to it. Below is the solution that I came up with. It places a group of icons on one line and centers each icon within it's list-item.</p>
 <p><a href="http://www.joshmarknelson.com/examples/center-icons">See the demo</a></p>

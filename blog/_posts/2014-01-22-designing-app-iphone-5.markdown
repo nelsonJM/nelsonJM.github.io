@@ -1,23 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: ! 'Designing an app for iPhone 5: Wire-framing'
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 802
-wordpress_url: http://www.joshmarknelson.com/?p=802
-date: !binary |-
-  MjAxNC0wMS0yMiAwNToyODozOCAtMDYwMA==
-date_gmt: !binary |-
-  MjAxNC0wMS0yMiAwNToyODozOCAtMDYwMA==
 categories: archives
-tags: iOS prototyping sketching
+tags: iOS, prototyping, sketching
 excerpt: I've been learning Objective-C and iOS programming through one of the Big Nerd Ranch Guides (<a href="http://www.bignerdranch.com/book/ios_programming_the_big_nerd_ranch_guide_rd_edition_">this one</a>)...
 ---
 <p>I've been learning Objective-C and iOS programming through one of the Big Nerd Ranch Guides (<a href="http://www.bignerdranch.com/book/ios_programming_the_big_nerd_ranch_guide_rd_edition_">this one</a>). Unfortunately, the book is outdated and has left me hanging on a few details. I've been using this as an excuse to delay my learning and pick up an updated copy of the book when it's available. No more. I'm determined to create an app and have decided to begin wire-framing an app idea. The app will help me keep track of meeting numbers (a task that I must perform once a month). Below is a screenshot of my wire-framing progress. I hope to document the process in short posts as I go.<br />

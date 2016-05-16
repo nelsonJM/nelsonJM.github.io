@@ -9,7 +9,7 @@
     </div>
     
     <nav class="site-nav">
-      {% for page in site.pages %}
+      {% for page in site.pages | sort:"order" %}
       {% unless page.exclude_from_nav %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
@@ -17,6 +17,7 @@
           {% endunless %}
         {% endfor %}
     </nav>
+   
       </div>
     </div>
   </div>

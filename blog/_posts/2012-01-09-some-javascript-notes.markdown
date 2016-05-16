@@ -1,25 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Some JavaScript notes
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 272
-wordpress_url: http://www.joshmarknelson.com/?p=272
-date: !binary |-
-  MjAxMi0wMS0wOSAwNDo1NzowMSAtMDYwMA==
-date_gmt: !binary |-
-  MjAxMi0wMS0wOSAwNDo1NzowMSAtMDYwMA==
-categories:
-- Development
-tags: []
-comments: []
+categories: Development
+tags: JavaScript
 ---
 <p>Watched Jeff Way screencast 'JS from Null' series, chapter 3. Here's a note that I jotted down.</p>
 <p>You create a string:<br />

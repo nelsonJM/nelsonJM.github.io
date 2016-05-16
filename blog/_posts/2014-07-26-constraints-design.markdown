@@ -3,6 +3,7 @@ layout: post
 title: Constraints and Design
 date: 2014-07-26
 categories: design, blog
+tags: forever things
 excerpt: I recently read the <a href="http://37signals.com/rework/">Rework</a> book <a href="http://www.squeezedbooks.com/articles/rework.html">summary at Squeezed Books</a>. There is a point made in the book, under the heading, 'Embrace constraints', that I have been thinking about...
 ---
 <p>I recently read the <a href="http://37signals.com/rework/">Rework</a> book <a href="http://www.squeezedbooks.com/articles/rework.html">summary at Squeezed Books</a>. There is a point made in the book, under the heading, 'Embrace constraints', that I have been thinking about: </p>

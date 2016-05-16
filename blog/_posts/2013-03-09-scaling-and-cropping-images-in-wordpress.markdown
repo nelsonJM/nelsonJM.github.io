@@ -1,26 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Scaling and Cropping Images in WordPress
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 698
-wordpress_url: http://www.joshmarknelson.com/?p=698
-date: !binary |-
-  MjAxMy0wMy0wOSAwNDo1Mzo0NyAtMDYwMA==
-date_gmt: !binary |-
-  MjAxMy0wMy0wOSAwNDo1Mzo0NyAtMDYwMA==
-categories:
-- Design
-tags:
-- Wordpress
-comments: []
+categories: Design
+tags: Wordpress
 excerpt: This is just a quick note on how to scale and crop an image in WordPress.
 ---
 <p>This is just a quick note on how to scale and crop an image in WordPress.</p>

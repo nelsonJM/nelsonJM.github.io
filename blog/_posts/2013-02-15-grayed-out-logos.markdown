@@ -1,20 +1,8 @@
 ---
 layout: post
-title: Grayed out logos
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 671
-wordpress_url: http://www.joshmarknelson.com/?p=671
-date: !binary |-
-  MjAxMy0wMi0xNSAwNTo1MDo0MCAtMDYwMA==
-date_gmt: !binary |-
-  MjAxMy0wMi0xNSAwNTo1MDo0MCAtMDYwMA==
+title: Grayed-out logos
 categories: Design
+tags: Photoshop
 excerpt: Have you ever had this need on a project&#58; You have some color logos of past clients and you need to convert them into a grayed-out banner to place on a website? Here's an example&#58; <a href="/assets/uploads/2013/02/gray-example.png"><img class="aligncenter size-medium wp-image-687" alt="gray-example" src="/assets/uploads/2013/02/gray-example-300x54.png" width="300" height="54" /></a>
 ---
 <p>Have you ever had this need on a project: You have some color logos of past clients and you need to convert them into a grayed-out banner to place on a website? Here's an example:</p>

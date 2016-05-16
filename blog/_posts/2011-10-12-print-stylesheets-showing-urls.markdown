@@ -1,25 +1,9 @@
 ---
 layout: post
-status: publish
-published: true
-title: ! 'Print Stylesheets: Showing URLs'
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 222
-wordpress_url: http://www.joshmarknelson.com/?p=222
-date: !binary |-
-  MjAxMS0xMC0xMiAxMzo1MTowMCAtMDUwMA==
-date_gmt: !binary |-
-  MjAxMS0xMC0xMiAxMzo1MTowMCAtMDUwMA==
-categories:
-- Uncategorized
-tags: []
-comments: []
+title: Print Stylesheets Showing URLs
+categories: Code
+tags: CSS
+excerpt: <p>I learned a neat trick today related to <strong>print stylesheets</strong>. When a user prints out an airplane ticket, insurance cards, an article etc. from a website, the print out should receive its own stylesheet that removes unnecessary elements...</p>
 ---
 <p>I learned a neat trick today related to <strong>print stylesheets</strong>.  When a user prints out an airplane ticket, insurance cards, an article etc. from a website, the print out should receive its own stylesheet that removes unnecessary elements such as the site navigation, sidebar, and anything else that is irrelevant to the print version.  In addition to removing elements, there are some things you can include to <strong>enhance the user experience</strong>.  One of those things is the URL of a link that may be relevant to the content that the user is interested in.</p>
 <p>Here's an example of what it would look like:</p>
