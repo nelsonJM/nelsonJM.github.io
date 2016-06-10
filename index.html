@@ -9,8 +9,9 @@ layout: default-plus
     <p class="stars">***</p>
   </div>
 
-  <div class="row">
+  <div class="row margin-bottom-30">
     <div class="col-md-8 col-md-offset-2">
+
       <a href="{{ site.baseurl }}/projects/counter-app" class="text-center">
         
         <figure class="marginbottom30">
@@ -19,6 +20,24 @@ layout: default-plus
         <p>Latest Project: A Counter App for iOS.</p>
       </a>
     </div>
+  </div>
+  <hr class="margin-bottom-30">
+  <h2>Writings</h2>
+  <div class="row">
+      {% for post in site.categories.blog limit:3 %}
+
+  <div class="col-md-4">
+    <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.tags | join: ' '}}</span>
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      
+    </h2>
+        
+    <p>{{ post.excerpt }}</p>
+        </div>
+    {% endfor %}
+    </div>
+    
   </div>
   
   
