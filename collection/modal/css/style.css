@@ -1,0 +1,122 @@
+
+.tw {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.tw-light {
+	font-weight: 300;
+}
+
+.tw-thin {
+	font-weight: 200;
+}
+
+.margin-right-10 {
+	margin-right: 10px;
+}
+
+.padding-left-25 {
+	padding-left: 25px;
+}
+
+.text-dark {
+	color: #666;
+}
+
+.underline {
+	border-bottom: 1px solid;
+}
+
+.underline:hover {
+	border-bottom: none;
+}
+
+.caret {
+	border-top: 5px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+/* margin and padding */
+.padding-top-11 {
+	padding-top: 11px;
+}
+
+.padding-bottom-11 {
+	padding-bottom: 11px;
+}
+
+/* label */
+.label {
+	display: inline-block;
+	padding: 2px 1px;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+
+/* .modal-dialog */
+.modal-dialog {
+	box-shadow: 10px 10px 30px 0 rgba(0,0,0,.2);
+}
+/*.modal-content */
+.modal-content {
+	border: none;
+	box-shadow: 0 0 0px 7px rgba(0,0,0,.1);
+}
+
+/* Modal header */
+.modal-header {
+	line-height: 1.8;
+}
+
+/* Close button */
+.close {
+	opacity: 1.0;
+}
+
+/* Back */
+.back {
+	width: 125px;
+	height: 41px;
+	line-height: 3;
+}
+
+/* Call */
+
+.call-info {
+	padding-left: 20px;
+}
+
+.call-duration {
+	letter-spacing: -1.75px;
+	font-size: 42px;
+	line-height: 1;
+}
+
+.call-indicator-success {
+	/*margin-right: 6px;*/
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #00D95A;
+	border-radius: 4px;
+}
+
+/* Contact */
+
+.contact-name {
+	font-size: 22px;
+}
+
+/* Registers title */
+.registers-title {
+	margin-top: -38px;
+	font-size: 12px;
+}
+
+.registers-title a {
+	display: inline-block;
+	padding: 8px 22px;
+	background: #ebeff2;
+	border-radius: 100px;
+}

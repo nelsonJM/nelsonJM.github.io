@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "A Bootstrap-dependent Modal"
+date:   2016-07-1
+category: Development
+tags: front-end code
+excerpt: I learned a few things while implementing a modal using the Bootstrap framework.
+---
+
+<p>I did not design this modal. I'm posting it here because I learned a few things while implementing it using the Bootstrap framework.</p>
+
+<h2>Breaking Up the Design</h2>
+<figure>
+	<a href="/assets/call-modal.jpg"><img src="/assets/call-modal.jpg" alt="Bootstrap-dependent modal" class="img-responsive" /></a>
+	<figcaption>
+		A modal
+	</figcaption>
+</figure>
+<p>I began by looking at the screenshot above and identifying independent areas. The process looked like this: On one side of my screen I had the mockup and on the other I had an empty nvALT document. I looked at the mockup and said, "There's the notion of 'this call that's happending right now'", then I would enter ".call" in the nvALT doc. ".call" is the classname I will give to the 'call' component in the HTML. "This is a contact, so I'll write a classname called '.contact'.". Soon I had a list of classnames representing each independent area of the design. Later, I thought about the data as an outline of objects. Something like this:</p>
+<ul>
+	<li>Call</li>
+	<ul>
+		<li>History</li>
+		<li>Duration</li>
+		<li>Registers</li>
+	</ul>
+<li>Contact</li>
+
+	<ul>
+		<li>Name</li>
+		<li>Bio</li>
+		<li>Phone Number</li>
+		<li>...</li>
+	</ul>
+
+</ul>
+<p>This helped me identify components (like 'Call') and sub-components (like 'Contact') and make distinctions such as "call-history" and "contact-history" (different sub-components). </p>
+<h2>Naming Component and Sub-components (How I Write CSS)</h2>
+<p>I've been trying Mark Otto's approach to writing CSS as outlined in his talk, <a href="http://jqueryuk.com/2015/videos.php?s=mdo-ular-css">mdo-ular CSS</a>. The result is CSS that looks something like this:</p>
+<ul>
+	<li>component</li>
+	<li>component-modifier</li>
+	<li>component-subcomponent</li>
+	<li>component-subcomponent-modifier</li>
+</ul>
+<p>Watch the video for a great explanation and examples.</p>
+<h2>Coding</h2>
+<p>I downloaded a copy of Bootstrap and began coding using my list of classnames as a starting point for each component. Initially, I coded most of the components from scratch and used Bootstrap mainly for the grid system, JavaScript plugins and helper classes like 'pull-right'. I soon ran into limitations relying on the grid system for layout and took a step back to re-evaluate the design. I began to notice the patterns within patterns, which led me to dig around the Bootstrap documentation for solutions.</p> 
+<h2>Leaning on Bootstrap</h2>
+<p>Pouring over the Bootstrap documentation brought my attention to areas of the framework I hadn't noticed before. Helper classes like ".text-right" were familiar, but ".text-muted" and ".center-block" helped me position elements quickly and with less code. By far the most utilized pattern in this design is the "media object" and its variations. These are very specific uses of Bootstrap, but I did learn two broader, slightly higher level lessons:</p>
+<ul>
+	<li>Bootstrap encouraged me to refine my understanding of what constitutes a component. One component could house a few smaller components.</li>
+	<li>Write CSS in a way that let's you write flexible HTML.</li>
+</ul>
+
+<h2>Where to From Here?</h2>
+<p>Of course I have plenty to learn. My hope is that this recap of the build process will spark new ideas and connections in my brain. It is an exciting and humbling experience.</p>
+
+
+
