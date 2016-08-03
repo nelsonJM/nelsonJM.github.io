@@ -2,23 +2,24 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="logo">
-      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>  
-  
-    </div>
-    
-    <nav class="site-nav">
-      {% for page in site.pages | sort:"order" %}
-      {% unless page.exclude_from_nav %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-          {% endunless %}
-        {% endfor %}
-    </nav>
-   
+      <div class="col-md-5">
+        <div>
+          <a href="{{ site.baseurl }}/" class="logo">
+          <span class="site-title margin-right-10">{{ site.title }}</span><span>{{ site.description }}</span>
+        </a>  
+          
+        </div>
+        <nav class="site-nav">
+          {% for page in site.pages | sort:"order" %}
+          {% unless page.exclude_from_nav %}
+              {% if page.title %}
+              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              {% endif %}
+              {% endunless %}
+            {% endfor %}
+        </nav>
       </div>
+      
     </div>
   </div>
 

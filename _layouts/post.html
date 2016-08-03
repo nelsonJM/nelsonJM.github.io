@@ -3,14 +3,10 @@ layout: default
 ---
 
 <div class="post">
-<div class="intro">
-    
-    <p class="text">{{ site.description }}</p>
-    <p class="stars">***</p>
-  </div>
+
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} | {{ page.tags | join: ' ' }}</p>
+    <!-- <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} | {{ page.tags | join: ' ' }}</p> -->
   </header>
 
   <article class="post-content">
