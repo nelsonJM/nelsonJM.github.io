@@ -40,9 +40,12 @@ title:
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<h1>Video Assessment Tool: Designing the Commenting capability</h1>
-			<p>I decided to make a small challenge for myself to demonstrate my design process/thinking/approach to designing the commenting capability of a video assessment tool.</p>
+			<h2>Overview</h2>
+			<p>I came across a software tool that allows teachers to review student videos and add comments at specific times throughout the video. I decided to make a small design challenge for myself and redesign this commenting capability.</p>
 
-			<h2>Below are the steps I went through to arrive at the design.</h2>
+			<h2>Problem Statement or Why am I Designing this?</h2>
+			<p>This is a mini-challenge to redesign one feature that is part of an assessment and reporting system for colleges and universities. </p>
+			<h2>Design Process Story</h2>
 		
 	<div class="row">
 		<div class="col-md-6">
@@ -61,17 +64,12 @@ title:
 		<div class="col-md-6">
 			<figure><a href="{{ site.url }}/images/modeling-domain.jpg" target="_blank"><img src="{{ site.url }}/images/modeling-domain.jpg" class="img-responsive"></a></figure>
 		</div>
-	</div>
-		<div class="row">
-		<div class="col-md-6">
+		</div>
 			<h3>2. Sketching out flows</h3>
 			<p>Next, I sketched out the flow for adding a comment to a video and for sharing a video (although I restricted my focus to the commenting capability).</p>
 			<p><strong>Flow for Adding a Comment:</strong> When an evaluator adds a comment, they will be taken to an "add a comment" state where they have the option to create a comment and save or cancel. In this state, they can also see a preview of the video which shows them the time stamp for their comment. After saving a new comment, the evaluator is taken back to the video watching state and the new comment appears below the video.</p> 
 			<figure><a href="{{ site.url }}/images/commenting-flow.jpg" target="_blank"><img src="{{ site.url }}/images/commenting-flow.jpg" class="img-responsive"></a></figure>
-			
-			</div>
-			<div class="col-md-6">
-				<p><strong>Flow for Sharing:</strong> 
+			<p><strong>Flow for Sharing:</strong> 
 				When an evaluator decides to share a video (by clicking a link or button), they will be taken to a 'sharing' view where they will be able to choose with whom they would like to share via email. Possible methods of selecting email recipients include:</p>
 				<ul>
 					<li>select from contacts list</li>
@@ -83,10 +81,7 @@ title:
 			<figure>
 				<a href="{{ site.url }}/images/sharing-flow.jpg" target="_blank"><img src="{{ site.url }}/images/sharing-flow.jpg" class="img-responsive"></a>
 			</figure>
-			</div>
-		</div>	
-					<div class="row">
-						<div class="col-md-6">
+			
 							<h3>3. The Capabilities: Commenting and Sharing</h3>
 							<p>Commenting and sharing are two of the core capabilities that the tool offers evaluators. The commenting capability consists of:</p>
 							<ul>
@@ -94,15 +89,13 @@ title:
 								<li>preview location of their comment via a video preview</li>
 								<li>the recently created comment appears below the video</li>
 							</ul>	
-						</div>
-						<div class="col-md-6">
+						
 							<h3>4. Sketch out ideas for the interface</h3>
 							<p>Finally, I began to sketch out ideas for the interface, exploring design patterns that might satisfy the requirements of the 'commenting' task:</p>
 							<figure>
 								<a href="{{ site.url }}/images/sketching-ui.jpg" target="_blank"><img src="{{ site.url }}/images/sketching-ui.jpg" class="img-responsive"></a>
 							</figure>
-						</div>
-					</div>
+						
 				
 
 				<h2>My prototype for the 'commenting capability' of the Video Assessment Tool</h2>
