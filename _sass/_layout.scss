@@ -180,6 +180,16 @@
     }
 }
 
+.project {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-top: 1px solid #eee;
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
