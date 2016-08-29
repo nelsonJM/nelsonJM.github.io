@@ -2,12 +2,12 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-8 col-md-offset-2">
         
           <a href="{{ site.baseurl }}/" class="logo">
           <span class="site-title margin-right-10">{{ site.title }}</span><span>{{ site.description }}</span>
         </a>  
-          <nav class="site-nav pull-right">
+          <nav class="site-nav">
           {% for page in site.pages | sort:"order" %}
           {% unless page.exclude_from_nav %}
               {% if page.title %}
