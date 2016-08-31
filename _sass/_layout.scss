@@ -185,15 +185,20 @@
     margin-bottom: 30px;
     text-align: center;
     
-    
+    .project-inner {
+        padding: 15%;
+        background: rgba(11,2,6,.8);
+        transition: background .5s;
+    }
 
     h3 {
 
         margin-top: 0;
-        padding: 4%;
+        margin-bottom: 0;
+        padding: 6px 8px;
         display: inline-block;
         text-align: center;
-       
+        font-size: 83%;
         border-radius: 3px;
         border: 1px solid #eee;
     }
@@ -207,14 +212,20 @@
     
 }
 
+@media (min-width: 768px) {
+    .project h3 {
+        font-size: 100%;
+    }
+}
+
 .project:hover {
 
     .project-inner {
-        background: rgba(0,0,0,.0);
+        background: rgba(27,5,41,.8);
     }
 
     h3 {
-        background: rgba(0,0,0,.7);
+        
         border: 1px solid #eee;
     }
 

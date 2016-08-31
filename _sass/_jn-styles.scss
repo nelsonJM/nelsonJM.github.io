@@ -217,15 +217,30 @@ figcaption {
 }
 
 .featured {
-	
 	text-align: center;
 	background: url('/assets/counting-eye-screens.jpg') no-repeat;
 	background-size: contain;
-
+	background-position: center center;
 }
 
-.project-inner {
-	padding: 15%;
-	background: rgba(0,0,0,.7);
-
+.time-track {
+	text-align: center;
+	background: url('/assets/time-tracker-home.jpg') no-repeat;
+	background-size: contain;
+	background-position: center center;
 }
+
+.vid-assess {
+	text-align: center;
+	background: url('/assets/video-tool-home.jpg') no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.font-quiz {
+	text-align: center;
+	background: url('/assets/font-quiz-home.jpg') no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
