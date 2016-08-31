@@ -56,14 +56,34 @@ ul.no-bull li {
         border-radius: 5px;    
         }
 
-        .page-link {
+        .page-link,
+        a {
             display: inline;
-            padding: 5px;
+            padding: 6px 9px;
 
             &:not(:first-child) {
             margin-left: 0px;
         	}
         }
+
+        .page-link.active,
+        a.active {
+        	padding: 6px 9px;
+        	color: #fdfdfd;
+            background: #1b0529;
+            border-radius: 15px; 
+
+            }
+
+            .page-link:hover,
+        a:hover {
+        	padding: 6px 9px;
+        	text-decoration: none;
+        	color: #fdfdfd;
+            background: #1b0529;
+            border-radius: 15px; 
+            
+            }
 
        
 }

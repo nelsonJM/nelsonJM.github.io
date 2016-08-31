@@ -14,10 +14,10 @@ defaults:
     values:
       layout: "post"
 
-paginate: 5
-
 twitter_username: jmarknel
 github_username:  nelsonJM
 
 # Build settings
 markdown: kramdown
+
+

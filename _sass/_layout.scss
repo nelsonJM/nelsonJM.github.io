@@ -31,7 +31,8 @@
         display: none;
     }
 
-    .page-link {
+    .page-link,
+    a {
         color: $text-color;
         line-height: $base-line-height;
 
