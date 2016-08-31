@@ -60,7 +60,7 @@ ul.no-bull li {
         a {
             display: inline;
             padding: 6px 9px;
-
+			color: #a7a7a7;
             &:not(:first-child) {
             margin-left: 0px;
         	}
@@ -68,20 +68,16 @@ ul.no-bull li {
 
         .page-link.active,
         a.active {
-        	padding: 6px 9px;
-        	color: #fdfdfd;
-            background: #1b0529;
-            border-radius: 15px; 
+        	
+        	color: #1b0529;
+           
 
             }
 
             .page-link:hover,
         a:hover {
-        	padding: 6px 9px;
-        	text-decoration: none;
-        	color: #fdfdfd;
-            background: #1b0529;
-            border-radius: 15px; 
+        	color: #1b0529;
+            
             
             }
 
@@ -218,4 +214,18 @@ figcaption {
 
 .site-header {
 	border-top: 5px solid #1b0529;
+}
+
+.featured {
+	
+	text-align: center;
+	background: url('/assets/counting-eye-screens.jpg') no-repeat;
+	background-size: contain;
+
+}
+
+.project-inner {
+	padding: 15%;
+	background: rgba(0,0,0,.7);
+
 }
