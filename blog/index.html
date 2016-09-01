@@ -1,15 +1,17 @@
 ---
 layout: default
-title: Writing
+title: Journal
 navigation_weight: 2
 ---
 
 <div class="blog">
 
 
-  <h1>Writing</h1>
+  <div class="intro margin-bottom-30 text-center">
+    <h1>Journal</h1>
   
-  <p>I use writing to clarify my thinking surrounding new ideas. I write on design and product-related topics.</p>
+  <p>Writing helps me think more clearly and process my observations.</p>
+  </div>
   <!-- {% for post in site.categories.blog %}
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
@@ -34,9 +36,9 @@ navigation_weight: 2
   
 
 
-  <ul class="post-list">
+  <div class="entries">
     {% for post in site.categories.blog %}
-      <li>
+      <div class="entry">
         
 
         <h2>
@@ -46,9 +48,9 @@ navigation_weight: 2
         <!-- <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.categories | join: ' '}}</span> -->
         <p>{{ post.excerpt }}</p>
         
-      </li>
+      </div>
     {% endfor %}
-  </ul>
+  </div>
 
 
 </div>
