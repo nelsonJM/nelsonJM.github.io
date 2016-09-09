@@ -1,30 +1,13 @@
 ---
 layout: post
-status: publish
-published: true
 title: Unicode triangle
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 428
-wordpress_url: http://www.joshmarknelson.com/?p=428
-date: !binary |-
-  MjAxMi0wNC0yOSAwMjoxOTozMiAtMDUwMA==
-date_gmt: !binary |-
-  MjAxMi0wNC0yOSAwMjoxOTozMiAtMDUwMA==
-categories:
-- Development
-tags:
-- CSS3
-comments: []
+categories: Development
+tags: CSS3
+excerpt: <p>I've been following a tutorial on <a href="http://tutsplus.com/">Tuts+</a> and thought I'd share my progress so far and a tidbit of knowledge I picked up. The tidbit is related to the triangle in the image below (the orange arrow is not part of the design, it's just there to help identify the triangle. Thanks <a href="http://skitch.com/">Skitch</a>!). Here's <a href="http://www.joshmarknelson.com/examples/mobile-form/">what I have so far</a>.</p>
 ---
 <p>I've been following a tutorial on <a href="http://tutsplus.com/">Tuts+</a> and thought I'd share my progress so far and a tidbit of knowledge I picked up. The tidbit is related to the triangle in the image below (the orange arrow is not part of the design, it's just there to help identify the triangle. Thanks <a href="http://skitch.com/">Skitch</a>!). Here's <a href="http://www.joshmarknelson.com/examples/mobile-form/">what I have so far</a>.</p>
 <p>&nbsp;</p>
-<p><img class="alignleft size-full wp-image-431" title="Tooltip pop-up" src="http://www.joshmarknelson.com/wp-content/uploads/2012/04/Email-Domain-Autocomplete.png" alt="" width="187" height="126" /></p>
+<p><img class="alignleft size-full wp-image-431" title="Tooltip pop-up" src="/assets/uploads/2012/04/Email-Domain-Autocomplete.png" alt="" width="187" height="126" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

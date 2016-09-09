@@ -3,7 +3,6 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -199,8 +198,7 @@
         display: inline-block;
         text-align: center;
         font-size: 83%;
-        border-radius: 3px;
-        border: 1px solid #eee;
+        
     }
 
    
@@ -214,7 +212,7 @@
 
 @media (min-width: 768px) {
     .project h3 {
-        font-size: 100%;
+        font-size: 120%;
     }
 }
 
@@ -222,11 +220,6 @@
 
     .project-inner {
         background: rgba(27,5,41,.8);
-    }
-
-    h3 {
-        
-        border: 1px solid #eee;
     }
 
     a {

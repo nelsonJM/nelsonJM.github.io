@@ -1,26 +1,11 @@
 ---
 layout: post
-status: publish
-published: true
+
 title: Color property
-author:
-  display_name: jmnelson
-  login: jmnelson
-  email: jmarknel@gmail.com
-  url: ''
-author_login: jmnelson
-author_email: jmarknel@gmail.com
-wordpress_id: 234
-wordpress_url: http://www.joshmarknelson.com/?p=234
-date: !binary |-
-  MjAxMS0xMC0yOSAxNDozMzo1MSAtMDUwMA==
-date_gmt: !binary |-
-  MjAxMS0xMC0yOSAxNDozMzo1MSAtMDUwMA==
-categories:
-- Development
-tags:
-- CSS
-comments: []
+
+categories: Development
+tags: CSS
+excerpt: <p>This morning I learned about the color property, specifically how it is used to change the background color of an element.  I know this is easy stuff, but I wanted to post it just for the sake of documentation.  Using the color property in this way is as simple as:</p>
 ---
 <p>This morning I learned about the color property, specifically how it is used to change the background color of an element.  I know this is easy stuff, but I wanted to post it just for the sake of documentation.  Using the color property in this way is as simple as:</p>
 <p>#someElement {</p>

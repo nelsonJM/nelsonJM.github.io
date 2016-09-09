@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Takeaways from The Jony Ive interview with Vanity Fair
+title:  Takeaways from the Jony Ive interview with Vanity Fair
 date:   2014-10-26
 categories: design, blog
 tags: forever things

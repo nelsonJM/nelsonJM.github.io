@@ -1,3 +1,7 @@
+body {
+	font-size: 18px;
+}
+
 /* base overrides */
 /**
  * Headings
@@ -7,12 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 24px;
-}
-
-h2 {
-	margin-bottom: 8px;
 	margin-top: 50px;
+	font-size: 24px;
 }
 
 h3 {
@@ -59,8 +59,11 @@ ul.no-bull li {
         .page-link,
         a {
             display: inline;
-            padding: 6px 9px;
-			color: #a7a7a7;
+            padding: 6px 0 3px 0;
+            margin-right: 14px;
+			color: #1b0529;
+			font-size: 16px;
+
             &:not(:first-child) {
             margin-left: 0px;
         	}
@@ -70,14 +73,15 @@ ul.no-bull li {
         a.active {
         	
         	color: #1b0529;
-           
+            border-bottom: 1px solid;
 
             }
 
             .page-link:hover,
         a:hover {
         	color: #1b0529;
-            
+            text-decoration: none;
+            border-bottom: 1px solid;
             
             }
 
@@ -87,7 +91,6 @@ ul.no-bull li {
 .intro {
 	text-align: center;
 	margin-bottom: 1em;
-	color: #111;
 }
 
 .brief-bio {
@@ -248,8 +251,9 @@ figcaption {
 .entry {
 	padding: 20px;
 	border-bottom: 1px solid #eee;
-	}
+	
 
 	h2 {
 	margin-top: 0;
+	}
 }

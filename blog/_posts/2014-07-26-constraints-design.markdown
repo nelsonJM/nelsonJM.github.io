@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Constraints and Design
+title: Constraints and design
 date: 2014-07-26
 categories: design, blog
 tags: forever things
