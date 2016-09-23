@@ -183,6 +183,11 @@
 .project {
     margin-bottom: 30px;
     text-align: center;
+
+    img {
+        padding: 4px;
+        box-shadow: 0 1px 0 rgba(0,0,0,.2);
+    }
     
     .project-inner {
         padding: 15%;
@@ -192,8 +197,7 @@
 
     h3 {
 
-        margin-top: 0;
-        margin-bottom: 0;
+        margin-top: 8px;
         padding: 6px 8px;
         display: inline-block;
         text-align: center;
@@ -204,7 +208,8 @@
    
 
     a {
-        color: #fdfdfd;
+        display: block;
+        color: inherit;
     }
 
     
@@ -218,13 +223,15 @@
 
 .project:hover {
 
+    img {
+        box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    }
+
     .project-inner {
         background: rgba(27,5,41,.8);
     }
 
-    a {
-        color: #fdfdfd;
-    }
+    
 }
 
 .post-meta {
