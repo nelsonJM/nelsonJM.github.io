@@ -117,7 +117,7 @@ ul.no-bull li {
 }
 
 .page-heading {
-    font-family: $cabin;
+    font-family: $karla;
 }
 
 .page-content {
@@ -127,7 +127,7 @@ ul.no-bull li {
 
 /* My styles */
 .site-title {
-	font-family: $cabin;
+	font-family: $karla;
 	font-weight: 700;
 	
 }
@@ -155,7 +155,7 @@ ul.no-bull li {
 
 /* Questions block */
 .block {
-	font-family: "Cabin", sans-serif;
+	font-family: $karla;
 	background: rgba(1, 1, 0, 0.07);
 	font-style: italic;
 	padding: 10px 15px;
@@ -217,10 +217,6 @@ figcaption {
 .post-header {
 	padding-top: 60px;
 	padding-bottom: 20px;
-}
-
-.site-header {
-	border-top: 5px solid #1b0529;
 }
 
 .featured {
