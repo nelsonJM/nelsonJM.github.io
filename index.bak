@@ -22,17 +22,18 @@ navigation_weight: 1
   </div> -->
  
     <div class="row margin-bottom-30">
-    <div class="col-md-6 col-md-offset-2">
+    <div class="col-md-8 col-md-offset-2">
       
       
   
   
-    
+    <h1>Hello,</h1>
+            <p>I'm <strong>Josh Nelson</strong> &mdash; a designer living in Austin, Texas. </p>
+            <h2>Get in Touch</h2>
+       <p>Send a DM to <a href="https://twitter.com/{{ site.twitter_username }}">@jmarknel</a>.</p>
      
       <div class="intro">
-        <h1>Hello,</h1>
-            <p>I'm <strong>Josh Nelson</strong>, a UX &amp; Interaction designer living in Austin, Texas. Get in touch by sending a DM to <a href="https://twitter.com/{{ site.twitter_username }}">@jmarknel</a>.</p>
-            <h2>Side Projects</h2>
+        <h2>Side Projects</h2>
       <p>A collection of work outside of work hours. I strive for clarity and focusing on what matters.</p>
       </div>
 

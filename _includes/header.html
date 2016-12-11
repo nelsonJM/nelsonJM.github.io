@@ -4,10 +4,10 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         
-          <a href="{{ site.baseurl }}/" class="logo">
+          <a href="{{ site.baseurl }}/" class="logo hide">
           <span class="site-title margin-right-10">{{ site.title }}</span><span>{{ site.description }}</span>
         </a>  
-          <nav class="site-nav">
+          <nav class="site-nav text-right">
             {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
             {% for p in navigation_pages %}
             {% if p.navigation_weight %}
