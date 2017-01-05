@@ -8,68 +8,116 @@ exclude_from_nav: true
   
     <div class="col-md-12">
       <div class="row">
-        <div class="col-md-2 col-md-offset-2 col-md-push-6">
-    <div class="outline hidden-xs hidden-sm affix">
-      <!-- <h2>Case Study Contents:</h2>
-      <h3>Tl;dr</h3>
-      <ul>
-      <li><a href="#problem-overview">Outcome</a>
-    </li><li><a href="#design-process">System</a>
-    <li><a href="#interaction">Interaction</a></li>
-    <li><a href="#visual">Visual</a></li>
-    </li><li><a href="#learning">Lessons Learned</a>
-    </li>
-  </ul> -->
-      <h3>Case Study Contents:</h3>
-      <ul>
-      <li><a href="#problem-overview">Problem Overview</a>
-    </li>
-    </li><li><a href="#design-process">Design Process Story</a>
-    </li><li><a href="#learning">Lessons Learned</a>
-    </li>
-    </ul>
-    </div>
-  </div>
-        <div class="col-md-6 col-md-pull-2">
-<div class="intro">
-       <h1>Counting Eye: A Counter App for iOS</h1>
-        <p><a href="https://itunes.apple.com/us/app/counting-eye/id1139416094?ls=1&mt=8" class="text-center">Available in the App Store</a></p>
-     </div>
+
+        <div class="col-md-6 col-md-offset-2">
+          <div class="intro">
+            <h1>Counting Eye: A Counter App for iOS</h1>
+            <p>This is a counter app inspired by a recurring responsibility: counting meeting attendees, childcare workers and children.</p>
+            <p><a href="https://itunes.apple.com/us/app/counting-eye/id1139416094?ls=1&mt=8" class="text-center">Available in the App Store</a></p>
+          </div>
           <div class="row">
-        <div class="col-xs-3">
-          <figure>
-            <img src="/assets/counting-eye/5.5-Screenshot-Only-1.jpg" class="img-responsive border-soft"/>
-            <figcaption class="text-left">
-              <p>Tap view.</p>
-            </figcaption>
-          </figure>
+            <div class="col-xs-3">
+              <figure>
+                <img src="/assets/counting-eye/5.5-Screenshot-Only-1.jpg" class="img-responsive border-soft"/>
+                <figcaption class="text-left">
+                  <p>Tap view.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-xs-3">
+              <figure>
+                <img src="/assets/counting-eye/5.5-Screenshot-Only-2.jpg" class="img-responsive border-soft"/>
+                <figcaption class="text-left">
+                  <p>Counts view.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-xs-3">
+              <figure>
+                <img src="/assets/counting-eye/5.5-Screenshot-Only-3.jpg" class="img-responsive border-soft"/>
+                <figcaption class="text-left">
+                  <p>Single count settings view.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-xs-3">
+              <figure>
+                <img src="/assets/counting-eye/5.5-Screenshot-Only-4.jpg" class="img-responsive border-soft"/>
+                <figcaption class="text-left">
+                  <p>Select counts to share view.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-3">
-          <figure>
-            <img src="/assets/counting-eye/5.5-Screenshot-Only-2.jpg" class="img-responsive border-soft"/>
-            <figcaption class="text-left">
-              <p>Counts view.</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-xs-3">
-          <figure>
-            <img src="/assets/counting-eye/5.5-Screenshot-Only-3.jpg" class="img-responsive border-soft"/>
-            <figcaption class="text-left">
-              <p>Single count settings view.</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col-xs-3">
-          <figure>
-            <img src="/assets/counting-eye/5.5-Screenshot-Only-4.jpg" class="img-responsive border-soft"/>
-            <figcaption class="text-left">
-              <p>Select counts to share view.</p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+   
+    
+      <div class="col-md-6 col-md-offset-2">
+        <h2><strong>Project Overview (tl;dr)</strong></h2>
+          <h2>Outcome - Defining the intended outcome of the project, the problem being solved</h2>
+         <p>I used the <a href="http://jobstobedone.org/news/filling-in-leans-gaps/">Job Outline</a> to help in researching the problem and determining what the solution should accomplish. The goal of the outline is to identify the job that customers want done. Here are the four parts of the job outline:</p>
+  <ol>
+    <li>Exposition</li>
+    <li>Observation</li>
+    <li>Situational Analysis</li>
+    <li>Job-to-be-Done</li>
+  </ol>
+  <p>I used <a href="https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27">job stories</a> as a tool for summarizing the job and capturing key constraints, motivations and forces. The job story for the Counter app is:</p> 
+          <div class="block">
+  <span class="context-sig">Outcome - The Job Story*</span>
+<p>"When it's my turn to count the number of attendees in the meeting and I may be interrupted at any moment by an attendee, I want to be able to count and keep track of the current count at the same time, so that I have an accurate count to send to the record-keeper(s)."</p>
+<p class="small">* My understanding of the Jobs-to-be-Done theory is continuing to evolve. Looking back, I realize this may not count as a 'job', but it is still an outcome.</p>
+</div>
+  
+            
       
+        
+          <h2>System - Defining the components of the system and how they are related, the features required</h2>
+          <figure>
+  <img src="/assets/mystery-UI.jpg" />
+  <figcaption>What's this UI gonna' be?</figcaption>
+</figure>
+
+<p>My first few sketches looked something like the one below. The UI is a typical pattern found in similar apps in the app store. It consists of 2 buttons for increasing and decreasing the count, a title for the count, and the current count.</p>
+<figure>
+  <img src="/assets/boring-ui.jpg" />
+  <figcaption>Common counter pattern</figcaption>
+</figure>
+
+<p>As the image above depicts, this UI pattern fails to resolve several of the forces. Under each force in the list below, I've list my reasoning why the UI fails to resolve it:</p>
+<ul class="forces-list no-bull">
+  <li>1. Each count should be easy to increase & decrease the current count</li>
+  <li>Buttons get easier to tap as their size increases, but they still make for difficult targets when walking and counting or when counting moving objects.</li>
+  <li>2. Counts can be given titles</li>
+  <li>4. I want to be able to count without looking at my phone</li>
+  <li>Multiple buttons require the person who is counting to look first before tapping.</li>
+  <li>7. Should be simple like pen and paper</li>
+  <li>8. Quickly start counting as soon as open app</li>
+  <li>9. Quickly add start a new count after completing previous count</li>
+  <li>This pattern usually places the capability to add a new count on a different screen.</li>
+</ul>
+
+<p>I discovered that upon unlocking my phone and "opening the app" (I really was just opening a note taking app), I had a desire to quickly tap somewhere on the screen to start a new count. I also noticed that it's easy to tap with my thumb anywhere on the screen and perhaps I could make the entire screen a button that would increase the count. </p>
+
+<p>I continued to iterate on the UI:</p>
+<figure>
+  <img src="/assets/final-ui.jpg" />
+  <figcaption>A pattern that resolves the forces.</figcaption>
+</figure>
+        
+          
+     
+          <h2>Interaction - Defining how people will interact with the components</h2>
+          <figure>
+  <iframe src="https://player.vimeo.com/video/138073817?title=0&byline=0&portrait=0" width="570" height="357" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption>Demo of counter app's basic functionality</figcaption>
+</figure>
+        
+         <!--  <h2>Visual - Defining layout, typography, iconography...</h2> -->
+      
+
+    <h2><strong>The Details (the whole messy story)</strong></h2>
+
     <h2 id="problem-overview">Problem Overview</h2>
     <p>When it's my turn to count the number of attendees in a meeting and I may be interrupted at any moment by an attendee, I want to be able to count and keep track of the current count at the same time, so that I have an accurate number to send to the record-keeper(s).</p>
    
@@ -89,7 +137,7 @@ exclude_from_nav: true
 
 
 
-<p>I'l be using the <a href="http://jobstobedone.org/news/filling-in-leans-gaps/">Job Outline</a> to help in researching the problem and determining what the solution should accomplish. The goal of the outline is to identify the job that customers want done. Here are the four parts of the job outline:</p>
+<p>I'll be using the <a href="http://jobstobedone.org/news/filling-in-leans-gaps/">Job Outline</a> to help in researching the problem and determining what the solution should accomplish. The goal of the outline is to identify the job that customers want done. Here are the four parts of the job outline:</p>
   <ol>
     <li>Exposition</li>
     <li>Observation</li>
@@ -252,6 +300,7 @@ My goal is to <a href="https://vimeo.com/10875362">design with forces</a> in min
   <span class="context-sig">The Job Story</span>
 <p>"When it's my turn to count the number of attendees in the meeting and I may be interrupted at any moment by an attendee, I want to be able to count and keep track of the current count at the same time, so that I have an accurate count to send to the record-keeper(s)."</p>
 </div>
+
 <p>The job story is so helpful because it's rooted in actual behavior (my behavior). Together with my observations and self-interview responses, I have greater resolution on what it is that the customer (me) is trying to get done, how I've done it in the past, what worked and didn't work, and how I'm currently getting it done.</p>
 
 <p>From here, I set out by listing everything I knew about the problem based on my observations and analysis above. My list looked something like the following:</p>

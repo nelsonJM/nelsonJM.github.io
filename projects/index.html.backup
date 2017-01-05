@@ -1,0 +1,78 @@
+---
+layout: default
+title: Side Projects
+<!-- navigation_weight: 2 -->
+exclude_from_nav: true
+---
+
+<div class="projects">
+  
+
+  
+ <h1 class="text-center">Portfolio of Projects</h1> 
+<h2><a href="{{ site.baseurl }}/projects/counter-app">Counting Eye: Counter App for iOS</a></h2>
+      <p>When I'm in a meeting and I need to count attendees, I want to keep track of my count without taking my eyes off of the people I'm counting. This app helps me do that.</p>
+<div class="row">
+ 
+  <div class="col-xs-3">
+    <figure>
+  <img src="/assets/counting-eye/5.5-Screenshot-Only-1.jpg" class="img-responsive border-soft"/>
+ 
+</figure>
+  </div>
+  <div class="col-xs-3">
+    <figure>
+  <img src="/assets/counting-eye/5.5-Screenshot-Only-2.jpg" class="img-responsive border-soft"/>
+  
+</figure>
+  </div>
+  <div class="col-xs-3">
+    <figure>
+  <img src="/assets/counting-eye/5.5-Screenshot-Only-3.jpg" class="img-responsive border-soft"/>
+  
+</figure>
+  </div>
+  <div class="col-xs-3">
+    <figure>
+  <img src="/assets/counting-eye/5.5-Screenshot-Only-4.jpg" class="img-responsive border-soft"/>
+
+</figure>
+  </div>
+  </div>
+ 
+
+
+
+  <ul class="post-list">
+    <li>
+      <h2><a href="{{ site.baseurl }}/projects/time-tracking">Time-tracking App</a></h2>
+      <p>A time-tracking app for individuals and teams.</p>
+    </li>
+    <li>
+      <h2><a href="{{ site.baseurl }}/projects/video-tool">A Video Assessment Tool</a></h2>
+      <p>Designing the commenting capability of a video assessment tool.</p>
+    </li>
+    
+  </ul>
+  <br />
+  <h2>Older Projects</h2>
+  <p class="text-muted">These websites are still live. I am responsible for their design and development.</p>
+  <ul class="post-list">
+    <li>
+     
+      <h2><a href="http://jmarknel.com/Font-Identity-Quiz/" target="_blank">Font Identity Quiz</a></h2>
+      <p>Created with Handlebars.js. Test your ability to identify fonts. I also wrote a blog post about the quiz&mdash;<a href="{{ site.baseurl }}/projects/2014/10/17/font-quiz-design-process/">Design Process: Font Quiz</a></p>
+
+    </li>
+    <li>
+      <h2><a href="http://aacmclinic.com/" target="_blank">Actual Acupuncture &amp; Chinese Medicine</a></h2>
+      <p>A custom WordPress theme for a local acupuncturist.</p>
+    </li>
+    <li>
+      <h2><a href="http://austinfirewood.com/" target="_blank">Austin Firewood</a></h2>
+      <p>A static, profitable website for a firewood delivery service.</p>
+    </li>
+  </ul>
+  
+
+</div>
