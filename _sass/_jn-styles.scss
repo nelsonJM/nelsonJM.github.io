@@ -258,9 +258,72 @@ figcaption {
 	}
 }
 
-.project img {
+.project img,
+.card {
+	padding: 4px;
 	border: 1px solid #eee;
 	border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+
+.project {
+    margin-bottom: 30px;
+    text-align: center;
+
+    
+    .project-inner {
+        padding: 15%;
+        background: rgba(11,2,6,.8);
+        transition: background .5s;
+    }
+
+    h3 {
+
+        margin-top: 8px;
+        padding: 6px 8px;
+        display: inline-block;
+        text-align: center;
+        font-size: 83%;
+        
+    }
+
+   
+
+    a {
+        display: block;
+        color: inherit;
+    }
+
+    
+}
+
+@media (min-width: 768px) {
+    .project h3 {
+        font-size: 120%;
+    }
+}
+
+.project:hover {
+
+    img {
+        box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    }
+
+    .project-inner {
+        background: rgba(27,5,41,.8);
+    }
+
+    
+}
+
+.card {
+	margin-bottom: 25px;
+	padding: 14px;
+	font-size: 14px;
+}
+
+.card:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
 }
 
 img {

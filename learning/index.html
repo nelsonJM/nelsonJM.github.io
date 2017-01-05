@@ -1,0 +1,58 @@
+---
+layout: default
+title: Learning
+<!-- navigation_weight: 3 -->
+exclude_from_nav: true
+---
+
+<div class="blog">
+
+
+  <div class="intro">
+    <h1>Learning</h1>
+    <p>Stay hungry.</p>
+  
+  </div>
+  <!-- {% for post in site.categories.blog %}
+  {% assign currentdate = post.date | date: "%Y" %}
+  {% if currentdate != date %}
+  {% unless forloop.first %}</ul>{% endunless %}
+  <h2>{{ currentdate }} Writings</h2>
+  <ul class="post-list">
+    {% assign date = currentdate %}
+    {% endif %}
+      <li>
+        
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.tags | join: ' '}}</span>
+        <p>{{ post.excerpt }}</p>
+        
+      </li>
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %} -->
+  
+
+
+  <div class="entries">
+    {% for post in site.categories.learning %}
+      <div class="entry">
+        
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          
+        </h2>
+        <!-- <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.categories | join: ' '}}</span> -->
+        <p>{{ post.excerpt }}</p>
+        
+      </div>
+    {% endfor %}
+  </div>
+ 
+
+
+</div>
