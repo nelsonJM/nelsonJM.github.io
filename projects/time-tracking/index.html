@@ -4,29 +4,67 @@ title: Designing a Time-tracking App
 exclude_from_nav: true
 ---
 <div class="row">
-  <div class="col-md-2 col-md-offset-2 col-md-push-6">
-    <div class="outline hidden-xs hidden-sm affix">
-      <h3>Case Study Contents:</h3>
-      <ul>
-      <li><a href="#problem-overview">Problem Overview</a>
-    </li>
-    <li><a href="#design-process">Design Process Story</a>
-    <!-- </li><li><a href="#learning">Lessons Learned</a> -->
-    </li>
-    </ul>
+    <div class="col-md-6 col-md-offset-2">
+      <div class="intro">
+        <h1>Time Tracker</h1>
+        <p>A product concept for a time-tracking app that is focused on fast, after-the-fact, time entry.</p>
+      </div>
+      <figure>
+        <img src="/assets/time-tracking-concept.jpg" alt="" class="img-responsive">
+        <figcaption>
+          Swipe and scrub to add time to a project
+        </figcaption>
+      </figure>
     </div>
-  </div>
-        <div class="col-md-6 col-md-pull-2">
-<div class="intro">
-    <h1>Time Tracker</h1>
-  </div>
+ <div class="col-md-6 col-md-offset-2">
+        <p>This case study is divided into 2 parts:</p>
+        <ol>
+          <li><a href="#overview">Project Overview</a> - a breakdown of the project into 3 areas
+            <ul>
+              <li><strong>Outcome</strong> - Defining the intended outcome of the project, the problem being solved</li>
+              <li><strong>System</strong> - Defining the components of the system and how they are related, the features required</li>
+              <li><strong>Interaction</strong> - Defining how people will interact with the components</li>
+            </ul></li>
+          <li><a href="#details">Details</a> - the messy story</li>
+        </ol> 
+
+
+
+<a id="overview"></a>
+<h2><strong>Project Overview (tl;dr)</strong></h2>
+<h2>Outcome - Defining the intended outcome of the project, the problem being solved</h2>
+<p>I am usually working on several projects throughout my day, switching from task to task and stopping mid-task to resolve the occasional emergency. Ideally, I would say something like "Ok, I'm now going to work on project B, so I'll begin tracking my time", but in reality, I just do my work and <strong>record my time later</strong>. 
+<p>I am interested in this part of the problem: tracking time spent on a project <em>after the fact</em>.</p>
+
+<h2>System - Defining the components of the system and how they are related, the features required</h2>
+<p>I began with the question, "How do I add time?" and began sketching UI flows.</p>
 <figure>
-  <img src="/assets/time-tracking-concept.jpg" alt="" class="img-responsive">
+  <img src="/assets/time-tracking-flow-enter-time.jpg" alt="" class="img-responsive">
   <figcaption>
-    Swipe and scrub to add time to a project
+    Early sketch of "How do I add time?" flow
   </figcaption>
 </figure>
-  
+
+<p>The flows lead to a system of features which I composed into a prototype.</p>
+<figure>
+        <img src="/assets/time-tracker-invision.jpg" alt="" class="img-responsive">
+        <figcaption>
+          Invision prototype
+        </figcaption>
+      </figure>
+<p>View Prototype: <a href="https://invis.io/AZ28IJ59Q">InVision prototype</a></p>
+
+<h2>Interaction - Defining how people will interact with the components</h2>
+<p>The affordance for adding/subtracting time is a "scrubber" similar to those found on audio apps like SoundCloud.</p>
+<figure>
+        <img src="/assets/scrubber-time.jpg" alt="" class="img-responsive">
+        <figcaption>
+          Scrub left/right to add/subtract time
+        </figcaption>
+      </figure>
+
+<a id="details"></a>
+    <h2><strong>The Details (the whole messy story)</strong></h2>
 <h2 id="problem-overview">Problem Overview</h2>          
 <p>This is a time-tracking app for individuals and teams to track their time spent on projects. This overview is subject to change as the design progresses.</p>
 
