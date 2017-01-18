@@ -1,0 +1,22 @@
+---
+layout: nav_menu_item
+status: publish
+published: true
+author:
+  display_name: jmnelson
+  login: jmnelson
+  email: jmarknel@gmail.com
+  url: ''
+author_login: jmnelson
+author_email: jmarknel@gmail.com
+wordpress_id: 742
+wordpress_url: http://www.joshmarknelson.com/?p=742
+date: !binary |-
+  MjAxMy0wOC0yOSAwOToxODoxMyAtMDUwMA==
+date_gmt: !binary |-
+  MjAxMy0wOC0yOSAwOToxODoxMyAtMDUwMA==
+categories: []
+tags: []
+comments: []
+---
+

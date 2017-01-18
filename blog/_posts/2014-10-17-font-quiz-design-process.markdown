@@ -1,0 +1,79 @@
+---
+layout: post
+status: publish
+published: true
+title: ! 'Design Process: Font Quiz'
+author:
+  display_name: jmnelson
+  login: jmnelson
+  email: jmarknel@gmail.com
+  url: ''
+author_login: jmnelson
+author_email: jmarknel@gmail.com
+wordpress_id: 890
+wordpress_url: http://www.joshmarknelson.com/?p=890
+date: !binary |-
+  MjAxNC0xMC0xNyAxODoyMDoyMSAtMDUwMA==
+date_gmt: !binary |-
+  MjAxNC0xMC0xNyAxODoyMDoyMSAtMDUwMA==
+categories:
+- Design
+tags: []
+comments: []
+---
+<p><a href="http://nelsonjm.github.io/Font-Identity-Quiz/"><img src="http://www.joshmarknelson.com/wp-content/uploads/2014/10/JN-Quiz-1024x504.png" alt="JN Quiz" width="540" height="265" class="aligncenter size-large wp-image-905" /></a></p>
+<p>The Font Quiz is a project that I came up with during the 4th week of studying JavaScript according to this <a href="http://javascriptissexy.com/how-to-learn-javascript-properly/#Your_First_ProjectA_Dynamic_Quiz">this schedule</a>. The quiz tests your ability to identify 10 different system and web fonts.</p>
+<h4>"Build something for yourself"</h4>
+<p>I once had a job interviewer ask me "Can you identify fonts?". I thought to myself, "Why? I have a Chrome extension for that." Well, that question continued to bother me long after the interview. I didn't lose sleep over it, but it nagged me enough that I decided to address it with this quiz. For this reason, I think it falls in line with Jason Fried's advice to <a href="http://humblepied.com/jason-fried/">make something for yourself</a>. </p>
+<h4>Why no or little styling?</h4>
+<p>I've chosen to focus on the early steps in the interface design process and reserve styling for later. I've tried the opposite approach - focusing on things like color, typography, etc. and trying to make things look great from the start - but that always delayed project completion and left important problems unsolved.</p>
+<h3>The Project</h3>
+<p>I wanted to build a typography quiz that helped my eyes focus on the anatomy of a specific font. I've tried a few other quizzes, but none did this for me.</p>
+<h4>Design Process</h4>
+<p>I won't cover every step, but I'll touch on the points that provide a window into my design process and thinking.</p>
+<h4>A List for Success</h4>
+<p>I put together a list of things that I felt the quiz needed to achieve or account for in order to be a success. It's not a list of requirements or implementation details. </p>
+<h4>Moving through the quiz</h4>
+<p>I had a general idea of how the quiz taker would flow from choosing a quiz on the home page, to answering questions and ending on the final page where they receive their score. To make sure I had this and other paths imprinted on my mind, I used a shorthand for <a href="https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows">UI flows</a>.</p>
+<p><a href="http://www.joshmarknelson.com/wp-content/uploads/2014/10/flows.jpg"><img src="http://www.joshmarknelson.com/wp-content/uploads/2014/10/flows-e1413569520364.jpg" alt="flows" width="640" height="480" class="aligncenter size-full wp-image-885" /></a></p>
+<h4>Sketching the Question Page</h4>
+<p>After drawing the flows, I began sketching pages. I decided to sketch the question page first:</p>
+<p><img src="http://www.joshmarknelson.com/wp-content/uploads/2014/10/System-Quiz-1024x504.png" alt="System Quiz" width="540" height="265" class="aligncenter size-large wp-image-898" /></p>
+<p><a href="http://www.joshmarknelson.com/wp-content/uploads/2014/10/question-page-e1413569613194.jpg"><img src="http://www.joshmarknelson.com/wp-content/uploads/2014/10/question-page-e1413569613194.jpg" alt="question-page" width="480" height="640" class="aligncenter size-full wp-image-887" /></a></p>
+<p>I started here because this is a screen that quiz takers must succeed at in order to progress to the end. It's also the simplest screen (fewer elements pointing to other aspects of the domain) that allowed me to think about how the quiz works and where data is coming from.</p>
+<h4>Starting with the epicenter</h4>
+<p>I started my design work with the most important part of the screen (the <a href="http://gettingreal.37signals.com/ch09_Epicenter_Design.php">epicenter</a>). This screen seems to be 90% epicenter - the giant word typed in a specific font and the answer choices - but I decided the epicenter was the giant word and more specifically the 'highlighting' of that word's anatomy. I explored a few options before landing on the dashed circles and lines.  There are probably more clever ways to do it, but this approach did the job and allowed me to move forward with the design.</p>
+<h4>Final Score Page</h4>
+<p><a href="http://www.joshmarknelson.com/wp-content/uploads/2014/10/System-Quiz-answers.png"><img src="http://www.joshmarknelson.com/wp-content/uploads/2014/10/System-Quiz-answers-1024x504.png" alt="System Quiz-answers" width="540" height="265" class="aligncenter size-large wp-image-907" /></a></p>
+<p>Quiz takers enter through the home page, go through a series of question screens, and end on the final score page. What would I expect to see after I answered the last question? For me, it was the following:<br />
+	my score<br />
+	my answers<br />
+	the correct answers<br />
+	some explanation for each answer<br />
+	my options for where to go next<br />
+	some indication of how awesome I am (or not)<br />
+	I don't want to travel to other pages to satisfy these points<br />
+	how I did compared to other quiz takers</p>
+<p>The last point seemed beyond the scope of the project (probably good for version 2). Taking the previous points into consideration, I again started with finding the epicenter and working outwards. </p>
+<p>The most important part of the screen was the score. I wanted to make it a large number or percentage, but decided against that idea since I think percentages are only good when a large number of various types of question are involved. Using the "5 out of 5" approach works well because there are only 5 questions and each question is basically asking the same thing: what font is this?</p>
+<p>The "review your answers below, replay or take another quiz" sentence addresses the second most important question: "Where do I go from here?".</p>
+<p>The "review your answers" section was the third most important part of the screen and it gave me the most trouble. </p>
+<p>In considering the context surrounding this review section, I came up with a list of questions/concerns/forces that I felt the design had to resolve:<br />
+	What is the correct answer to this question?<br />
+	What was my answer?<br />
+	I want to know almost immediately whether my answer was right or wrong<br />
+	I want some explanation for the answer</p>
+<p>The elements and their arrangement on screen form the pattern that I settled on after several iterations. Below are my sketches of those iterations:</p>
+<p><a href="http://www.joshmarknelson.com/wp-content/uploads/2014/10/final-page-e1413569701407.jpg"><img src="http://www.joshmarknelson.com/wp-content/uploads/2014/10/final-page-e1413569701407.jpg" alt="final-page" width="480" height="640" class="aligncenter size-full wp-image-884" /></a></p>
+<h4>Home Screen Copy</h4>
+<p>I wanted to focus on clarity and making the copy work for it's place on the screen. I re-wrote the sentence on the home page "Take the System or Web Fonts Quiz" many times. I didn't want to rely on two big buttons or something 'graphical' that was labeled "System Quiz" or "Web Fonts Quiz". Using a single sentence also allowed me to focus on getting the point across as quickly and clearly as possible. For example, one iteration of the sentence said "Take the System Quiz or Web Fonts Quiz", from which I cut out the repetitive use of the word "quiz".</p>
+<h3>Conclusion</h3>
+<p>I can see this quiz evolving into a web app that allows for more interaction. I'd like to allow quiz takers to move the dashed circles and lines or create their own. I built this quiz to learn some JavaScript and scratch an itch. This was a great experience exercising my design muscles to build something for myself.</p>
+<h4><a href="http://nelsonjm.github.io/Font-Identity-Quiz/">Give the quiz a try</a></h4>
+<p><strong>References:</strong></p>
+<p>http://blazdesign.com/20-fonts-every-designer-should-know/</p>
+<p>http://practicaltypography.com/system-fonts.html</p>
+<p>http://typographywinter2014.blogspot.com/2014/01/type-anatomy-connor-posey.html</p>
+<p>http://www.marksimonson.com/notebook/view/how-to-spot-arial</p>
+<p>http://www.fonts.com/content/learning/fontology/level-1/type-anatomy/anatomy</p>
+<p>http://www.typographydeconstructed.com/category/anatomy-of-type/</p>

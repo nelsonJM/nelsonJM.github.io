@@ -1,0 +1,23 @@
+---
+layout: nav_menu_item
+status: publish
+published: true
+title: Contact
+author:
+  display_name: jmnelson
+  login: jmnelson
+  email: jmarknel@gmail.com
+  url: ''
+author_login: jmnelson
+author_email: jmarknel@gmail.com
+wordpress_id: 156
+wordpress_url: http://www.testing.designflips.com/?p=156
+date: !binary |-
+  MjAxMS0wOS0xOCAwMzozMjo0MSAtMDUwMA==
+date_gmt: !binary |-
+  MjAxMS0wOS0xOCAwMzozMjo0MSAtMDUwMA==
+categories: []
+tags: []
+comments: []
+---
+
