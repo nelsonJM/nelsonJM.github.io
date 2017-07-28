@@ -3,19 +3,31 @@
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+	font-family: $urw-thin;
+}
+
+h1 {
+	font-size: 64px;
 }
 
 h2 {
 	margin-top: 40px;
-	font-size: 24px;
+	font-size: 36px;
 }
 
 h3 {
 	margin-top: 30px;
-	font-size: 20px;
+	font-size: 24px;
 }
 
+h4 {
+	font-size: 18px;
+}
+
+hr {
+	margin: $spacing-unit 0;
+	border-top: 1px solid $grey-color-light;
+}
 
 ul {
 	margin-bottom: 2em;
@@ -30,12 +42,24 @@ ul {
 	border-radius: 3px;
 }
 
+.logo {
+	margin-bottom: 24px;
+	padding-top: 24px;
+	display: block;
+	color: $text-color;
+}
+
+.logo:visited {
+	color: $text-color;
+}
+
 .logo:hover {
 	text-decoration: none;
 }
 
 .site-nav {
-	border: none;
+	padding-bottom: 4px;
+	border-bottom: 1px solid $grey-color-light;
 }
 
 ul.no-bull li {
@@ -55,9 +79,9 @@ ul.no-bull li {
         .page-link,
         a {
             display: inline;
-            padding: 6px 0 3px 0;
+            padding-top: 6px;
             margin-right: 14px;
-			color: #1b0529;
+			color: $text-color;
 			font-size: 16px;
 
             &:not(:first-child) {
@@ -68,16 +92,15 @@ ul.no-bull li {
         .page-link.active,
         a.active {
         	
-        	color: #1b0529;
-            border-bottom: 1px solid;
+        	color: $grey-color;
+            
 
             }
 
             .page-link:hover,
         a:hover {
-        	color: #1b0529;
+        	color: $grey-color;
             text-decoration: none;
-            border-bottom: 1px solid;
             
             }
 
@@ -101,8 +124,9 @@ ul.no-bull li {
 }
 
 .cpr {
+
 	text-align: center;
-	color: #e1e1e1;
+	color: $grey-color;
 	font-size: .75em;
 }
 
@@ -112,21 +136,13 @@ ul.no-bull li {
 	text-align: center;
 }
 
-.page-heading {
-    font-family: $karla;
-}
-
 .page-content {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
 
 /* My styles */
-.site-title {
-	font-family: $karla;
-	font-weight: 700;
-	
-}
+
 .section-heading {
 	font-weight: 700;
 	font-size: 1em;
@@ -151,11 +167,10 @@ ul.no-bull li {
 
 /* Questions block */
 .block {
-	font-family: $karla;
-	background: rgba(1, 1, 0, 0.07);
-	font-style: italic;
-	padding: 10px 15px;
-	color: rgb(100, 59, 2);
+	font-family: $urw-thin;
+	background: #343D4E;
+	padding: 30px 30px 15px;
+	color: #308EF4;
 	margin-bottom: 2em;
 }
 
@@ -172,9 +187,8 @@ figure {
 
 figcaption {
 	font-size: 12px;
-	font-style: italic;
-	color: #A3A2A2;
-	text-align: right;
+	font-family: $urw-italic;
+	color: #B5C3C8;
 	margin: 1em 0;
 }
 
@@ -254,14 +268,6 @@ figcaption {
 	}
 }
 
-.project img,
-.card {
-	padding: 4px;
-	border: 1px solid #eee;
-	border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(0,0,0,.2);
-}
-
 .project {
 	overflow: hidden;
     margin-bottom: 30px;
@@ -271,8 +277,16 @@ figcaption {
   }
   
 
-   .project-header h3 {
+   .project-header {
    	margin-top: .5em;
+   }
+
+   .project-header a {
+   	 color: $text-color;
+   }
+
+   .project-header a:visited {
+   	 color: $text-color;
    }
 
 
@@ -285,16 +299,8 @@ figcaption {
 
 }
 
-.project-img {
-   	max-width: 300px;
-   }
-
 
 .project:hover {
-
-    img {
-        box-shadow: 0 1px 3px rgba(0,0,0,.2);
-    }
 
     .project-inner {
         background: rgba(27,5,41,.8);
@@ -314,8 +320,5 @@ figcaption {
 }
 
 img {
-        padding: 4px;
-        border: 1px solid #eee;
-		border-radius: 3px;
-        box-shadow: 0 1px 0 rgba(0,0,0,.2);
+        box-shadow: 0 1px 0 rgba(0,0,0,.1);
     }

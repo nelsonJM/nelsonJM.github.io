@@ -2,12 +2,16 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
+     
         
-          <a href="{{ site.baseurl }}/" class="logo hide">
-          <span class="site-title margin-right-10">{{ site.title }}</span><span>{{ site.description }}</span>
-        </a>  
-          <nav class="site-nav text-right">
+          <div class="text-center">
+           
+              <a href="{{ site.baseurl }}/" class="logo">
+                <span class="site-title margin-right-10">{{ site.title }}</span><span>{{ site.description }}</span>
+              </a> 
+            
+          
+           <nav class="site-nav">
             {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
             {% for p in navigation_pages %}
             {% if p.navigation_weight %}
@@ -16,10 +20,10 @@
               <a href="{{ p.url }}" {% if p.url == page.url %} class="active" {% endif %}>{{ p.title }}</a>
              {% endif %}
              {% endfor %} 
-        </nav>
+            </nav> 
+          </div>
+          
         
-        
-      </div>
       
     </div>
   </div>
