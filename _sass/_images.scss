@@ -1,0 +1,16 @@
+.m-20 {
+	
+	@media screen and (min-width: 430px){
+		float: left;
+		margin-right: 8px;
+		max-width: 20%;
+        max-width: 30%;
+     }
+	@media screen and (min-width: 700px){
+        max-width: 30%;
+     }
+	@media screen and (min-width: 767px){
+		float: none;
+        max-width: 100%;
+     }
+}

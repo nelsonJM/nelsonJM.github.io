@@ -7,37 +7,37 @@ exclude_from_nav: true
     
           <div class="intro">
             <h1>Counting Eye: A Counter App for iOS</h1>
-            <p>A counter app inspired by a recurring responsibility: counting meeting attendees, childcare workers and children.</p>
+            <p>A counter app inspired by a recurring responsibility: counting childcare workers and children.</p>
             <p><a href="https://itunes.apple.com/us/app/counting-eye/id1139416094?ls=1&mt=8" class="text-center">Available in the App Store</a></p>
           </div>
           
               <div class="row">
-                <div class="col-md-3">
+                <div class="col-xs-3 col-sm-3 col-md-3">
                   <figure>
-                    <img src="/assets/tap-view.jpg" class="img-responsive border-soft"/>
+                    <img src="/assets/tap-view.jpg" class="img-responsive"/>
                     <figcaption class="text-left">
                       <p>Tap view.</p>
                     </figcaption>
                   </figure>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-3 col-sm-3 col-md-3">
                   <figure>
-                <img src="/assets/counts-view.jpg" class="img-responsive border-soft"/>
+                <img src="/assets/counts-view.jpg" class="img-responsive"/>
                 <figcaption class="text-left">
                   <p>Counts view.</p>
                 </figcaption>
               </figure>
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-3 col-sm-3 col-md-3">
                   <figure>
-                <img src="/assets/settings-view.jpg" class="img-responsive border-soft"/>
+                <img src="/assets/settings-view.jpg" class="img-responsive"/>
                 <figcaption class="text-left">
                   <p>Single count settings view.</p>
                 </figcaption>
               </figure></div>
-                <div class="col-md-3">
+                <div class="col-xs-3 col-sm-3 col-md-3">
                   <figure>
-                <img src="/assets/share-view.jpg" class="img-responsive border-soft"/>
+                <img src="/assets/share-view.jpg" class="img-responsive"/>
                 <figcaption class="text-left">
                   <p>Select counts to share view.</p>
                 </figcaption>
@@ -46,8 +46,8 @@ exclude_from_nav: true
               </div>
            
 
-    <h2>This case study is structured as follows:</h2>
-<div class="block-toc">
+    <!-- <h2>This case study is structured as follows:</h2> -->
+<!-- <div class="block-toc">
     <h3><a href="#overview">Overview</a></h3>
           <h3><a href="#outcome">Outcome</a></h3>
           <p>Defining the intended outcome of the project, the problem being solved.</p> 
@@ -58,115 +58,134 @@ exclude_from_nav: true
           <h3><a href="#interaction">Interaction</a></h3>
           <p>Defining how people will interact with the components.</p>
 
-          <!-- <li><a href="#visual">Visual</a> - Design choices for communication and aesthetics.</li> -->
+          <li><a href="#visual">Visual</a> - Design choices for communication and aesthetics.</li>
           <h3><a href="#conclusion">Conclusion</a></h3>
    
-</div>
+</div> -->
+
+   <h2 id="overview">Overview</h2>
 
     
-
-<h2 id="overview">Overview</h2>
    
-    <p>I designed and built Counting Eye, an iOS app, to help me count meeting attendees. </p>
-
+    <p>Each month I have the task of recording the number of childcare workers and children and sharing those numbers for planning purposes. The children are outside on a playground while the child-care workers are standing or sitting nearby. I usually count while standing near a building exit which is over 100 feet away.</p>
+      <figure>
+        <img src="/assets/playground.jpg" class="img-responsive" />
+        <figcaption>Busy playground</figcaption>
+      </figure> 
     
+    <p class="text-center">The process and associated challenges can be summed up like so:</p>
+<div class="row">
+  <div class="col-sm-4 col-md-4">
+       
+    <img src="/assets/stick-man-counting.jpg" class="img-responsive margin-bottom-8 m-20">
+    <h3 class="h4 padding-top-8">Counting</h3> 
+    <p>Challenges at this step include: moving targets are hard to count. Interruptions force a re-count.</p>
+    <div class="clearfix"></div>
 
-<h2 id="outcome">Outcome</h2>
-<p class="subtitle">Defining the intended outcome of the project, the problem being solved</p>
-
-<p><strong>The outcome is the final step in a 4-step process:</strong></p>
-  <ol>
-    <li>Exposition - Setting the stage</li>
-    <li>Observation - Identifying Past and Current Behavior</li>
-    <li>Situational Analysis</li>
-    <li>Identifying the Problem; Defining Success</li>
-  </ol>
-
-<p><strong>I'll briefly touch on each step below.</strong></p>
-
-  <h3>1. Exposition - The Context of the Customer's Struggle</h3>
-  <p>Understanding the context helps me understand the problem I am solving.</p>
-  <p>Each month, I count the following groups of people: meeting attendees, childcare workers, and children. I share this responsibility with someone else. We usually split the counting so that one of us will count meeting attendees and the other will count the childcare workers and children. After the meeting we combine our counts and one of us will send the totals to a designated record-keeper who oversees the meeting attendance.</p>
-     
-  <h3>2. Observation - Identifying Past and Current Behavior</h3>
-  
-<p>The goal of this step is to observe how I currently solve the problem, discover the products I have used in the past and that I'm currently using to solve the problem, and learn more about the context of the struggle.</p>
-<p>Since I'm designing this app for myself, I conducted my observation using a combination of recall and "on-the-job" note-taking, meaning I recorded some of my actions, thoughts and observations while performing the counting task.</p> 
-<p>Observing how the problem has been solved in the past and how it is currently being solved provides me with real behavior I can question and analyze.</p>
-      
-        <h3>3. Situational Analysis</h3>
-<p>I took my observations and identified the constraints, customer (my) motivations, and facts related to the situation that will ultimately shape the final solution. I grouped these according to the following categories:</p>
-<ol>
-  <li><strong>Push of the situation</strong> - What is pushing me to find a better solution?<ul>
-    <li>I want fewer steps to get the job done</li>
-      <li>Too much typing is a pain</li>
-  </ul></li>
-  <li><strong>Magnetism of the new solution</strong> - What is appealing about the new solution?<ul>
-    <li>Simple and fast like using Simplenote</li>
-    <li>Easy to send counts to others. Fewer steps</li>
-  </ul></li>
-  <li><strong>Habit of the present</strong> - What behavior will the new solution need to replace?<ul>
-    <li>Simplenote is easy, like pen and paper - what if the new solution is too complicated?</li>
-    <li>I like the simple, blank note that reminds me of scratch paper</li>
-  </ul></li>
-  <li><strong>Anxiety of the new solution</strong> - What anxieties surround the new solution?<ul>
-  <li>I'm worried I'll make a mistake since I won't be looking at my phone as often</li>
-      <li>Will it be easy to learn?</li>
-    </ul></li>
-</ol>
-
-
-<p><strong>My aim was to design the app in a way that balanced or reconciled the constraints and motivations above.</strong></p>
-  
-        <h3>4. Outcome - Framing the Problem; Defining Success</h3>
-        <p>The best way I can articulate what success looks like is with a 'story' that captures key constraints and motivations.</p>  
-
-<div class="block">
-  
-<p>"When it's my turn to count the number of attendees in the meeting and I may be interrupted at any moment by an attendee, I want to be able to count and keep track of the current count at the same time, so that I have an accurate count to send to the record-keeper(s)."</p>
+  </div>
+  <div class="col-sm-4 col-md-4">
+   
+    
+    <img src="/assets/counting-tools.jpg" class="img-responsive margin-bottom-8 m-20">
+ <h3 class="h4 padding-top-8">Recording</h3>
+    <p>Challenges at this step include: availability of recording tools. Need uninterrupted moment to record.</p>
+    <div class="clearfix"></div>
+  </div>
+  <div class="col-sm-4 col-md-4">
+    
+    <img src="/assets/copy-and-paste.jpg" class="img-responsive margin-bottom-8 m-20">
+    <h3 class="h4 padding-top-8">Sharing</h3>
+    <p>Challenges at this step include: formatting the results. Everyone can receive the results.</p>
+    <div class="clearfix"></div>
+  </div>
 </div>
-<p><a href="https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27">Check out job stories</a> to learn more about this technique.</p>
+<h2>Push and Pull</h2>
+<p>Past experience, the present situation, and a hoped-for future state produce forces that push or pull me towards the different tools.</p>
+
+    <figure>
+        <img src="/assets/counter-forces.jpg" class="img-responsive" />
+        <figcaption>Push and Pull</figcaption>
+      </figure>
+  <h2>Defining Success</h2>
+  <p>Based on an analysis of the information gathered from researching the domain and situation, a short story can be crafted to define what success looks like.</p>
+  <div class="block">
+    <h2 class="margin-top-8">"When it's my turn to report the number of kids and workers on the playground and I’m worried I’ll get distracted and forget the numbers before I record them, I want to count and record at the same time, so that I can move on to other tasks."</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>"When..."</h3>
+      <p>This is the context surrounding the problem.</p>
+    </div>
+    <div class="col-md-6">
+      <h3>"I'm worried..."</h3>
+      <p>A moment of frustration occuring between counting and recording.</p>
+    </div>
+    <div class="col-md-6">
+      <h3>"I want..."</h3>
+      <p>How progress is visualized.</p>
+    </div>
+    <div class="col-md-6">
+      <h3>"So I can..."</h3>
+      <p>How life is better.</p>
+    </div>
+  </div>
+  
+      <br>
+      <p>This short story is an informed opinion. It also serves as a metric by which designed solutions should be measured.</p>
 
       
-<p>My next step was to design a system of components based on my understanding of what the solution should accomplish.</p>
-      
 
 
 
-<h2 id="system">System</h2>
+<h2 id="system">Designing an App to Solve the Problem</h2>
+<p>I decided that an app was still a good form for the solution to take. I rarely leave the house without my phone, while analog tools like pencils and scratch paper are easily forgotten. </p>
+<p>From here, I set out to design the app's system.</p>
+        
+<div class="row">
+    <div class="col-sm-6 col-md-6">
+<img src="/assets/list-and-cluster.jpg" class="img-responsive m-20 margin-bottom-8">
+    <h3 class="padding-top-8">Brain Dump & Clustering</h3>
+<p>Creating a list of what the design should accomplish and grouping related items.</p>
+      <div class="clearfix"></div>
+  </div>
 
-<p>From here, I set out by listing everything I knew about the problem based on my observations and analysis above. My list looked something like the following:</p>
+<div class="col-sm-6 col-md-6">
+  <img src="/assets/refine-with-flows.jpg" class="img-responsive m-20 margin-bottom-8">
+  <h3 class="padding-top-8">Flows</h3>
+<p>Sketching flows to refine the groups and uncover subgroups.</p>
+      <div class="clearfix"></div>
+
+
+</div>
+
+</div>
+<div class="clearfix"></div>
+<h3>Mapping the Capabilities & Prioritizing the Work</h3>
+<p>Each grouping represents a capability or de-coupled area of concern. I categorized each capability and it's sub-components as one of the following:</p>
 <ol>
-  <li>Each count should be easy to increase & decrease the current count</li>
-  <li>Counts can be given titles</li>
-  <li>Counts can be shared via text</li>
-  <li>I want to be able to count without looking at my phone</li>
-  <li>Too much typing is a pain</li>
-  <li>I want fewer steps between taking count and sending count</li>
-  <li>Should be simple like pen and paper</li>
-  <li>Quickly start counting as soon as open app</li>
-  <li>Quickly add/start a new count after completing previous count</li>
-  <li>Can't be more complicated than current solution</li>
-  <li>Takes burden off me to remember count</li>
+<li>"Must Have"</li>
+<li>"Necessary"</li>
+<li>"Nice to Have"</li>
 </ol>
+<p>I decided to work on the "counting" capability first, since it is the most valuable area of the app.</p>
 
-<p>Next, I grouped those items that I believed were connected. For the sake of brevity, I'll only cover one such grouping:</p>
-<ul class="no-bull">
-  <li>1. Each count should be easy to increase & decrease the current count</li>
-  <li>2. Counts can be given titles</li>
-  <li>4. I want to be able to count without looking at my phone</li>
-  <li>7. Should be simple like pen and paper</li>
-  <li>8. Quickly start counting as soon as open app</li>
-  <li>9. Quickly add/start a new count after completing previous count</li>
-</ul>
-<p>This group of forces became my standard for success or reference point while building the first component - the 'Count' screen.</p>
+<h2 id="interaction">Interaction Design for the "Count" View</h2>
+<p>Referring to the "Counting" capability cluster, I began to sketch a few ideas for the count screen.</p>
 
-<h2 id="interaction">Interaction</h2>
-<p>I decided that this group of forces and motivations could best be handled by a single 'Count' screen. My next step was to sketch a few ideas for UI patterns that might resolve each of these forces and motivations.</p>
-<figure>
+<div class="row">
+  <div class="col-sm-6 col-md-6">
+    <figure>
   <img src="/assets/mystery-UI.jpg" class="img-responsive"/>
-  <figcaption>What's this UI gonna' be?</figcaption>
+  <figcaption>"Counting" Capability Cluster</figcaption>
 </figure>
+  </div>
+  <div class="col-sm-6 col-md-6">
+    <figure>
+  <img src="/assets/count-screen-sketching.jpg" class="img-responsive"/>
+  <figcaption>Initial sketches</figcaption>
+</figure>
+  </div>
+</div>
 
 <p>My first few sketches looked something like the one below. The UI is a typical pattern found in similar apps in the app store. It consists of 2 buttons for increasing and decreasing the count, a title for the count, and the current count.</p>
 <figure>
@@ -174,7 +193,7 @@ exclude_from_nav: true
   <figcaption>Common counter pattern</figcaption>
 </figure>
 
-<p>As the image above depicts, this UI pattern fails to resolve several of the forces. Under each force in the list below, I've list my reasoning why the UI fails to resolve it:</p>
+<p>As the image above depicts, this UI pattern fails to satisfy the "Counting" cluster for the following reasons:</p>
 <ul class="forces-list no-bull">
   <li>1. Each count should be easy to increase & decrease the current count</li>
   <li>Buttons get easier to tap as their size increases, but they still make for difficult targets when walking and counting or when counting moving objects.</li>
@@ -186,58 +205,61 @@ exclude_from_nav: true
   <li>9. Quickly add start a new count after completing previous count</li>
   <li>This pattern usually places the capability to add a new count on a different screen.</li>
 </ul>
-<p>At this point, I decided to once again study my behavior as I counted people, but this time I held my phone while I counted.</p>
-<p>I discovered that upon unlocking my phone and "opening the app" (I really was just opening a note taking app), I had a desire to quickly tap somewhere on the screen to start a new count. I also noticed that it's easy to tap with my thumb anywhere on the screen and perhaps I could make the entire screen a button that would increase the count. </p>
-<p>Coupling that with the fact that it's fairly easy to see the glowing screen in my peripheral vision, I decided to make the screen flicker when tapped. This would allow me to keep my eyes on the objects I was counting and be sure that my taps were being registered. All that was left was to figure out the mechanic for decreasing the count.</p>
-<p>I had this picture in my head of a circle drawn on the ground. Every time I tapped, it was as if I were dropping a pebble inside the circle. What does removing a pebble look like? In my mind, it looks like someone picking up a pebble and pulling it outside of the circle. I experimented with swiping left, right, up, two fingers up, etc. to "mimic" that action. I found that swiping down with the thumb or finger felt the most natural and it was also distinguishable enough from the tap gesture that I felt confident it wouldn't accidentally register as a tap. </p>
-<p>Below is a rough mockup of the UI:</p>
+<p>At this point, I decided to study my behavior as I counted people, but this time I held my phone while I counted.</p>
+<p>I noticed that as I counted, I moved my index finger as a way of reinforcing the "counting" action. I had the idea that I could make the entire screen a button that would register a count each time I tapped it with my finger. Also, by making the screen flash each time I tapped, I could leverage my peripheral vision to allow me to keep my eyes on the objects I was counting and be sure that my taps were being registered.</p>
+<p>For decreasing the count, I experimented with swiping left, right, up, two fingers up, etc., but I found that swiping down with the thumb or finger felt the most natural and it was also distinguishable enough from the tap gesture that I felt confident it wouldn't accidentally register as a tap. </p>
+
+<p>After a few more sketches, I arrived at the mockup below:</p>
 <figure>
   <img src="/assets/final-ui.jpg" class="img-responsive"/>
   <figcaption>The pattern I landed on.</figcaption>
 </figure>
-
-<p>The quick and dirty video below shows the following:</p> 
+<h2>Prototyping and Removing Elements</h2>
+<p>I created a prototype in Xcode to explore the following:</p> 
 <ul>
-<li>increment and decrement counts</li>
-<li>add new counts from the 'all counts' screen and from the counter screen (by way of double tap).</li>
-<li>delete counts</li>
-  <li>edit a count's title</li>
-  <li>swipe left to right to view all counts.</li>
+<li>incrementing/decrementing counts</li>
+<li>adding new counts from a 'my counts' screen and from the counter screen (by way of double tap).</li>
+<li>deleting counts</li>
+  <li>editing a count's title</li>
+  <li>swiping left to right to view all counts.</li>
 </ul>
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe src="https://player.vimeo.com/video/138073817?title=0&byline=0&portrait=0" width="570" height="357" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   <figcaption>Demo of counter app's basic functionality</figcaption>
 </div>
+
+<h3>Reducing the Design of the "Count" View</h3>
+<p>After playing with the prototype, I decided to remove the following actions from the "Count" view: adding new counts by way of double-tapping and editing the count title. Both of these actions increased the likelihood of accidentally incrementing the count.</p>
 <h2 id="conclusion">Conclusion</h2>
-    <p>As I worked through this project, I realized a few things. First, counting moving people from a distance is harder than counting seated people. Initially, I focused on <em>"If someone interrupts me while counting, I sometimes have to start over or ask them to wait."</em>(from the problem overview above) as the main pain point this app would resolve. In reality, I discovered that counting moving objects, like kids running around outside (or inside a classroom), was the main opportunity to add value and the need to remember the numbers was just par for the course.</p> 
-    <p>The second thing I realized and I'm still learning about, is that there is a significant emotional side to the problem that I discovered during my initial research. I believe the design would have suffered without attention to the emotional aspect of the situation for which it was designed.</p>
+
+    <p>I believe my solution was successful. Why? It gave me a new, better way to make progress that was not immediately obvious. Prior to using the new solution, I had assumed that counting and recording were necessarily 2 separate steps, i.e. “that’s just the way it is”. This solution was not a shot in the dark, but a decision based on research.</p> 
     
+    <p>Style-wise, the focus on clear communication makes the app look uninteresting. On the functionality side, I think the “reset” button is awkward, positioned above the current count. I might experiment with removing the feature, since I rarely use it in practice.</p>
+    
+  
+    <p>Overall, the solution effectively satisfies the short story because the upfront planning accounted for the facts drawn from the real-life situation of the customer.</p>
 
-<p>I started working on the counter app a few months ago and had a strong start, in my opinion. Many sketches as well as the ideas were scribbled down in a notebook and ready for prototyping well before this post, but it just didn't happen. The reason: my mouth said "I'm going to <strong>prototype</strong> this", but my intentions were "I'm going to <strong>build</strong> this". I became focused on building a rough version of the <strong>entire</strong> app, making that a mandatory step in the process. It took a book and a podcast to shine light on my situation and begin correcting my course. The book was "<a href="http://www.amazon.com/Insanely-Simple-Obsession-Drives-Success/dp/1591846218">Insanely Simple</a>" by Ken Segall and the podcast was <a href="http://www.talkingcode.com/podcast/episode-3-ryan-singer/">Talking Code</a>.</p>
 
-  <p>In short, Insanely Simple taught me that too much process can kill ideas. Talking Code taught me not to lose sight of the context or situation that my product is "plugging into" and to make sure that the product is in fact a good fit for the situation. I realized that my focus on process was starting to become a barrier to my progress. It wasn't important whether I had a full blown application or not, I just needed to have enough of it working so that I could test it out. Fortunately, <a href="http://agiletortoise.com/">Agile Tortoise</a> released a similar app called Tally, that had two key bits of functionality that I also had in mind for my app. I didn't have to prototype some of the key functionality of my app because Agile Tortoise had already done it for me - <em>win!</em> I began to test Tally's counting and count-sharing functionality during my regular counting sessions. This not only increased my confidence in the feature choices, it also gave me insight into my expectations regarding the UI and user experience.</p>
+
 
    
  <hr>
-<h2>Next Project:</h2>
+
 
       
        
           <div class="row project">
-              <div class="col-md-5">
-                <a href="{{ site.baseurl }}/projects/2014/10/17/font-quiz-design-process/">
-                <img src="{{ site.baseurl }}/assets/font-id-preview.jpg" alt="" class="img-responsive">
-                              
-             
-             </a>
-              </div>
-           <div class="col-md-7">
-              <h3 class="media-heading">Typography Quiz</h3>
-            <p>This a typography quiz that trains your eye to recognize type anatomy.</p> 
-                       <div class="divider"></div>
- 
-            <p><a href="{{ site.baseurl }}/projects/2014/10/17/font-quiz-design-process/">Read the case study</a></p>
+              
+           <div class="col-sm-7 col-sm-offset-5">
+            <div class="block block-dark">
+              <a href="{{ site.baseurl }}/projects/2014/10/17/font-quiz-design-process/">
+              <h4 class="text-color-grey">Next Project:</h4>
+              <h3 class="media-heading margin-bottom-15">Typography Quiz</h3>
+            
+              </a>
+
+            </div>
           </div>
         </div>
 

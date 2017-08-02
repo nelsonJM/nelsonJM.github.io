@@ -40,7 +40,7 @@ $urw-black: 'urw-black', sans-serif;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }
@@ -57,5 +57,6 @@ $urw-black: 'urw-black', sans-serif;
         "syntax-highlighting",
         "jn-styles",
         "project-outline",
-        "toc"
+        "toc",
+        "images"
 ;

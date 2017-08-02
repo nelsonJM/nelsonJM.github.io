@@ -168,10 +168,19 @@ ul.no-bull li {
 /* Questions block */
 .block {
 	font-family: $urw-thin;
-	background: #343D4E;
+	background: #fff;
 	padding: 30px 30px 15px;
 	color: #308EF4;
 	margin-bottom: 2em;
+}
+
+.block.block-dark {
+	background: #343D4E;
+}
+
+.block.block-dark a:hover {
+	color: #0b76ea;
+	text-decoration: none;
 }
 
 .context-sig {
@@ -189,7 +198,7 @@ figcaption {
 	font-size: 12px;
 	font-family: $urw-italic;
 	color: #B5C3C8;
-	margin: 1em 0;
+	margin: 16px 0;
 }
 
 .forces-list li {

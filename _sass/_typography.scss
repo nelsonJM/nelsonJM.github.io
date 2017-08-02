@@ -33,3 +33,11 @@
        url('../fonts/urw/Black/URWDIN-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/urw/Black/URWDIN-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+.text-black {
+  font-family: 'urw-black', sans-serif;
+}
+
+.text-color-grey {
+  color: $grey-color;
+}
