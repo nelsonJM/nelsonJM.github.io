@@ -1,15 +1,16 @@
-<header class="site-header">
+<!-- <header class="site-header">
 
   <div class="container">
     <div class="row">
      
         
-          <div class="text-center">
+          <div class="text-center"> -->
            
               <a href="{{ site.baseurl }}/" class="logo">
-                <span class="site-title margin-right-10">{{ site.title }}</span><span>{{ site.description }}</span>
+                <span class="site-title margin-right-10">{{ site.title }}</span><br/><span>{{ site.description }}</span>
               </a> 
             
+      
           
            <nav class="site-nav">
             {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
@@ -21,11 +22,14 @@
              {% endif %}
              {% endfor %} 
             </nav> 
-          </div>
+
+            <p><a href="mailto:hello@joshmarknelson.com">Get in touch <img src="{{ site.baseurl }}/assets/Envelope.png" alt="" width="24"></a></p>
+            <hr>
+          <!-- </div> -->
           
         
       
-    </div>
+    <!-- </div>
   </div>
 
-</header>
+</header> -->

@@ -6,8 +6,13 @@ exclude_from_nav: true
 
     
           <div class="intro">
-            <h1>Counting Eye: A Counter App for iOS</h1>
-            <p>A counter app inspired by a recurring responsibility: counting childcare workers and children.</p>
+            <div class="text-center">
+              <span class="text-color-grey">iOS App</span>
+            <h1>Counting Eye</h1>
+            </div>
+            
+            <p><span class="text-black">My contribution:</span> Design and development</p>
+            <p><span class="text-black">Duration:</span>2015-2016</p>
             <p><a href="https://itunes.apple.com/us/app/counting-eye/id1139416094?ls=1&mt=8" class="text-center">Available in the App Store</a></p>
           </div>
           
@@ -44,26 +49,20 @@ exclude_from_nav: true
               </figure>
                 </div>
               </div>
+           <h2>The Case Study Structure</h2>
            
 
-    <!-- <h2>This case study is structured as follows:</h2> -->
-<!-- <div class="block-toc">
-    <h3><a href="#overview">Overview</a></h3>
-          <h3><a href="#outcome">Outcome</a></h3>
-          <p>Defining the intended outcome of the project, the problem being solved.</p> 
-      
-          <h3><a href="#system">System</a></h3>
-          <p>Defining the components of the system and how they are related, the features required</p> 
-        
-          <h3><a href="#interaction">Interaction</a></h3>
-          <p>Defining how people will interact with the components.</p>
-
-          <li><a href="#visual">Visual</a> - Design choices for communication and aesthetics.</li>
-          <h3><a href="#conclusion">Conclusion</a></h3>
-   
-</div> -->
-
-   <h2 id="overview">Overview</h2>
+   <p>This case study is built around these 4 layers of design:</p>
+<div class="col-sm-6"><h3><a href="#outcome">Outcome</a></h3>
+          <p>Defining the intended outcome of the project, the problem being solved.</p> </div>
+<div class="col-sm-6"><h3><a href="#system">System</a></h3>
+          <p>Defining the components of the system and how they are related, the features required</p> </div>
+<div class="col-sm-6"><h3><a href="#interaction">Interaction</a></h3> 
+          <p>Defining how people will interact with the components.</p></div>
+<div class="col-sm-6"><h3 class="text-color-grey">Visual Design <small>Details coming soon</small></h3>
+  <p class="text-color-grey">Defining layout, typography, iconography, color.</p></div>
+<div class="clearfix"></div>
+   <h2 id="outcome">Outcome</h2>
 
     
    
@@ -99,14 +98,14 @@ exclude_from_nav: true
     <div class="clearfix"></div>
   </div>
 </div>
-<h2>Push and Pull</h2>
+<h3>Push and Pull</h3>
 <p>Past experience, the present situation, and a hoped-for future state produce forces that push or pull me towards the different tools.</p>
 
     <figure>
         <img src="/assets/counter-forces.jpg" class="img-responsive" />
         <figcaption>Push and Pull</figcaption>
       </figure>
-  <h2>Defining Success</h2>
+  <h3>Defining Success</h3>
   <p>Based on an analysis of the information gathered from researching the domain and situation, a short story can be crafted to define what success looks like.</p>
   <div class="block">
     <h2 class="margin-top-8">"When it's my turn to report the number of kids and workers on the playground and I’m worried I’ll get distracted and forget the numbers before I record them, I want to count and record at the same time, so that I can move on to other tasks."</h2>
@@ -137,7 +136,8 @@ exclude_from_nav: true
 
 
 
-<h2 id="system">Designing an App to Solve the Problem</h2>
+<h2 id="system">System</h2>
+<h3>Designing an App to Solve the Problem</h3>
 <p>I decided that an app was still a good form for the solution to take. I rarely leave the house without my phone, while analog tools like pencils and scratch paper are easily forgotten. </p>
 <p>From here, I set out to design the app's system.</p>
         
@@ -169,7 +169,8 @@ exclude_from_nav: true
 </ol>
 <p>I decided to work on the "counting" capability first, since it is the most valuable area of the app.</p>
 
-<h2 id="interaction">Interaction Design for the "Count" View</h2>
+<h2 id="interaction">Interaction</h2>
+<h3>Designing the "Count" View</h3>
 <p>Referring to the "Counting" capability cluster, I began to sketch a few ideas for the count screen.</p>
 
 <div class="row">
@@ -214,7 +215,7 @@ exclude_from_nav: true
   <img src="/assets/final-ui.jpg" class="img-responsive"/>
   <figcaption>The pattern I landed on.</figcaption>
 </figure>
-<h2>Prototyping and Removing Elements</h2>
+<h3>Prototyping and Removing Elements</h3>
 <p>I created a prototype in Xcode to explore the following:</p> 
 <ul>
 <li>incrementing/decrementing counts</li>
@@ -233,7 +234,7 @@ exclude_from_nav: true
 <p>After playing with the prototype, I decided to remove the following actions from the "Count" view: adding new counts by way of double-tapping and editing the count title. Both of these actions increased the likelihood of accidentally incrementing the count.</p>
 <h2 id="conclusion">Conclusion</h2>
 
-    <p>I believe my solution was successful. Why? It gave me a new, better way to make progress that was not immediately obvious. Prior to using the new solution, I had assumed that counting and recording were necessarily 2 separate steps, i.e. “that’s just the way it is”. This solution was not a shot in the dark, but a decision based on research.</p> 
+    <p>I believe my solution was successful because it gave me a better way to make progress that was not immediately obvious. Prior to using the new solution, I had assumed that counting and recording were necessarily 2 separate steps, i.e. “that’s just the way it is”. This solution was not a shot in the dark, but a decision based on research.</p> 
     
     <p>Style-wise, the focus on clear communication makes the app look uninteresting. On the functionality side, I think the “reset” button is awkward, positioned above the current count. I might experiment with removing the feature, since I rarely use it in practice.</p>
     
