@@ -43,9 +43,13 @@ ul {
 }
 
 .logo {
-	
+	margin-bottom: 24px;
 	display: block;
 	color: $text-color;
+
+	@include media-query($on-laptop) {
+        margin-bottom: 64px;   
+        }
 }
 
 .logo:visited {
@@ -136,7 +140,7 @@ ul.no-bull li {
 }
 
 .page-content {
-	padding-top: 60px;
+	padding-top: 32px;
 	padding-bottom: 60px;
 }
 
