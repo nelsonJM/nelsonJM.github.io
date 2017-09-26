@@ -1,12 +1,15 @@
 ---
 layout: default
-title: Designing a Time-tracking App
+title: Designing and Prototyping a Time-tracking App
 exclude_from_nav: true
 ---
 
       <div class="intro">
-        <h1>Time Tracker</h1>
-        <p>A product concept for a time-tracking app that is focused on fast, after-the-fact, time entry.</p>
+        <span class="text-color-grey">iOS App</span>
+        <h1>Time-tracking App: Design &amp; Prototype</h1>
+        <p><span class="text-black">My contribution:</span> Design</p>
+            <p><span class="text-black">Year(s):</span> 2016</p>
+        
       </div>
       <figure>
         <img src="/assets/time-tracking-concept.jpg" alt="" class="img-responsive">
@@ -15,33 +18,27 @@ exclude_from_nav: true
         </figcaption>
       </figure>
  
-  <h2>This case study is structured as follows:</h2>
+  <h2>The Case Study Structure</h2>
+           
 
-        <div class="block-toc">
-    <h3><a href="#overview">Overview</a></h3>
-          <h3><a href="#outcome">Outcome</a></h3>
-          <p>Defining the intended outcome of the project, the problem being solved.</p> 
-      
-          <h3><a href="#system">System</a></h3>
-          <p>Defining the components of the system and how they are related, the features required</p> 
-        
-          <h3><a href="#interaction">Interaction</a></h3>
-          <p>Defining how people will interact with the components.</p>
-
-          <!-- <li><a href="#visual">Visual</a> - Design choices for communication and aesthetics.</li> -->
-          <!-- <h3><a href="#conclusion">Conclusion</a></h3> -->
-   
-</div>
+   <p>This case study is built around the following layers of design:</p>
+<div class="col-sm-6"><h3><a href="#outcome">Outcome</a></h3>
+          <p>Defining the intended outcome of the project, the problem being solved.</p> </div>
+<div class="col-sm-6"><h3><a href="#system">System</a></h3>
+          <p>Defining the components of the system and how they are related, the features required</p> </div>
+<div class="col-sm-6"><h3><a href="#interaction">Interaction</a></h3> 
+          <p>Defining how people will interact with the components.</p></div>
+<div class="col-sm-6"><h3 class="text-color-grey">Visual Design</h3>
+  <p class="text-color-grey">Defining layout, typography, iconography, color.</p></div>
+<div class="clearfix"></div>
 
 
-
-
-<h2 id="overview">Overview</h2>
+<h2 id="outcome">Outcome</h2>
+<p>A prototype for a time-tracking app that is focused on fast, after-the-fact, time entry.</p>
 <p>This is a time-tracking app for individuals and teams to track their time spent on projects.</p>
 <p>It's not easy to remember to track my time at the outset of a project-related task. I am usually working on several projects throughout my day, switching from task to task and stopping mid-task to resolve the occasional emergency. Ideally, I would say something like "Ok, I'm now going to work on project B, so I'll begin tracking my time", but in reality, I just do my work and <strong>record my time later</strong>. 
 </p>
-<h2 id="outcome">Outcome - Defining the intended outcome of the project, the problem being solved</h2>
-<p>I am interested in this part of the problem: tracking time spent on a project <em>after the fact</em>.</p>
+
 <p>The following are capabilities the app will offer:</p>
   <ul>
     <li>Add time to a project for "today" and any given day.</li>
@@ -50,7 +47,7 @@ exclude_from_nav: true
     <li>See how I spent my time this month.</li>
   </ul>
 
-<h2 id="system">System - Defining the components of the system and how they are related, the features required</h2>
+<h2 id="system">System</h2>
 <p>I began with the question, "How do I add time?" and began sketching UI flows.</p>
 <figure>
   <img src="/assets/time-tracking-flow-enter-time.jpg" alt="" class="img-responsive">
@@ -60,6 +57,10 @@ exclude_from_nav: true
 </figure>
 <p>By asking this question, I had a starting point and an action that came to mind. I knew there was some screen where I could select a particular project and add time to the project. I began to sketch the flow for selecting a project, a specific date and finally entering the time spent on that project.</p>
 
+
+
+
+<h2 id="interaction">Interaction</h2>
 <p>The flows lead to a system of features which I composed into a prototype.</p>
 <figure>
         <img src="/assets/time-tracker-invision.jpg" alt="" class="img-responsive">
@@ -68,8 +69,6 @@ exclude_from_nav: true
         </figcaption>
       </figure>
 <p>View Prototype: <a href="https://invis.io/AZ28IJ59Q">InVision prototype</a></p>
-
-<h2 id="interaction">Interaction - Defining how people will interact with the components</h2>
 <p>The affordance for adding/subtracting time is a "scrubber" similar to those found on audio apps like SoundCloud.</p>
 <figure>
         <img src="/assets/scrubber-time.jpg" alt="" class="img-responsive">

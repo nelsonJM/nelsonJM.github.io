@@ -1,7 +1,17 @@
+/*
+Container
+*/
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 40em;
+}
+    
 /**
  * Site header
  */
 .site-header {
+    margin-bottom: 32px;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -19,7 +29,7 @@
 }
 
 .site-nav {
-    
+    float: right;
 
     .menu-icon {
         display: none;
@@ -147,9 +157,9 @@
 /**
  * Page content
  */
-// .page-content {
-//     padding: 60px 0;
-// }
+
+    
+
 
 .page-heading {
     font-size: 20px;

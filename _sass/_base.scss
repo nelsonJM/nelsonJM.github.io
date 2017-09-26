@@ -14,11 +14,13 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    padding-top: 16px;
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
+    border-top: 4px solid #343D4E;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
@@ -41,7 +43,8 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    // max-width: 100%;
+    max-width: 100%;
+    height: auto;
     vertical-align: middle;
 }
 
