@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head-plus.html %}
+  {% include head.html %}
 
-  <body>
+  <body class="home">
+    <div class="container">
+      
 
-	{% include header.html %}
+      <div class="page-content mb-64 clearfix">
+            
+              {{ content }}
+           
+      </div>
 
-    
-     
-        {{ content }}
-    
-   
+      {% include footer.html %}
+    </div>
 
-    {% include footer.html %}
-
-    
-<!-- <script src="{{ site.url }}/js/jquery-2.1.4.min.js"></script>
-<script src="{{ site.url }}/js/bootstrap.js"></script> -->
-<script src="../../js/jquery-2.1.4.min.js"></script>
-<script src="../../js/bootstrap.js"></script>
   </body>
 
 </html>

@@ -1,80 +1,48 @@
 ---
-layout: default-plus
-title: Side Projects
+layout: home
+title: Projects
 navigation_weight: 1
 ---
 
-<div class="home">
-  <!-- <div class="greeting margin-bottom-30">
-    <div class="container">
-      <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+    <!-- <div class="row margin-bottom-30"> -->
+    <!-- <div class="col-sm-10"> -->
         
-          <h1>Hello,</h1>
-            <p>I'm Josh Nelson. I enjoy helping customers make progress with design that fits their real-life situation.</p>
-            
-            <p>
-            You can reach me via <a href="mailto:jmarknel@gmail.com" >email</a> or on <a href="https://twitter.com/{{ site.twitter_username }}">twitter</a>.</p>
-        
-      </div>
-    </div>
-    </div>
-  </div> -->
- 
-    <div class="row margin-bottom-30">
-    <div class="col-md-8 col-md-offset-2">
-      
-      
-  
-  
-    <h1>Hello,</h1>
-            <p>I'm <strong>Josh Nelson</strong> &mdash; a designer living in Austin, Texas. </p>
-            <h2>Get in Touch</h2>
-       <p>Send a DM to <a href="https://twitter.com/{{ site.twitter_username }}">@jmarknel</a>.</p>
-     
-      <div class="intro">
-        <h2>Side Projects</h2>
-      <p>A collection of work outside of work hours. I strive for clarity and focusing on what matters.</p>
-      </div>
-
-      
-      <div class="row">
-        <div class="col-xs-4">
-          <div class="project">
-        <a href="{{ site.baseurl }}/projects/counter-app" >
-        <img src="assets/counting-eye-preview.jpg" alt="" class="img-responsive">
-        <h3>Counting Eye</h3>
-        </a>
-      </div>
-        </div>
-        <div class="col-xs-4">
-          <div class="project">
-            <a href="{{ site.baseurl }}/projects/time-tracking">
-              <img src="assets/time-tracker-home.jpg" alt="" class="img-responsive">
-            <h3>Time Tracker</h3>
-            </a>
-          </div>
-        </div>
-        
-        <div class="col-xs-4">
-          <div class="project">
-          <a href="{{ site.baseurl }}/projects/2014/10/17/font-quiz-design-process/">
-            <img src="assets/font-id-preview.jpg" alt="" class="img-responsive">
-              <h3>Font Identity</h3>            
-         
-         </a>
-        </div>
-        </div>
-      </div> 
-       
     
-   
+     
+        <div class="intro">
+          
+          <p>I'm <span class="text-black">Josh Nelson</span>, a UX and Interaction designer based in Austin, Texas.</p>
+          <p>My projects and writing focus on customer motivation, interaction design, and visual communication.</p>
+          <p>You can reach me by <a href="mail:hello@joshmarknelson.com">email</a> or on <a href="https://twitter.com/jmarknel">twitter</a>.</p>
+          
+        </div>
+      
+          <h2 class="text-center">Projects</h2>
+            
+            
+           <div class="project text-center">
+            <a href="/projects/counter-app">
+            <img src="/assets/counting-eye-preview.jpg" alt="" class="img-responsive">
+            
+          
+         
+            <h3 class="project-header h4"><a href="/projects/counter-app">Counting Eye</h3>
+            </a>
+            
+         
+          </div> 
+          <div class="project text-center">
+                <a href="/projects/2014/10/17/font-quiz-design-process/">
+                <img src="/assets/font-id-preview.jpg" alt="" class="img-responsive">
+                              
+             
+             </a>
+              
+              <h3 class="project-header h4"><a href="/projects/2014/10/17/font-quiz-design-process/">Typeface Quiz</a></h3>
+            
+                       
+              </div>
+          
 
-        <br/>
-  <br/>
-</div> 
-
-  </div>
- 
-<!-- <hr class="margin-bottom-30"> -->
-</div>
+    <!-- </div> -->
+ <!--  </div> -->

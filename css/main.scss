@@ -51,6 +51,7 @@ $urw-black: 'urw-black', sans-serif;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "utilities",
         "typography",
         "margin-padding",
         "layout",

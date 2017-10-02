@@ -6,16 +6,16 @@ h1, .h1, h2, .h2 {
 	font-family: $urw-thin;
 }
 
-h1 {
+h1, .h1 {
 	font-size: 64px;
 }
 
-h2 {
+h2, .h2 {
 	margin-top: 40px;
 	font-size: 36px;
 }
 
-h3 {
+h3, .h3 {
 	margin-top: 30px;
 	font-size: 24px;
 }
@@ -118,7 +118,7 @@ ul.no-bull li {
 }
 
 .intro {
-	margin-bottom: 2em;
+	margin-bottom: 4em;
 }
 
 .brief-bio {
@@ -284,46 +284,17 @@ figcaption {
 	}
 }
 
-.project {
-	overflow: hidden;
-    margin-bottom: 30px;
+.recent-post {
+    color: #e5eefa;
 
-  img {
-  	margin-bottom: 15px;
-  	max-width: 70%;
-  }
-  
-
-   .project-header {
-   	margin-top: .5em;
+   .recent-post-header a {
+   	 color: #95fff5;
    }
 
-   .project-header a {
-   	 color: $text-color;
+   .recent-post-header a:visited {
+   	 color: #95fff5;
    }
 
-   .project-header a:visited {
-   	 color: $text-color;
-   }
-
-
-    
-    .project-inner {
-        padding: 15%;
-        background: rgba(11,2,6,.8);
-        transition: background .5s;
-    }
-
-}
-
-
-.project:hover {
-
-    .project-inner {
-        background: rgba(27,5,41,.8);
-    }
-
-    
 }
 
 .card {

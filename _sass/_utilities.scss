@@ -1,0 +1,29 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.fs-14 {
+	font-size: 14px;
+}
+
+.ls-1 {
+	letter-spacing: 1px;
+}
+
+.lh-1-25 {
+	line-height: 1.25;
+}
+
+.padl-1em {
+	padding-left: 1em;
+}
+
+.teal-anchor,
+.teal-anchor:visited  {
+	color: #95fff5;
+}
