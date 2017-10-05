@@ -11,6 +11,10 @@
 	font-size: 14px;
 }
 
+.fs-18 {
+	font-size: 18px;
+}
+
 .ls-1 {
 	letter-spacing: 1px;
 }
@@ -26,4 +30,8 @@
 .teal-anchor,
 .teal-anchor:visited  {
 	color: #95fff5;
+}
+
+.color-brand {
+	color: $brand-color;
 }

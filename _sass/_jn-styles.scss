@@ -2,7 +2,7 @@
 /**
  * Headings
  */
-h1, .h1, h2, .h2 {
+h1, .h1 {
 	font-family: $urw-thin;
 }
 
@@ -13,6 +13,7 @@ h1, .h1 {
 h2, .h2 {
 	margin-top: 40px;
 	font-size: 36px;
+	font-family: $urw-black;
 }
 
 h3, .h3 {
@@ -174,10 +175,8 @@ ul.no-bull li {
 
 /* Questions block */
 .block {
-	font-family: $urw-thin;
 	background: #fff;
 	padding: 30px 30px 15px;
-	color: #308EF4;
 	margin-bottom: 2em;
 }
 
