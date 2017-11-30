@@ -1,5 +1,5 @@
 # Site settings
-title: JMARK<br>NEL
+title: JMARKNEL
 email: josh@joshmarknelson.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
