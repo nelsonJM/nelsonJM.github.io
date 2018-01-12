@@ -23,8 +23,26 @@
 	line-height: 1.25;
 }
 
+.nopadl {
+	padding-left: 0;
+}
 .padl-1em {
 	padding-left: 1em;
+}
+.padr-1em {
+	padding-right: 1em;
+}
+
+.mr-1em {
+	margin-right: 1em;
+}
+
+.mt-8 {
+	margin-top: 8px;
+}
+
+.mb-2em {
+	margin-bottom: 2em;
 }
 
 .teal-anchor,

@@ -3,26 +3,95 @@ Container
 */
 .container {
     margin: 0 auto;
-    width: 90%;
-    max-width: 40em;
+    width: 80%;
+    max-width: 60em;
 }
 
-.w-33 {
+.w-23, .w-33, .w-66, .w-76 {
     width: 100%;
 } 
+
+.home .intro {
+    width: 100%;
+}
+
+@media screen and (min-width: 840px) {
+    .home .intro {
+    width: 74%;
+}
+}
+
+@media screen and (min-width: 1060px) {
+    .home .intro {
+    width: 64%;
+}
+}
+
+.home .work {
+    
+    width: 100%;
+}
+@media screen and (min-width: 924px) {
+    .home .work {
+        float: left;
+    width: 75%;
+}
+}
+
+.home .work .recent-post {
+    width: 100%;
+    
+    }
+
+@media screen and (min-width: 1008px) {
+    .home .work .recent-post {
+    width: 50%;
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    }
+}
+
+.home .aside {
+    margin-top: 3em;
+        width: 100%;
+}
+
+@media screen and (min-width: 924px) {
+.home .aside {
+    margin-top: 0;
+        width: 25%;
+    float: right;
+    padding-left: 2em;
+    border-left: 1px solid #0544a5;
+}
+}
 
 @include media-query($on-palm) {
     .w-33 {
         float: left;
         width: 50%;
     }
+
 }
 
 @include media-query($on-laptop) {
+    .w-23 {
+        float: left;
+        width: 23%;
+    }
     .w-33 {
         float: left;
         width: 33%;
     }
+    .w-66 {
+        float: left;
+        width: 66%;
+    } 
+    .w-76 {
+        float: left;
+        width: 76%;
+    } 
 }
 /**
  * Site header
