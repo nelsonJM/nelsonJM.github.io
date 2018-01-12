@@ -263,8 +263,15 @@ Container
  */
 
 .home .page-content {
+    padding-top: 2em;
+   
+}
+
+@media screen and (min-width: 900px) {
+    .home .page-content {
     padding-top: 8em;
    
+}
 }
 
 .page-heading {
