@@ -3,6 +3,12 @@ Container
 */
 .container {
     margin: 0 auto;
+    width: 90%;
+    max-width: 40em;
+}
+
+.home .container {
+    margin: 0 auto;
     width: 80%;
     max-width: 60em;
 }
