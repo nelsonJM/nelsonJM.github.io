@@ -3,17 +3,17 @@
  * Headings
  */
 h1, .h1 {
-	font-family: $urw-thin;
+	font-family: $urw-regular;
 }
 
 h1, .h1 {
-	font-size: 64px;
+	font-size: 42px;
 }
 
 h2, .h2 {
 	margin-top: 40px;
 	font-size: 36px;
-	font-family: $urw-black;
+	font-family: $urw-thin;
 }
 
 h3, .h3 {
@@ -57,7 +57,11 @@ ul {
 
 .logo {
 	margin-bottom: 24px;
+	padding: .5em;
 	color: $text-color;	
+	text-decoration: none;
+	display: inline-block;
+	background: #343D4E;
 }
 
 .logo:visited {
@@ -93,6 +97,7 @@ ul.no-bull li {
             padding-top: 6px;
             margin-right: 14px;
 			color: $text-color;
+			color: #343D4E;
 			font-size: 16px;
 
             &:not(:first-child) {
@@ -104,13 +109,14 @@ ul.no-bull li {
         a.active {
         	
         	color: $grey-color;
-            
+            color: #099;
 
             }
 
             .page-link:hover,
         a:hover {
         	color: $grey-color;
+        	color: #099;
             text-decoration: none;
             
             }
@@ -284,14 +290,12 @@ figcaption {
 }
 
 .recent-post {
-    color: #e5eefa;
+    color: #343D4E;
 
-   .recent-post-header a {
-   	 color: #95fff5;
-   }
+   
 
-   .recent-post-header a:visited {
-   	 color: #95fff5;
+   p {
+   		color: #343d4ea6;
    }
 
 }
