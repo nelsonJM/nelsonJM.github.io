@@ -152,7 +152,7 @@ exclude_from_nav: true
 </ul>
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe src="https://player.vimeo.com/video/138073817?title=0&byline=0&portrait=0" width="570" height="357" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/138073817?title=0&byline=0&portrait=0" width="100%" height="357" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   <figcaption>Demo of counter app's basic functionality</figcaption>
 </div>
 
@@ -161,47 +161,49 @@ exclude_from_nav: true
 <h2 id="final-design">Final Design</h2>
 <p>This is the final design for a counter app I designed and built in Swift for iPhone 5-7 Plus. Read the case study above for details on the design process.</p>
 <p>Taking my prototype and sketches, I pushed forward with the visual design. Here are a few notes on each screen.</p>
-<div class="w-66 padr-1em">
+<div class="flex"><div class="w-3/4 padr-1em pr-4">
   <h3>The "Single Count" View</h3>
   <p>I decided to move the count number from the top-center to the bottom-left. This created a large empty space in the middle for tapping (to increment) or swiping down (to decrement). Nearly every note-taking app opens with a blank “note” that invites you to start typing your note. I wanted to take advantage of that wide, open area that invites a user to tap.</p>
   <p>Tapping increments the count and causes the screen to flash at each tap. This allows the user to keep their eyes on what they are counting while the flash observed in their peripheral vision provides the assurance that their counts are registering.</p>
   <p>Swiping down on the screen decrements the count.</p>
 </div>
-<div class="w-33">
+<div class="w-1/4">
   <img src="/assets/counting-eye/single-count.jpg"/>
-</div>
+</div></div>
 <div class="clearfix mb-2em"></div>
-<div class="w-66 padr-1em">
+<div class="flex"><div class="w-3/4 padr-1em pr-4">
   <h3>The "Settings" View</h3>
   <p>Tapping on the settings icon or swiping up reveals the settings for the current count. The count title, count multiple, and reset value can be set here.</p>
 </div>
-<div class="w-33">
+<div class="w-1/4">
   <img src="/assets/counting-eye/settings.jpg"/>
-</div>
+</div></div>
 
 <div class="clearfix mb-2em"></div>
-<div class="w-66 padr-1em">
+<div class="flex"><div class="w-3/4 padr-1em pr-4">
   <h3>The "Counts" View</h3>
   <p>Swiping left to right reveals all the counts. New counts are added from the bottom to keep them within thumb's reach. Swiping right to left on any count will reveal the option to delete the count.</p>
 </div>
-<div class="w-33">
+<div class="w-1/4">
   <img src="/assets/counting-eye/counts.jpg"/>
-</div>
+</div></div>
 <div class="clearfix mb-2em"></div>
-<div class="w-66 padr-1em">
+<div class="flex"><div class="w-3/4 padr-1em pr-4">
   <h3>The "Select Counts to Share" View</h3>
   <p>Tapping on 'Select' in the top right makes each count selectable.</p>
 </div>
-<div class="w-33">
+<div class="w-1/4">
   <img src="/assets/counting-eye/select.jpg"/>
-</div>
+</div></div>
 <div class="clearfix mb-2em"></div>
-<div class="w-66 padr-1em">
+<div class="flex">
+  <div class="w-3/4 padr-1em pr-4">
   <h3>The "Share" View</h3>
   <p>With counts selected, tapping on the share button opens the share sheet with the default option to share via email or text message. By default, the counts are formatted according to the following: "# Count title".</p>
 </div>
-<div class="w-33">
+<div class="w-1/4">
   <img src="/assets/counting-eye/share.jpg"/>
+</div>
 </div>
 <div class="clearfix mb-2em"></div>
 <h2 id="conclusion">Conclusion</h2>

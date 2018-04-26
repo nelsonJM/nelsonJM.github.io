@@ -5,59 +5,44 @@
 
 
 
-// Our variables
-$base-font-family: 'urw-regular', sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// $base-font-family: 'urw-regular', sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
 
-$spacing-unit:     16px;
+// $spacing-unit:     16px;
 
-$text-color:       #343D4E;
-$background-color: #FAFBFB;
-$brand-color:      #308EF4;
+// $text-color:       #343D4E;
+// $background-color: #FAFBFB;
+// $brand-color:      #308EF4;
 
-$grey-color:       #B5C3C8;
-$grey-color-light: lighten($grey-color, 20%);
-$grey-color-dark:  darken($grey-color, 25%);
+// $grey-color:       #B5C3C8;
+// $grey-color-light: lighten($grey-color, 20%);
+// $grey-color-dark:  darken($grey-color, 25%);
 
-$on-palm:          600px;
-$on-tablet:        687px;
-$on-laptop:        800px;
+// $on-palm:          600px;
+// $on-tablet:        687px;
+// $on-laptop:        800px;
 
-$cabin: 'Rubik', 'urw-thin', sans-serif;
-$karla: 'Karla', 'urw-thin', sans-serif;
-$urw-regular: 'urw-regular', sans-serif;
-$urw-thin: 'urw-thin', sans-serif;
-$urw-italic: 'urw-italic', sans-serif;
-$urw-black: 'urw-black', sans-serif;
+// $cabin: 'Rubik', 'urw-thin', sans-serif;
+// $karla: 'Karla', 'urw-thin', sans-serif;
+// $urw-regular: 'urw-regular', sans-serif;
+// $urw-thin: 'urw-thin', sans-serif;
+// $urw-italic: 'urw-italic', sans-serif;
+// $urw-black: 'urw-black', sans-serif;
 
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
+// @mixin media-query($device) {
+//     @media screen and (min-width: $device) {
+//         @content;
 //     }
 // }
-@mixin media-query($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
-}
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "utilities",
-        "typography",
-        "margin-padding",
-        "layout",
-        "syntax-highlighting",
-        "jn-styles",
-        "project-outline",
-        "toc",
-        "images"
+        "preflight",
+        "custom",
+        "tailwind",
+        "custom-utilities"
 ;
