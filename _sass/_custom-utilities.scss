@@ -40,3 +40,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox=
         	width: 40%;
         }
     }
+@media screen and (min-width: 768px) {
+        .md\:container {
+          max-width: 768px;
+        } 
+    }

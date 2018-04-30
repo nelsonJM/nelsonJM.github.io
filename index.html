@@ -12,12 +12,15 @@ navigation_weight: 1
                   
 
                   <h4 class="recent-post-header mb-0 mt-0">
+                    {% if post.external %}
+                    <a href="{{ post.external }}" class="mr-1em" target="_blank">{{ post.title }}</a>
+                    {% else %}
                     <a href="{{ post.url | prepend: site.baseurl }}" class="mr-1em">{{ post.title }}</a>
-                    
+                    {% endif %}
                   </h4>
                   <!-- <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.categories | join: ' '}}</span> -->
                   <p class="mt-2 text-grey-dark">{{ post.excerpt }}</p>
-                  
+            
                 </div>
               {% endfor %}
              
