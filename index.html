@@ -7,36 +7,26 @@ navigation_weight: 1
               
              <div class="work">
               <h2 class="text-sm text-black margin-top-0 padl-1em mb-4">SELECTED PROJECTS</h2>
-              {% for post in site.categories.project %}
-               <div class="recent-post mb-8">
-                  
-
-                  <h4 class="recent-post-header mb-0 mt-0">
-                    {% if post.external %}
-                    <a href="{{ post.external }}" class="mr-1em" target="_blank">{{ post.title }}</a>
-                    {% else %}
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="mr-1em">{{ post.title }}</a>
-                    {% endif %}
-                  </h4>
-                  <!-- <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.categories | join: ' '}}</span> -->
-                  <p class="mt-2 text-grey-dark">{{ post.excerpt }}</p>
-            
-                </div>
+              
+              <!-- <div class="flex flex-wrap justify-between"> -->
+                {% for post in site.categories.project %}
+                   <div class="recent-post mb-8 pb-8">
+                      {{ post.excerpt }}
+                      <h4 class="recent-post-header mb-0 pt-4">
+                        {% if post.external %}
+                        <a href="{{ post.external }}" class="mr-1em" target="_blank">{{ post.title }}</a>
+                        {% else %}
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="mr-1em">{{ post.title }}</a>
+                        {% endif %}
+                      </h4>
+                      <span class="post-meta text-grey-dark text-sm">{{post.tags | join: ' '}}</span>
+                    </div>
               {% endfor %}
+            <!-- </div> -->
              
-              <div class="recent-post mb-8">
-                  
-                <h4 class="recent-post-header mb-0 mt-0"><a href="/projects/counter-app/" class="mr-1em">Counting Eye</a></h4>
-                <p class="mt-2 text-grey-dark">A counter app designed and built in Swift for iPhone 5-7 Plus.</p>
-                
-              </div>
+             
                
-               <div class="recent-post mb-8">
-                 <h4 class="recent-post-header mb-0 mt-0"><a href="http://jmarknel.com/Font-Identity-Quiz/"  class="mr-1em" target="_blank">Typeface Quiz</a></h4>
-                  <p class="mt-2 text-grey-dark">Drawing attention to typeface anatomy with brief explanations.</p>
-                  
-                   
-               </div> 
+               
              </div>
           
 
