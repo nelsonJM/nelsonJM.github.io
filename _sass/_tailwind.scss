@@ -1425,6 +1425,11 @@ border-bottom-left-radius: 9999px;}
 .w-full	{
   width: 100%;
 }
+@media (max-width: 768px) {
+	.md\:w-full {
+		width: 100%;
+	}
+}
 .w-screen	{
   width: 100vw;
 }
