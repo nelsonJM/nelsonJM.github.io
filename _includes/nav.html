@@ -4,7 +4,7 @@
             {% if p.navigation_weight %}
 
           
-              <a href="{{ p.url }}" {% if p.url == page.url %} class="mr-4 active text-grey-dark underline" {% endif %} class="mr-4 no-underline">{{ p.title }}</a>
+              <a href="{{ p.url }}" {% if p.url == page.url %} class="mr-4 active text-grey no-underline" {% endif %} class="mr-4 underline">{{ p.title }}</a>
              {% endif %}
              {% endfor %} 
             

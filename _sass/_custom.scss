@@ -39,17 +39,8 @@ p {
   margin-top: 1rem;
 }
 
-a { 
-    text-decoration: underline;
-    color: #343D4E;
-    &:visited {
-        color: #343D4E;
-    }
-
-    &:hover {
-        
-        text-decoration: none;
-    }
+a:visited {
+  color: inherit;
 }
 
 /* Line Graph Animation */
