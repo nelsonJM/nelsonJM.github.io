@@ -1,5 +1,16 @@
-<footer class="footer">
+<footer class="footer text-center">
+<a href="mailto:josh@jmarknel.com" class="no-underline text-grey-dark mr-4"><svg width="16px" height="12px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
+    <g id="Envelope-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-4.000000, -6.000000)">
+        <path d="M20,7.99972923 C19.8827525,7.99970987 19.7635152,8.02046143 19.647314,8.06425828 L13.0924423,10.5348242 C12.5399413,10.7430648 11.537806,10.7451202 10.9894769,10.540531 L4.34957368,8.06309112 C4.23432714,8.02009104 4.1161768,7.99971249 4,7.99972873 L4,6 L20,6 L20,7.99972923 Z M20,10.068671 L20,18 L4,18 L4,10.0673397 L10.2903295,12.4143488 C11.291978,12.7880777 12.7930761,12.7849989 13.7978143,12.4063077 L20,10.068671 Z" id="Combined-Shape" fill="#b8c2cc"></path> 
+    </g>
+</svg> josh@jmarknel.com</a>
+{% if site.twitter_username %}
+    
+            <a href="https://twitter.com/{{ site.twitter_username }}" class="no-underline" target="_blank"><span class="icon icon--twitter">{% include icon-twitter.svg %}</span><span class="username text-grey-dark">{{ site.twitter_username }}</span></a>
+            
+     
+          {% endif %}
 			
 			<div class="text-grey-light">
       <p>&copy; 2018 jmarknel.com</p>
