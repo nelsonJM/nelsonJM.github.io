@@ -532,6 +532,16 @@ ul {
 }
 
 /**
+ * Suppress the focus outline on elements that cannot be accessed via keyboard.
+ * This prevents an unwanted focus outline from appearing around elements that
+ * might still respond to pointer events.
+ */
+
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+/**
  * Tailwind custom reset styles
  */
 
@@ -592,7 +602,6 @@ textarea {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 button,
@@ -624,10 +633,6 @@ textarea::placeholder {
 button,
 [role=button] {
   cursor: pointer;
-}
-
-table {
-  border-collapse: collapse;
 }
 
 /**
@@ -1652,14 +1657,6 @@ table {
 
 .bg-contain {
   background-size: contain;
-}
-
-.border-collapse {
-  border-collapse: collapse;
-}
-
-.border-separate {
-  border-collapse: separate;
 }
 
 .border-transparent {
@@ -4314,14 +4311,6 @@ table {
   opacity: 1;
 }
 
-.outline-none {
-  outline: 0;
-}
-
-.focus\:outline-none:focus {
-  outline: 0;
-}
-
 .overflow-auto {
   overflow: auto;
 }
@@ -4344,22 +4333,6 @@ table {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
-.overflow-x-visible {
-  overflow-x: visible;
-}
-
-.overflow-y-visible {
-  overflow-y: visible;
 }
 
 .overflow-x-scroll {
@@ -4991,14 +4964,6 @@ table {
 
 .stroke-current {
   stroke: currentColor;
-}
-
-.table-auto {
-  table-layout: auto;
-}
-
-.table-fixed {
-  table-layout: fixed;
 }
 
 .text-left {
@@ -9986,22 +9951,6 @@ a:visited {
     overflow-y: auto;
   }
 
-  .sm\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .sm\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .sm\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .sm\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .sm\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -10623,14 +10572,6 @@ a:visited {
 
   .sm\:focus\:shadow-none:focus {
     box-shadow: none;
-  }
-
-  .sm\:table-auto {
-    table-layout: auto;
-  }
-
-  .sm\:table-fixed {
-    table-layout: fixed;
   }
 
   .sm\:text-left {
@@ -15576,22 +15517,6 @@ a:visited {
     overflow-y: auto;
   }
 
-  .md\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .md\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .md\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .md\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .md\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -16213,14 +16138,6 @@ a:visited {
 
   .md\:focus\:shadow-none:focus {
     box-shadow: none;
-  }
-
-  .md\:table-auto {
-    table-layout: auto;
-  }
-
-  .md\:table-fixed {
-    table-layout: fixed;
   }
 
   .md\:text-left {
@@ -21166,22 +21083,6 @@ a:visited {
     overflow-y: auto;
   }
 
-  .lg\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .lg\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .lg\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .lg\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .lg\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -21803,14 +21704,6 @@ a:visited {
 
   .lg\:focus\:shadow-none:focus {
     box-shadow: none;
-  }
-
-  .lg\:table-auto {
-    table-layout: auto;
-  }
-
-  .lg\:table-fixed {
-    table-layout: fixed;
   }
 
   .lg\:text-left {
@@ -26756,22 +26649,6 @@ a:visited {
     overflow-y: auto;
   }
 
-  .xl\:overflow-x-hidden {
-    overflow-x: hidden;
-  }
-
-  .xl\:overflow-y-hidden {
-    overflow-y: hidden;
-  }
-
-  .xl\:overflow-x-visible {
-    overflow-x: visible;
-  }
-
-  .xl\:overflow-y-visible {
-    overflow-y: visible;
-  }
-
   .xl\:overflow-x-scroll {
     overflow-x: scroll;
   }
@@ -27393,14 +27270,6 @@ a:visited {
 
   .xl\:focus\:shadow-none:focus {
     box-shadow: none;
-  }
-
-  .xl\:table-auto {
-    table-layout: auto;
-  }
-
-  .xl\:table-fixed {
-    table-layout: fixed;
   }
 
   .xl\:text-left {

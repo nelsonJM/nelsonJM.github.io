@@ -4,21 +4,7 @@ layout: default
 
 		<div class="post">
 			
-		  <div class="flex w-4/5 mx-auto mb-8">
-		    <div class="intro p-8 w-3/4">
-		    	<p class="text-sm text-grey-dark">{{ page.tags | join: ' ' }}</p>
-		    	<h1>{{ page.title }}</h1>
-		    	<p>{{ page.intro }}</p>
-		    </div>
-		    <div class="p-8 text-grey-lightest bg-black w-1/4">
-		    	<p class="mb-2"><span class="text-grey">Role:</span> {{ page.role }}</p>
-		    	<p class="mb-2"><span class="text-grey">Methods and skills:</span> {{ page.methodsandskills }}</p>
-		    	<p class="mb-2"><span class="text-grey">Year:</span> {{ page.year }}</p>
-		    
-		    <!-- <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} | {{ page.tags | join: ' ' }}</p> -->
-
-		  	</div>
-		  </div>
+		  
 
 		  <article class="post-content w-4/5 mx-auto">
 		    {{ content }}

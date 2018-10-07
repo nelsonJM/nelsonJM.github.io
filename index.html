@@ -5,37 +5,35 @@ title: Selected Work
 navigation_weight: 1
 ---
  
-              <h2>Case Studies</h2>
-             <div class="work flex flex-wrap">
-              <!-- <h2 class="text-sm text-black margin-top-0 padl-1em mb-4">SELECTED WORK</h2> -->
-              
-              <!-- <div class="flex flex-wrap justify-between"> -->
-                {% for post in site.categories.casestudy %}
-                   <div class="recent-post mb-8 pb-8 w-2/5 {{ post.width }}">
-                      <div><img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" /></div>
-                      <div>
-                        <h4 class="recent-post-header mb-0 pt-4">
-                          {% if post.external %}
-                          <a href="{{ post.external }}" class="mr-1em" target="_blank">{{ post.title }}</a>
-                          {% else %}
-                          <a href="{{ post.url | prepend: site.baseurl }}" class="mr-1em">{{ post.title }}</a>
-                          {% endif %}
-                        </h4>
-                        <span class="post-meta text-grey-dark text-sm">{{post.tags | join: ' '}}</span>
-                      </div>
-                    </div>
-              {% endfor %}
-            <!-- </div> -->
-             
-             
-               
-               
-             </div>
-        <h2>Small Projects</h2>
-          <div class="projects flex">
+            <div class="flex">
+              <div class="w-1/6"><h2 class="text-sm text-grey-dark">Case Studies</h2></div>
+                         <div class="work w-5/6">
+                            {% for post in site.categories.casestudy %}
+                               <div class="flex recent-post mb-8 pb-8 {{ post.width }}">
+                                  
+                                  <div class="w-1/3">
+                                    <h3 class="recent-post-header mb-0 pt-4">
+                                      {% if post.external %}
+                                      <a href="{{ post.external }}" class="mr-1em" target="_blank">{{ post.title }}</a>
+                                      {% else %}
+                                      <a href="{{ post.url | prepend: site.baseurl }}" class="mr-1em">{{ post.title }}</a>
+                                      {% endif %}
+                                    </h3>
+                                    <span class="post-meta text-grey-dark text-sm">{{post.tags | join: ' '}}</span>
+                                  </div>
+                                  <div class="w-2/3"><img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" /></div>
+                                </div>
+                          {% endfor %}
+                        </div></div>
+        <div class="flex">
+              <div class="w-1/6"><h2 class="text-sm text-grey-dark">Small Projects</h2></div>
+          <div class="projects flex flex-wrap">
             {% for post in site.categories.project %}
-                   <div class="mb-8 pb-8 w-2/5 {{ post.width }}">
-                      <div><img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" /></div>
+                   <div class="mb-8 px-8 pb-8 flex-none w-1/3 {{ post.width }}" style="height: 524px;">
+                      <div>
+                        <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
+                       
+                      </div>
                       <div>
                         <h4 class="recent-post-header mb-0 pt-4">
                           {% if post.external %}
@@ -49,6 +47,8 @@ navigation_weight: 1
                     </div>
               {% endfor %}
             </div>
+          </div>
+
 
               
     
