@@ -1,0 +1,101 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+@font-face {
+  font-family: 'urw-regular';
+  src: url('../fonts/urw/Regular/URWDIN-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/urw/Regular/URWDIN-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/urw/Regular/URWDIN-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/urw/Regular/URWDIN-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/urw/Regular/URWDIN-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'urw-thin';
+  src: url('../fonts/urw/Thin/URWDIN-Thin.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/urw/Thin/URWDIN-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/urw/Thin/URWDIN-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/urw/Thin/URWDIN-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/urw/Thin/URWDIN-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'urw-italic';
+  src: url('../fonts/urw/Italic/URWDIN-Italic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/urw/Italic/URWDIN-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/urw/Italic/URWDIN-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/urw/Italic/URWDIN-Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/urw/Italic/URWDIN-Italic.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'urw-black';
+  src: url('../fonts/urw/Black/URWDIN-Black.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/urw/Black/URWDIN-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/urw/Black/URWDIN-Black.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/urw/Black/URWDIN-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/urw/Black/URWDIN-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+a:visited {
+  color: #3d4852;
+}
