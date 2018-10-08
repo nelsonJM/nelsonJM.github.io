@@ -96,6 +96,15 @@
        url('../fonts/urw/Black/URWDIN-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-a:visited {
+h2, h3 {
+  margin-top: 2em;
+  margin-bottom: .75em;
+}
+
+p {
+  margin-bottom: 24px;
+}
+
+a, a:visited {
   color: #3d4852;
 }
