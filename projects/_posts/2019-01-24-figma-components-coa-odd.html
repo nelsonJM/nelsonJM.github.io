@@ -1,45 +1,81 @@
 ---
 layout: post
-title: Creating Components in Figma&#58; My Takeways
+title: Designing a Handoff with Figma
 excerpt_separator: <!--more-->
 categories: project
 tags: Figma, Components
 previewImage: /assets/figma-components-preview.jpg
 intro: Creating components in Figma using the City of Austin's Office of Design & Delivery homepage as a test subject.
-role: Visual designer
-methodsandskills: Layout, 8pt grid, Presentation
-year: 2017
+role: Designer
+methodsandskills: Figma, CSS
+year: 2019
 ---
 
 <p class="text-sm text-grey-dark mb-1">{{ page.tags | join: ' ' }}</p>
-<h1 class="mb-4">Creating Components in Figma: My Takeways</h1>
-<p>I used the tips from <a href="https://www.figma.com/blog/component-architecture-in-figma/" target="_blank">Thomas Lowry's article</a> to decompose the City of Austin's Office of Design & Delivery homepage into components using Figma.</p>
-<h2>Get the Figma file for an in-depth look.</h2>
-<a href="/assets/CoA.fig" class="text-green">Download the Figma File</a>
+<h1 class="mb-4">Designing a Handoff with Figma</h1>
 
-<h2>Background</h2>
-<p>I've found myself in the following situation: a designed webpage needs to be broken down into useful measurements that developers can use to guide build efforts while simultaneously remaining accessible to designers for additional changes.</p>
-<p>I've also encountered these associated obstacles:</p>
-<ol class="mb-8">
-	<li>focusing on semantics too soon, e.g. "h1s should look like this..."</li>
-	<li>premature "componentizing"</li>
-</ol>
-<p>For this exercise, I assumed that a designer has presented me with a high-fidelity concept of the following homepage:</p>
+<p>An approach to preparing a high-fidelity comp for development.</p>
 <figure>
 <iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FOG6O4F2IwIu21ihTwYiVA9xt%2FCoA%3Fnode-id%3D0%253A1" allowfullscreen></iframe>	
 </a>
 <figcaption class="text-sm">Note: The Office of Design & Delivery has since <a href="http://odd.austintexas.io/" target="_blank">trimmed down their homepage</a>.</figcaption></figure>
-<h2>Overcoming Obstacle 1: Text Styles</h2>
-<p>Trying to establish the global styles for all the elements: h1, h2, h3, anchors, paragraphs, etc. in a design tool vs in code. Figma's color and text styles are great because they allow designers to focus on how elements should be desired while still maintaining a constraint on the number and kind of styles.</p>
-<p>For example, I identified the text styles in this homepage and Figma conveniently lists them on the design tab:</p>
-<div class="w-1/3 mb-8">
+<h2>Download the Figma file</h2>
+<a href="/assets/CoA.fig" class="text-green">Download the Figma File</a>
+
+<h2>Background</h2>
+<p>I'm designing for the following situation:</p>
+<div class="bg-grey-light p-4 mb-8">
+    <p>When a webpage has been designed in a tool and handed off to developers, I want the values (type, spacing, colors, sizes, etc.) to be easily parsed by developers while remaining accessible to designers for additional changes, so that both parties can effectively do their jobs.</p>
+
+</div>
+<p>Here are a few specific choices I made to arrive at the final handoff:</p>
+<ol class="mb-8">
+	<li>Naming text styles according to font-family, weight, size - "Roboto, medium, 20"</li>
+	<li>Naming color styles according to a scale vs. "primary, secondary..." e.g. "blue, blue-dark..."
+	<li>Using <a href="https://www.figma.com/blog/component-architecture-in-figma/" target="_blank">Thomas Lowry's</a> building blocks tip for buttons and repeat elements</li>
+</ol>
+
+<p>I'd like to briefly cover text styles and color styles.</p>
+
+<h2>Figma Text Styles</h2>
+
+
+<div class="flex flex-col md:flex-row">
+	<div class="w-2/3">
+		<p>Figma's color and text styles are great because they allow designers to focus on how elements should be styled while still maintaining a constraint on the number and kind of styles.</p>
+<p>As the designer prepping this file for development, I created text styles and manually rearranged the list on the design tab.</p>
+<p>A developer can take this list of styles and easily put it into a scale with CSS classes. Designers can refer to this list as a palette of options to choose from and create new styles when necessary.</p>
+</div>
+<div class="pl-8 w-1/3">
 	<img src="/assets/text-styles.png"/>
 </div>
+</div>
 
-<p>A developer can take this list of styles and easily put it into a scale with CSS classes. The designer doesn't need to worry about whether they should use the H1 vs the H2.</p>
 
-<h2>Overcoming Obstacle 2: Scales vs "Another component"</h2>
-<p>Another tendency is to create a component when it isn't necessary. For example, instead of creating a component for each section on the homepage, I used utility-class thinking to make the spacing and background colors reusable. I created a small scale for the spacing above each heading and below each paragraph. The background colors (white and grey) are specified as 'bg-white' or 'bg-grey-light. As such, they can be applied to backgrounds that may be used in non-section parts of the UI.</p>
 
-<h2>Conclusion</h2>
-<p>These are a couple of ways that Figma and Utility-class thinking is helping me solve the problem of communicating design requirements to developers while preserving the ability to make design changes in the design tool.</p>
+<h2>Color Styles</h2>
+<p>Sometimes a component isn't necessary. It's tempting to create a component for these sections since each has consistent spacing above their contents as well as a background color.</p>
+
+<div class="flex flex-col md:flex-row">
+	<div class="w-2/3">
+		<p>Initially, I gave this a try but ran into the following obstacles: Figma doesn't let you nest Instance A inside Instance B. So an instance of a section with a white background could not contain an instance of a 3 articles, text, buttons, etc. This meant that each time I created an instance of a section, I would have to detach the instance in order to nest a button, text, etc. inside the detached instance, effectively defeating the purpose of creating a section component.</p></div>
+<div class="mb-8 w-1/3">
+	<img src="/assets/color-styles.png" class="pl-8" />
+</div>
+</div>
+
+
+<p>Instead of creating a component for each section, I created color styles for the background colors (white and grey). The background colors (white and grey) are specified as 'bg-white' or 'bg-grey-light. As such, they can be applied to backgrounds that may be used in non-section parts of the UI.</p>
+
+<h2>Conclusion: A Confession</h2>
+<p>This exercise has been my way of thinking through a shift that I see in the CSS landscape towards utility-classes. A few big companies are seeing the benefits of utilities:</p>
+
+<div class="flex flex-col md:flex-row mb-8">
+	<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Funny considering how many big companies like Heroku and GitHub are moving away from component-driven CSS to utility-focused CSS precisely *because* it works better at scale 🙃<br><br>I’d love to see an example of a “web scale” site with a remotely sane stylesheet if anyone has one 👀 <a href="https://t.co/SsC7thPVa1">pic.twitter.com/SsC7thPVa1</a></p>&mdash; Adam Wathan (@adamwathan) <a href="https://twitter.com/adamwathan/status/1058564197980598273?ref_src=twsrc%5Etfw">November 3, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">In addition to that, here’s Heroku‘s infernal CSS framework documentation:<a href="https://t.co/JKFhILTnlo">https://t.co/JKFhILTnlo</a><br><br>...and an interview I did with Diana Mounter who leads design systems at GitHub:<a href="https://t.co/GJJQoXuuxO">https://t.co/GJJQoXuuxO</a></p>&mdash; Adam Wathan (@adamwathan) <a href="https://twitter.com/adamwathan/status/1058717471216041984?ref_src=twsrc%5Etfw">November 3, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+
+<p>I believe that the existing (Figma, Sketch, XD) and future design tools that adapt to this shift will be in the best position.</p>
+<p>Figma's text and color styles are a great way to begin thinking in terms of utility classes when designing.</p>
