@@ -56,18 +56,18 @@ year: 2019
 
 
 <h2>Color Styles</h2>
-<p>Sometimes a component isn't necessary. It's tempting to create a component for these sections since each has consistent spacing above their contents as well as a background color.</p>
+<p>Sometimes a component isn't necessary. For example, I created components for the alternating white and gray sections. I thought that this was a good idea since each has consistent spacing above their contents as well as a background color that I might want to change at a later time.</p>
 
 <div class="flex flex-col md:flex-row">
 	<div class="w-2/3">
-		<p>Initially, I gave this a try but ran into the following obstacles: Figma doesn't let you nest Instance A inside Instance B. So an instance of a section with a white background could not contain an instance of a 3 articles, text, buttons, etc. This meant that each time I created an instance of a section, I would have to detach the instance in order to nest a button, text, etc. inside the detached instance, effectively defeating the purpose of creating a section component.</p></div>
+		<p>Initially, I gave this a try, but ran into the following obstacles: Figma doesn't let you nest Instance A inside Instance B. So an instance of a section with a white background could not contain an instance of a 3 articles, text, buttons, etc. This meant that each time I created an instance of a section, I would have to detach the instance in order to nest a button, text, etc. inside the detached instance, effectively defeating the purpose of creating a section component.</p></div>
 <div class="mb-8 w-1/3">
 	<img src="/assets/color-styles.png" class="pl-8" />
 </div>
 </div>
 
 
-<p>Instead of creating a component for each section, I created color styles for the background colors (white and grey). The background colors (white and grey) are specified as 'bg-white' or 'bg-grey-light. As such, they can be applied to backgrounds that may be used in non-section parts of the UI.</p>
+<p>Instead of creating a component for each section, I created color styles for the background colors (white and grey). The background colors (white and grey) are specified as 'bg-white' or 'bg-grey-light. As such, they can be applied to backgrounds that may be used in non-"page section" parts of the UI. The tradeoff is that I can't drag and drop a section component, but it's a tradeoff that's offset by the reusability of the background color styles.</p>
 
 <h2>Conclusion: A Confession</h2>
 <p>This exercise has been my way of thinking through a shift that I see in the CSS landscape towards utility-classes. A few big companies are seeing the benefits of utilities:</p>
