@@ -56,7 +56,7 @@ year: 2017
 </li>
   <li>Implementation</li>
 </ol>
-<p>This section covers steps 2-5 (with the exception of aesthetics in step 5).</p>
+<p>This section covers steps 2-5 (with the exception of Visual design in step 5).</p>
 
 <h2>Observation, Part I: Observing behavior</h2>      
 <p>I followed other count takers around and observed their behavior. Here's what the counting process looked like:</p>
@@ -122,7 +122,6 @@ year: 2017
 <p>I decided to work on the "counting" capability first, since it is the most valuable area of the app.</p>
 
 <!-- <h2 id="interaction">Interaction</h2> -->
-<h3>Visual</h3>
 <h4>Designing the "Count" View</h4>
 <p>Referring to the "Counting" capability cluster, I began to sketch a few ideas for the count screen.</p>
 
@@ -159,7 +158,7 @@ year: 2017
 </figure>
 <h3>Prototyping and Removing Elements</h3>
 <p>I created a prototype in Xcode to explore the following:</p> 
-<ul class="mb-4">
+<ul class="mb-8">
 <li>incrementing/decrementing counts</li>
 <li>adding new counts from a 'my counts' screen and from the counter screen (by way of double tap).</li>
 <li>deleting counts</li>
@@ -167,19 +166,17 @@ year: 2017
   <li>swiping left to right to view all counts.</li>
 </ul>
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe src="https://player.vimeo.com/video/138073817?title=0&byline=0&portrait=0" width="100%" height="357" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  <figcaption class="font-sans-italic text-grey-dark">Demo of counter app's basic functionality</figcaption>
+<div class="embed-responsive embed-responsive-16by9 mb-8">
+  <iframe src="https://player.vimeo.com/video/138073817?title=0&byline=0&portrait=0" width="100%" height="357" class="embed-responsive-item mb-8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <figcaption class="font-sans-italic text-grey-dark text-center">Demo of counter app's basic functionality</figcaption>
 </div>
-<h3>A few notes regarding the visual design</h3>
-<h4>Visual: Reducing the Design of the "Count" View</h4>
-<p><strong>The "Count" View:</strong> After playing with the prototype, I decided to remove the ability to double-tap to add new counts and edit the count title. Both of these actions increased the likelihood of accidentally incrementing the count.</p>
+<p>After playing with the prototype, I decided to remove the "double-tap to add new counts and edit the count title". Both of these actions increased the likelihood of accidentally incrementing the count.</p>
 
 <p>Taking my prototype and sketches, I continued designing the interactions for the remaining views. Here are a few notes on each screen.</p>
 <div class="flex">
 
   <div>
-    <p><strong>The "Single Count" View:</strong> I decided to move the count number from the top-center to the bottom-left. This created a large empty space in the middle for tapping (to increment) or swiping down (to decrement). Nearly every note-taking app opens with a blank “note” that invites you to start typing your note. I wanted to take advantage of that wide, open area that invites a user to tap.</p>
+    <p>For the "Single Count" view, I decided to move the count number from the top-center to the bottom-left. This created a large empty space in the middle for tapping (to increment) or swiping down (to decrement). Nearly every note-taking app opens with a blank “note” that invites you to start typing your note. I wanted to take advantage of that wide, open area that invites a user to tap.</p>
   </div>
  <!--  <div class="md:w-2/5">
       <img src="/assets/counting-eye/single-count.jpg"/>
