@@ -20,33 +20,57 @@ year: 2017
         </div>
         <div class="lg:w-4/5 mx-auto py-4">
           <img src="/assets/counting-eye-preview.jpg" alt="" class="img-responsive">
-          <div class="p-8 w-full text-grey-lightest bg-black">
-          <p class="mb-2"><span class="text-grey">Role:</span> {{ page.role }}</p>
-          <p class="mb-2"><span class="text-grey">Methods and skills:</span> {{ page.methodsandskills }}</p>
-          <p class="mb-2"><span class="text-grey">Year:</span> {{ page.year }}</p>
-        
-        <!-- <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} | {{ page.tags | join: ' ' }}</p> -->
-
-        </div>
+          
         </div>
         
       </div>
+<h2>Introduction</h2>
+<p>This case study is structured as follows:</p>
+<ol>
+  <li>Introduction: Situation, Problem, and Solution</li>
+  <li><a href="#my-process">My Process</a></li>
+  <li><a href="#conclusion">Conclusion</a></li>
+</ol>
+<h3>Situation</h3>
+<p>Each month I have the task of recording the number of childcare workers and children and sharing those numbers for planning purposes. The children are outside on a playground while the child-care workers are standing or sitting nearby. I usually count while standing near a building exit which is over 100 feet away.</p>
+<h3>The Problem</h3>
 
-<h2>The Outcome</h2>
+<p>Moving targets are hard to count and interruptions can force a re-count. Existing tools are limited to pen and paper and note-taking apps. A major pain point is that each tool requires a free moment for the eyes, brain, and fingers. Formatting&mdash;"kids: 23, adults: 14"&mdash; is time-consuming and sharing the recording with others is equally clunky.</p>
 
+<h3>The solution</h3>
+<p>I decided to create a counter app that allows me to count without looking from the people I am counting.</p>
 
+<h2 id="my-process">My Process</h2>
+<p>The process I followed to complete this project went as follows:</p>
+<ol class="mb-8">
+  <li>Exposition: establishing the context of the problem</li>
+  <li>Observation: observing behavior and interviewing</li>
+  <li>Situational analysis</li>
+  <li>Defining success</li>
+  <li>Design <ul>
+    <li>Outcome: the definition of success</li>
+    <li>System: what I will create to deliver success</li>
+    <li>Interaction: how people will accomplish things with the system</li>
+    <li>Visual: the 2D layout and the aesthetics</li>
+  </ul>
+</li>
+  <li>Implementation</li>
+</ol>
+<p>This section covers steps 2-5 (with the exception of aesthetics in step 5).</p>
 
-      
-    <h3 id="outcome">What's the Problem Being Solved?</h3>
-    <p>Moving targets are hard to count and interruptions can force a re-count. Existing tools are limited to pen and paper and note-taking apps. A major pain point is that each tool requires a free moment for the eyes, brain, and fingers. Formatting&mdash;"kids: 23, adults: 14"&mdash; is time-consuming and sharing the recording with others is equally clunky.</p>
- 
-    <p>Here's what the process looks like:</p>
- <figure>
-        <img src="/assets/existing-process.jpg" class="img-responsive" />
-        <figcaption class="font-sans-italic text-grey-dark">Current counting process</figcaption>
-      </figure> 
-    <h3>How's the Problem Currently Being Solved?</h3>
-<p>Next, I looked for answers to: What makes one solution more attractive than another? What is it about their current solution that makes it difficult to try something new? What anxieties surround potential solutions?</p>
+<h2>Observation, Part I: Observing behavior</h2>      
+<p>I followed other count takers around and observed their behavior. Here's what the counting process looked like:</p>
+    <figure>
+      <img src="/assets/existing-process.jpg" class="img-responsive" />
+      <figcaption class="font-sans-italic text-grey-dark">Current counting process</figcaption>
+    </figure> 
+
+<h2>Observation, Part II: Interviews</h2>
+<p>I interviewed count takers regarding their behavior and the products they currently use and have used in the past.</p>
+    
+
+<h2>Situational Analysis</h2>
+<p>Next, I looked for answers to: What makes one solution more attractive than another? What is it about their current solution that makes it difficult to try something new? What anxieties surround potential solutions? The data that answered these questions fell into the following categories:</p>
 
 
     <figure>
@@ -54,7 +78,7 @@ year: 2017
         <figcaption class="font-sans-italic text-grey-dark">The "forces" pushing and pulling the customer</figcaption>
       </figure>
 
-  <h3>Defining Success</h3>
+  <h3>Defining Success: The desired outcome</h3>
   <p>Based on an analysis of the information gathered from researching the domain and situation, I summarized what success looks like with a short story:</p>
   <div class="bg-grey-light p-4 mb-4">
     <p class="mb-0">"<span class="text-black">When</span> it's my turn to report the number of kids and workers on the playground and <span class="text-black color-brand">I’m worried</span> I’ll get distracted and forget the numbers before I record them, <span class="text-black color-brand">I want</span> to count and record at the same time, <span class="text-black color-brand">so that I can</span> move on to other tasks."</h2>
@@ -68,19 +92,18 @@ year: 2017
       <p>"<span class="text-black color-brand">so that I can</span>..." How life is better.</p>
    
      
-
-      
-
-
+<h2>Design</h2>
+<p>With my definition of success, I now had a basis for my design efforts.</p>
 
 <!-- <h2 id="system">System</h2> -->
-<h2>Designing the System</h2>
-<h3>Laying everything out on the table & clustering</h3>
+<h3>Designing the System</h3>
+<h4>Laying everything out on the table & clustering</h4>
 <p>I wrote down everything that I believed the app needed to be and accomplish. This became a list of items that I grouped into clusters.</p>
 
 <figure class="mb-8"><img src="/assets/list-and-cluster.jpg" class="img-responsive">
 <figcaption class="font-sans-italic text-grey-dark">Brain dump & clusters</figcaption></figure>
-<h3>Sketching flows to show how a user will interact with the system</h3>
+<h3>Interaction</h3>
+<h4>Interaction: Sketching flows to show how a user will interact with the system</h4>
 <p>Next, I took my clusters (parts of the system) and began sketching flows. This process allows me to sketch out a rough schematic of how the customer interacts with the system. It also lets me refine the clusters and discover new clusters.</p>
 <figure class="mb-8">
    <img src="/assets/refine-with-flows.jpg" class="img-responsive">
@@ -89,7 +112,7 @@ year: 2017
   
 
 
-<h3>Mapping the Capabilities & Prioritizing the Work</h3>
+<h4>Interaction: Mapping the Capabilities & Prioritizing the Work</h4>
 <p>Each grouping represents a capability or area of concern that I prioritized as follows:</p>
 <ol class="mb-4">
 <li>"Must Have"</li>
@@ -99,7 +122,8 @@ year: 2017
 <p>I decided to work on the "counting" capability first, since it is the most valuable area of the app.</p>
 
 <!-- <h2 id="interaction">Interaction</h2> -->
-<h2>Designing the "Count" View</h2>
+<h3>Visual</h3>
+<h4>Designing the "Count" View</h4>
 <p>Referring to the "Counting" capability cluster, I began to sketch a few ideas for the count screen.</p>
 
     <figure class="mb-8">
@@ -120,20 +144,13 @@ year: 2017
 </figure>
 
 <p>As the image above depicts, this UI pattern fails to satisfy the "Counting" cluster for the following reasons:</p>
-<ul class="mb-4">
-  <li>1. Each count should be easy to increase & decrease the current count</li>
+<ol class="mb-4">
+  
   <li>Buttons get easier to tap as their size increases, but they still make for difficult targets when walking and counting or when counting moving objects.</li>
-  <li>2. Counts can be given titles</li>
-  <li>4. I want to be able to count without looking at my phone</li>
   <li>Multiple buttons require the person who is counting to look first before tapping.</li>
-  <li>7. Should be simple like pen and paper</li>
-  <li>8. Quickly start counting as soon as open app</li>
-  <li>9. Quickly add start a new count after completing previous count</li>
   <li>This pattern usually places the capability to add a new count on a different screen.</li>
-</ul>
-<p>At this point, I decided to study my behavior as I counted people, but this time I held my phone while I counted.</p>
-<p>I noticed that as I counted, I moved my index finger as a way of reinforcing the "counting" action. I had the idea that I could make the entire screen a button that would register a count each time I tapped it with my finger. Also, by making the screen flash each time I tapped, I could leverage my peripheral vision to allow me to keep my eyes on the objects I was counting and be sure that my taps were being registered.</p>
-<p>For decreasing the count, I experimented with swiping left, right, up, two fingers up, etc., but I found that swiping down with the thumb or finger felt the most natural and it was also distinguishable enough from the tap gesture that I felt confident it wouldn't accidentally register as a tap. </p>
+</ol>
+
 
 <p>After a few more sketches, I arrived at the mockup below:</p>
 <figure>
@@ -154,70 +171,35 @@ year: 2017
   <iframe src="https://player.vimeo.com/video/138073817?title=0&byline=0&portrait=0" width="100%" height="357" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   <figcaption class="font-sans-italic text-grey-dark">Demo of counter app's basic functionality</figcaption>
 </div>
-
-<h3>Reducing the Design of the "Count" View</h3>
-<p>After playing with the prototype, I decided to remove the following actions from the "Count" view: adding new counts by way of double-tapping and editing the count title. Both of these actions increased the likelihood of accidentally incrementing the count.</p>
-<h2 id="final-design">Designing the Remaining Views</h2>
+<h3>A few notes regarding the visual design</h3>
+<h4>Visual: Reducing the Design of the "Count" View</h4>
+<p><strong>The "Count" View:</strong> After playing with the prototype, I decided to remove the ability to double-tap to add new counts and edit the count title. Both of these actions increased the likelihood of accidentally incrementing the count.</p>
 
 <p>Taking my prototype and sketches, I continued designing the interactions for the remaining views. Here are a few notes on each screen.</p>
 <div class="flex">
 
   <div>
-    
-    <h3>The "Single Count" View</h3>
-    <p>I decided to move the count number from the top-center to the bottom-left. This created a large empty space in the middle for tapping (to increment) or swiping down (to decrement). Nearly every note-taking app opens with a blank “note” that invites you to start typing your note. I wanted to take advantage of that wide, open area that invites a user to tap.</p>
-    <p>Tapping increments the count and causes the screen to flash at each tap. This allows the user to keep their eyes on what they are counting while the flash observed in their peripheral vision provides the assurance that their counts are registering.</p>
-    <p>Swiping down on the screen decrements the count.</p>
+    <p><strong>The "Single Count" View:</strong> I decided to move the count number from the top-center to the bottom-left. This created a large empty space in the middle for tapping (to increment) or swiping down (to decrement). Nearly every note-taking app opens with a blank “note” that invites you to start typing your note. I wanted to take advantage of that wide, open area that invites a user to tap.</p>
   </div>
  <!--  <div class="md:w-2/5">
       <img src="/assets/counting-eye/single-count.jpg"/>
     </div> -->
 </div>
 
-<div class="flex">
-  <div>
-  <h3>The "Settings" View</h3>
-  <p>Tapping on the settings icon or swiping up reveals the settings for the current count. The count title, count multiple, and reset value can be set here.</p>
-</div>
-<!-- <div class="w-1/4">
-  <img src="/assets/counting-eye/settings.jpg"/>
-</div> -->
-</div>
 
 
-<div class="flex">
-  <div>
-  <h3>The "Counts" View</h3>
-  <p>Swiping left to right reveals all the counts. New counts are added from the bottom to keep them within thumb's reach. Swiping right to left on any count will reveal the option to delete the count.</p>
-</div>
-<!-- <div class="w-1/4">
-  <img src="/assets/counting-eye/counts.jpg"/>
-</div> -->
-</div>
 
-<div class="flex">
-  <div>
-  <h3>The "Select Counts to Share" View</h3>
-  <p>Tapping on 'Select' in the top right makes each count selectable.</p>
-</div>
-<!-- <div class="w-1/4">
-  <img src="/assets/counting-eye/select.jpg"/>
-</div> -->
-</div>
-
-<div class="flex">
-  <div>
-  <h3>The "Share" View</h3>
-  <p>With counts selected, tapping on the share button opens the share sheet with the default option to share via email or text message. By default, the counts are formatted according to the following: "# Count title".</p>
-</div>
-<!-- <div class="w-1/4">
-  <img src="/assets/counting-eye/share.jpg"/>
-</div> -->
-</div>
 <div class="clearfix mb-2em"></div>
 <h2 id="conclusion">Conclusion</h2>
-
+<p>I set out to solve the problem or pain associated with counting moving targets (kids and adults) from relatively long distance, while struggling to hold the count in memory long enough to record it.</p>
+<p>The solution was to create an app that satisfied the story:<p>
+  <div class="bg-grey-light p-4 mb-4">
+    <p class="mb-0">"<span class="text-black">When</span> it's my turn to report the number of kids and workers on the playground and <span class="text-black color-brand">I’m worried</span> I’ll get distracted and forget the numbers before I record them, <span class="text-black color-brand">I want</span> to count and record at the same time, <span class="text-black color-brand">so that I can</span> move on to other tasks."</h2>
+  </div>
     <p>This solution gave me a new way to make progress on a recurring life situation. Prior to using the new solution, I had assumed that counting and recording were necessarily 2 separate steps, i.e. “that’s just the way it is”.</p> 
+
+    <p>Ultimately, user feedback suggested that the flashing screen was potentially distracting and could benefit from an "off" option.</p>
+    <p>I intentionally did not focus on the aesthetics. If I have some free time, I will give that area the much needed attention.</p>
     
     <p>Overall, the solution effectively satisfies the short story because the upfront planning accounted for the facts drawn from the real-life situation of the customer.</p>
 
