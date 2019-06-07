@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 categories: casestudy
 tags: Prototype, JavaScript, Typography
 previewImage: /assets/type-preview.jpg
-intro: I wanted to build a typography quiz that helped my eyes focus on the anatomy of a specific font.
+intro: I designed and built a typography quiz that helps the eyes focus on the anatomy of a specific font.
 role: UX and interaction designer
 methodsandskills: Sketching, Prototyping, Development
 year: 2015
@@ -18,39 +18,65 @@ year: 2015
         </div>
         <div class="lg:w-4/5 mx-auto py-4">
           <img src="/assets/typography-quiz-families.jpg" alt="Typography Quiz" class="img-responsive" />
-          <div class="p-8 w-full text-grey-lightest bg-black">
-          <p class="mb-2"><span class="text-grey">Role:</span> {{ page.role }}</p>
-          <p class="mb-2"><span class="text-grey">Methods and skills:</span> {{ page.methodsandskills }}</p>
-          <p class="mb-2"><span class="text-grey">Year:</span> {{ page.year }}</p>
-        
-        <!-- <p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} | {{ page.tags | join: ' ' }}</p> -->
-
-        </div>
+          
         </div>
         
       </div>
 
-<h2 id="outcome">Overview</h2>
-<p>I wanted to build a typography quiz that helped my eyes focus on the anatomy of a specific font. I've tried other typography quizzes, but none did this for me. They simply displayed some text, styled in a particular typeface, and asked the user to identify the typeface. I wanted to create a quiz that explained the defining characteristics of the typeface in question.</p>
+      <h2>Introduction</h2>
+<p>This case study is structured as follows:</p>
+<ol class="mb-8">
+  <li>Introduction: Situation, Problem, and Solution</li>
+  <li><a href="#my-process">My Process</a></li>
+  <li><a href="#conclusion">Conclusion</a></li>
+</ol>
+
+<h3>Situation</h3>
+<p>A single typeface is somewhat easy to appreciate as a whole. It's not so easy or apparent how the individual parts contribute to the whole.</p>
+<h3>The Problem</h3>
+<p>I wanted to become a typeface-identifying genius. There are tools that simply display some text, styled in a particular typeface, and ask the user to identify the typeface. This was not enough. I had a hunch that I needed to focus on the anatomy of the forms.</p>
+<h3>The Solution</h3>
+<p>I decided to create a quiz that highlighted and explained the defining characteristics of the typeface in question.</p>
 <p><a href="http://nelsonjm.github.io/Font-Identity-Quiz/" target="_blank">Give the quiz a try</a>.</p>
+
+<h2 id="my-process">My Process</h2>
+<p>The process I followed to complete this project went as follows:</p>
+<ol class="mb-8">
+  <li>Identify a problem situation</li>
+  <li>Come up with an idea</li>
+  <li>Imagine scenarios</li>
+  <li>Design<ul>
+    <li>Outcome: the definition of success</li>
+    <li>System: what I will create to deliver success</li>
+    <li>Interaction: how people will accomplish things with the system</li>
+    <li>Visual: the 2D layout and the aesthetics</li>
+  </ul>
+</li>
+  <li>Implementation</li>
+</ol>
+<p>This section covers step 4, Design, and specifically the system and interaction design stages.</p>
+
+<p>Coincidentally, my process shared overlap with Bill Verplank's design framework:</p>
+<figure class="mb-8"><img src="/images/bill-verplank-design.jpg" class="img-responsive" /></figure>
+
 
 <h2 id="system">Designing the System</h2>
 <p>I had a general idea of how the quiz taker would flow from choosing a quiz on the home page, to answering questions and ending on the final page where they receive their score. I used a shorthand for <a href="https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows">UI flows</a> to sketch out the system.</p>
-<figure><img src="/images/flows-e1413569520364.jpg" alt="flows" class="img-responsive" /></figure>
+<figure class="mb-8"><img src="/images/flows-e1413569520364.jpg" alt="flows" class="img-responsive" /></figure>
 <h2 id="interaction">Designing Interaction</h2>
 <p>After sketching flows, I began sketching screens. I started with the question view:</p>
-<figure><img src="/images/System-Quiz-1024x504.png" alt="System Quiz"  class="img-responsive" /></figure>
+<figure class="mb-8"><img src="/images/System-Quiz-1024x504.png" alt="System Quiz"  class="img-responsive" /></figure>
 
-<figure><img src="/images/question-page-e1413569613194.jpg" alt="question-page" class="img-responsive" /></figure>
+<figure class="mb-8"><img src="/images/question-page-e1413569613194.jpg" alt="question-page" class="img-responsive" /></figure>
 <p>I started here because this is a screen that quiz takers must succeed at in order to progress to the end. It's also the simplest screen (fewer elements pointing to other aspects of the domain) that allowed me to think about how the quiz works and where data is coming from.</p>
 <h3>Starting with the epicenter</h3>
 <p>I started my design work with the most important part of the screen (the <a href="http://gettingreal.37signals.com/ch09_Epicenter_Design.php">epicenter</a>). This screen seems to be 90% epicenter - the giant word typed in a specific font and the answer choices - but I decided the epicenter was the giant word and more specifically the 'highlighting' of that word's anatomy. I explored a few options before landing on the dashed circles and lines.  There are probably more clever ways to do it, but this approach did the job and allowed me to move forward with the design.</p>
 <h3>Final Score Page</h3>
 
 <p>Quiz takers enter through the home page, go through a series of question screens, and end on the final score page. What would I expect to see after I answered the last question?</p>
-<figure><img src="/images/System-Quiz-answers-1024x504.png" alt="System Quiz-answers" class="img-responsive" /></figure>
+<figure class="mb-8"><img src="/images/System-Quiz-answers-1024x504.png" alt="System Quiz-answers" class="img-responsive" /></figure>
 <p>For me, it was the following:</p>
-<ul><li>  my score
+<ul class="mb-8"><li>  my score
   </li><li>  my answers
   </li><li>  the correct answers
   </li><li>  some explanation for each answer
@@ -65,7 +91,7 @@ year: 2015
 <p>The "review your answers below, replay or take another quiz" sentence addresses the second most important question: "Where do I go from here?".</p>
 <p>The "review your answers" section was the third most important part of the screen and it gave me the most trouble. </p>
 <p>In considering the context surrounding this review section, I came up with a list of questions/concerns/forces that I felt the design had to resolve:</p>
-<ul>
+<ul class="mb-8">
   <li>  What is the correct answer to this question?
   </li><li>  What was my answer?
   </li><li>  I want to know almost immediately whether my answer was right or wrong
@@ -73,10 +99,10 @@ year: 2015
   </li>
 </ul>
   <p>The elements and their arrangement on screen form the pattern that I settled on after several iterations. Below are my sketches of those iterations:</p>
-<figure><img src="/images/final-page-e1413569701407.jpg" alt="final-page" class="img-responsive" /></figure>
+<figure class="mb-8"><img src="/images/final-page-e1413569701407.jpg" alt="final-page" class="img-responsive" /></figure>
 <h3>Home Screen Copy</h3>
 <p>I wanted to focus on clarity and making the copy work for it's place on the screen. I re-wrote the sentence on the home page "Take the System or Web Fonts Quiz" many times. I didn't want to rely on two big buttons or something 'graphical' that was labeled "System Quiz" or "Web Fonts Quiz". Using a single sentence also allowed me to focus on getting the point across as quickly and clearly as possible. For example, one iteration of the sentence said "Take the System Quiz or Web Fonts Quiz", from which I cut out the repetitive use of the word "quiz".</p>
-<h2 id="learning">Conclusion</h2>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>I made the decision to focus on the early steps in the interface design process and reserve styling for later. I've tried the opposite approach - focusing on things like color, typography, etc. and trying to make things look great from the start - but that always delayed project completion and left important problems unsolved. I think this helped me focus on the purpose of the project.</p>
 <p>I can see this quiz evolving into a web app that allows for more interaction. I'd like to allow quiz takers to move the dashed circles and lines or create their own. I built this quiz to learn some JavaScript and scratch an itch. This was a great experience exercising my design muscles to build something for myself.</p>
