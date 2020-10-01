@@ -15,7 +15,7 @@ navigation_weight: 1
                 {% for post in site.categories.casestudy %}
                 <div class="lg:flex-none lg:w-1/2">
                   <div class="mb-8 px-4 lg:px-8 pb-8">
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline" target="_blank">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">
                       <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
                     </a>
                     <h3 class="text-lg lg:text-xl recent-post-header mb-0 mt-0">
@@ -47,7 +47,7 @@ navigation_weight: 1
                             
                             <h4 class="recent-post-header mb-0 pt-4">
                               {% if post.external %}
-                              <a href="{{ post.external }}" class="no-underline hover:underline" target="_blank">{{ post.title }}</a>
+                              <a href="{{ post.external }}" class="no-underline hover:underline">{{ post.title }}</a>
                               {% else %}
                               <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ post.title }}</a>
                               {% endif %}
@@ -66,7 +66,7 @@ navigation_weight: 1
           <div class="lg:mb-24">
                     
                    <div class="pt-4 lg:px-8 lg:w-3/4">
-                    <p>My design journey began in 2010 as an aspiring Interactive Designer. A friend, mentor & UX professional put together a focused curriculum that among other topics consisted of typography, HTML & CSS, JavaScript, & design theory. Early on, I took a few detours (e.g. I have a few IT certifications), but I chock those experiences up to my strengths as both a learner and one who desires to see the "big picture".</p>
+                    <p>My design journey began in 2010 as an aspiring Interactive Designer, learning typography, HTML & CSS, JavaScript, design theory, & other topics. I took detours along the way, following my desire to learn and see the "big picture".</p>
                     <h3 class="text-2xl">Lately, I'm...</h3>
                     <div class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon-bolt flex-no-shrink w-6 mr-2">
                       <path class="primary fill-current text-green" d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
@@ -80,7 +80,7 @@ navigation_weight: 1
                     </svg><p class="mb-0 pt-1">Learning SwiftUI - just enough to be dangerous.</p></div>
 
                     <h3 class="text-2xl">Around the web</h3>
-                    <p>I'm always down to talk shop, give/receive feedback, and stick my nose in brainy conversations. Hey, here are some places to do that:</p>
+                    <p>I'm down to talk shop, give/receive feedback, and stick my nose in brainy conversations. Hey, here are some places to do that:</p>
                     
                     <div class="flex">
                         <div id="email" class="mr-2 pt-1">
