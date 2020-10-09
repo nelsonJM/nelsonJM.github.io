@@ -1,0 +1,68 @@
+---
+layout: post
+title: Learning to identify typefaces
+excerpt_separator: <!--more-->
+categories: casestudy
+tags: Typography, JavaScript
+previewImage: /assets/type-preview.jpg
+intro: I designed and built a typography quiz that helps the eyes focus on the anatomy of a specific typeface.
+role: UX and interaction designer
+methodsandskills: Sketching, Prototyping, Development
+---
+<div class="flex flex-wrap mx-auto">
+        <div class="intro w-full">
+          <p class="text-sm text-grey-dark mb-1">{{ page.tags | join: ' ' }}</p>
+          <h1 class="mb-4">{{ page.title }}</h1>
+          <p>{{ page.intro }}</p>
+        </div>
+        <div class="lg:w-4/5 mx-auto py-4">
+          <img src="/assets/typography-quiz-families.jpg" alt="Typography Quiz" class="img-responsive" />
+          
+        </div>
+        
+      </div>
+      <h2>Project details</h2>
+      <p><span class="font-bold">My role:</span> I was the sole person working on this app.</p>
+      <p><span class="font-bold">Methods and Skills:</span> UI Design, UX and Interaction Design, JavaScript</p>
+<h2>Table of contents</h2>
+<ol>
+  <li><a href="#situation">Situation & Problem</a></li>
+  <li><a href="#solution">Solution</a></li>
+  <li><a href="#conclusion">Conclusion</a></li>
+</ol>
+     
+
+<h2 id="situation">Situation & Problem</h2>
+<p>"Can you tell me what typeface that is?" I've been asked this question a few times over the years.</p>
+<h3>The Problem</h3>
+<p>How do you develop your typeface-identifying ability? There are apps that display some text, styled in a particular typeface, and ask you to identify the typeface. I'm looking for something that forces me to focus on the anatomy of the type.</p>
+<h2 id="solution">The Solution</h2>
+<p>I decided to create a quiz that highlighted and explained the defining characteristics of the typeface in question.</p>
+<p><a href="https://jmarknel.com/Font-Identity-Quiz/" target="_blank">Give the quiz a try</a>.</p>
+
+<h3>The "Question" view</h3>
+<p>This screen seems to be 90% <a href="http://gettingreal.37signals.com/ch09_Epicenter_Design.php">epicenter</a> - the giant word with the 'highlighting' of the typeface anatomy. I explored a few options before landing on the dashed circles and lines.</p>
+<figure class="mb-8"><img src="/images/System-Quiz-1024x504.png" alt="System Quiz"  class="img-responsive" /></figure>
+
+<h3>The "Final Score" view</h3>
+
+<p>Quiz takers enter through the home page, go through a series of question screens, and end on the final score page. What would I expect to see after I answered the last question?</p>
+<p>For me, it was the following:</p>
+<ul class="mb-8"><li>  my score
+  </li><li>  my answers
+  </li><li>  the correct answers
+  </li><li>  some explanation for each answer
+  </li><li>  my options for where to go next
+  </li><li>  some indication of how awesome I am (or not)
+  </li><li>  I don't want to travel to other pages to satisfy these points
+  </li><li>  how I did compared to other quiz takers
+  </li>
+</ul>
+<figure class="mb-8"><img src="/assets/typequiz-score-screen.jpg" alt="System Quiz score" class="img-responsive" /></figure>
+
+  
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I made the decision to focus on the early steps in the interface design process and reserve styling for later. I've tried the opposite approach - focusing on things like color, typography, etc. and trying to make things look great from the start - but that always delayed project completion and left important problems unsolved. I think this helped me focus on the purpose of the project.</p>
+<p>I built this quiz to learn about typefaces and JavaScript. This was a great experience exercising my design muscles to build something for myself.</p>
+<h3><a href="https://jmarknel.com/Font-Identity-Quiz/">Give the quiz a try</a></h3>

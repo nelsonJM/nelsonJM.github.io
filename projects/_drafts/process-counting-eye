@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 categories: casestudy
 tags: iOS app design, Figma, SwiftUI
 previewImage: /assets/main-ce-preview.jpg
-intro: Counting Eye is an iOS app that lets you count things without looking away. I came up with the idea while counting the number of children and childcare workers at an event.
+intro: Counting Eye is an iOS app that lets you count things without looking away.
 role: UX and interaction designer
 methodsandskills: Sketching, Prototyping, Development
 year: 2017
@@ -24,6 +24,9 @@ year: 2017
         </div>
         
       </div>
+      <h2>Project details</h2>
+      <p><span class="font-bold">My role:</span> I was the sole person working on this app.</p>
+      <p><span class="font-bold">Methods and Skills:</span> UI Design, UX and Interaction Design, JTBD, Figna, Xcode, SwiftUI</p>
 <h2>Introduction</h2>
 <p>This case study is structured as follows:</p>
 <ol>
