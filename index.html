@@ -39,6 +39,35 @@ navigation_weight: 1
                 
               <div>
                 <div class="projects">
+                  <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Video</h2>
+                  <div class="work pt-8 flex flex-col md:flex-row lg:flex-wrap">
+                      {% for post in site.categories.video %}
+                      <div class="lg:flex-none lg:w-1/2">
+                        <div class="mb-8 px-4 lg:px-8 pb-8">
+                          
+                          <iframe width="560" height="315" src="{{ post.embedLink }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <h3 class="text-lg lg:text-xl recent-post-header mb-0 mt-0">
+                                {% if post.external %}
+                                {{ post.title }}
+                                {% else %}
+                                {{ post.title }}
+                                {% endif %}
+                              </h3>
+                              <span class="post-meta text-grey-dark text-sm">{{post.tags | join: ' '}}</span>
+                        </div>
+                      </div>
+                      
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div><!-- end wrapper -->
+        <div class="bg-grey-lightest lg:bg-white py-8">
+            <div class="container md:container mx-auto px-4">
+                
+              <div>
+                <div class="projects">
                   <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Writing</h2>
                 {% for post in site.categories.project %}
                       <div class="">
@@ -60,6 +89,7 @@ navigation_weight: 1
               </div>
           </div>
         </div><!-- end wrapper --> 
+        
         <div class="py-8">
             <div class="container md:container mx-auto px-4">
                 <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// About me</h2>
