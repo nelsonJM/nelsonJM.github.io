@@ -11,7 +11,7 @@ navigation_weight: 1
           <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Projects</h2>
     <div class="flex flex-col lg:flex-row lg:mb-24">
               
-             <div class="work pt-8 flex flex-col md:flex-row lg:flex-wrap">
+             <div class="work pt-8 flex flex-col lg:flex-row lg:flex-wrap">
                 {% for post in site.categories.casestudy %}
                 <div class="lg:flex-none lg:w-1/2">
                   <div class="mb-8 px-4 lg:px-8 pb-8">
@@ -40,12 +40,12 @@ navigation_weight: 1
               <div>
                 <div class="projects">
                   <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Video</h2>
-                  <div class="work pt-8 flex flex-col md:flex-row lg:flex-wrap">
+                  <div class="work pt-8 flex flex-col lg:flex-row lg:flex-wrap">
                       {% for post in site.categories.video %}
                       <div class="lg:flex-none lg:w-1/2">
                         <div class="mb-8 px-4 lg:px-8 pb-8">
                           
-                          <iframe width="560" height="315" src="{{ post.embedLink }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <iframe class="w-full" height="315" src="{{ post.embedLink }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                           <h3 class="text-lg lg:text-xl recent-post-header mb-0 mt-0">
                                 {% if post.external %}
                                 {{ post.title }}
