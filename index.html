@@ -45,7 +45,7 @@ navigation_weight: 1
                       <div class="lg:flex-none lg:w-1/2">
                         <div class="mb-8 px-4 lg:px-8 pb-8">
                           
-                          <iframe class="w-full" height="315" src="{{ post.embedLink }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="{{ post.embedLink }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                           <h3 class="text-lg lg:text-xl recent-post-header mb-0 mt-0">
                                 {% if post.external %}
                                 {{ post.title }}
@@ -54,6 +54,8 @@ navigation_weight: 1
                                 {% endif %}
                               </h3>
                               <span class="post-meta text-grey-dark text-sm">{{post.tags | join: ' '}}</span>
+                              <div class="mb-2"></div>
+                              <p class="text-grey-darker">{{post.intro}}</p>
                         </div>
                       </div>
                       
