@@ -39,34 +39,53 @@ navigation_weight: 1
                 
               <div>
                 <div class="projects">
-                  <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Video</h2>
-                  <div class="work pt-8 flex flex-col lg:flex-row lg:flex-wrap">
-                      {% for post in site.categories.video %}
-                      <div class="lg:flex-none lg:w-1/2">
-                        <div class="mb-8 px-4 lg:px-8 pb-8">
-                          <div class="videoWrapper mb-8">
-                            <iframe width="560" height="315" src="{{ post.embedLink }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          </div>
-                          <h3 class="text-lg lg:text-xl recent-post-header mb-0 mt-0">
-                                {% if post.external %}
-                                {{ post.title }}
-                                {% else %}
-                                {{ post.title }}
-                                {% endif %}
-                              </h3>
-                          <span class="post-meta text-grey-dark text-sm">{{post.tags | join: ' '}}</span>
-                          <div class="mb-2"></div>
-                          <p class="text-grey-darker">{{post.intro}}</p>
-                        </div>
-                      </div>
-                      
-                    {% endfor %}
-                  </div>
+                  <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// My Process</h2>
+                  <p>Varies based on impact of the project and other factors.</p>
+                  <h3>Research</h3>
+                  <p>I make observations, collect & analyze the data and plug it into a model.</p>
+                  <h3>Formulate and test a hypothesis</h3>
+                  <p>"Someone with the following needs, who experiences the following constraints and events, will begin searching for a solution, with the following criteria. Data shows they favor solution X."</p>
+                  <p>I test this by changing solution X or designing new solutions that I think will compete with solution X.</p>
+                  <h3>Shape the work & build</h3>
+                  <p>Up to this point, I have designed how my system is going to interact with other systems (people, companies, products). I'll prioritize the work based on the anticipated impact (to the team, business) of each part. Now it's time to design the parts of the system that will make this interaction possible. This usually starts with rough sketches of UI flows, but it can also start with higher level actions that I know need to happen. Either way, the flows are grouped into larger scopes. After sequencing the scopes, I'll take the first one and begin designing views, collecting feedback, and revising flows as I go.</p>
+                  <p>Designing interactions takes time, so does programming. You want to know that it will have the effect that you're hoping to create.</p>
+                  <p>Regarding enterprise users of a system: what makes their problems worthwhile? Does solving their problem make sense? is it necessary? or should we focus on the company's problem (efficiency?) or the product owner's problem? or someone else's (supervisor)? Question 2: Are their workarounds really beneficial to the company? are they more efficient than using the system "as it was designed"? Or, if they have new ideas for how to do things - are those ideas profitable? This is where system's thinking comes in. Who's problem is most important? is there a solution that satisfies everyone? is compromise our goal? If the business wants one thing and the users want another, can systems thinking help us predict possible effects of each? Surely the business has models that render predictions? </p>
                 </div>
               </div>
           </div>
         </div><!-- end wrapper -->
-        
+        <div class="py-8">
+          <div class="container md:container mx-auto px-4">
+              
+            <div>
+              <div class="projects">
+                <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Video</h2>
+                <div class="work pt-8 flex flex-col lg:flex-row lg:flex-wrap">
+                    {% for post in site.categories.video %}
+                    <div class="lg:flex-none lg:w-1/2">
+                      <div class="mb-8 px-4 lg:px-8 pb-8">
+                        <div class="videoWrapper mb-8">
+                          <iframe width="560" height="315" src="{{ post.embedLink }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-lg lg:text-xl recent-post-header mb-0 mt-0">
+                              {% if post.external %}
+                              {{ post.title }}
+                              {% else %}
+                              {{ post.title }}
+                              {% endif %}
+                            </h3>
+                        <span class="post-meta text-grey-dark text-sm">{{post.tags | join: ' '}}</span>
+                        <div class="mb-2"></div>
+                        <p class="text-grey-darker">{{post.intro}}</p>
+                      </div>
+                    </div>
+                    
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+        </div>
+      </div><!-- end wrapper -->
         
         <div class="py-8">
             <div class="container md:container mx-auto px-4">
