@@ -5,16 +5,32 @@ title: Selected Work
 navigation_weight: 1
 ---
 
-
-    <div>
+<div class="mb-18 lg:mb-20 py-8">
+    <div class="container md:container mx-auto px-4">
+   
+          <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// My Design Process</h2>
+          <div class="px-8 lg:px-12">
+              <p>From a high level, the phases of my design process are:</p>
+              <ul>
+                <li><strong>Outcome:</strong> what's the effect am I trying to create?</li>
+                <li><strong>System:</strong> what's the system that I will design to create that effect?</li>
+                <li><strong>Interaction:</strong> what are the system parts and how will someone interact with them?</li>
+                <li><strong>Visual:</strong> what's the arrangement, style, etc. of the elements?</li>
+              </ul>
+          </div>
+          
+    
+    </div>
+  </div><!-- end wrapper -->
+    <div class="">
       <div class="container md:container mx-auto px-4">
           <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Projects</h2>
-    <div class="flex flex-col lg:flex-row lg:mb-24">
+    <div class="flex flex-col lg:flex-row lg:mb-18">
               
              <div class="work pt-8 flex flex-col lg:flex-row lg:flex-wrap">
                 {% for post in site.categories.casestudy %}
                 <div class="lg:flex-none lg:w-1/2">
-                  <div class="mb-8 px-4 lg:px-8 pb-8">
+                  <div class="px-4 lg:px-8 pb-8">
                     <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">
                       <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
                     </a>
@@ -67,6 +83,7 @@ navigation_weight: 1
             </div>
         </div>
       </div><!-- end wrapper -->
+      
         
         <div class="py-8">
             <div class="container md:container mx-auto px-4">
