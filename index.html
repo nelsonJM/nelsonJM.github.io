@@ -5,53 +5,34 @@ title: Selected Work
 navigation_weight: 1
 ---
 
-      <div class="container md:container mx-auto px-4">
-          <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-16">
-              <div class="py-8">
-                  <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Hey!</h2>
-                  <div class="text-base">
-                    
-                      <p>I'm Josh Nelson. I've worked as a web developer, web designer, and currently as a UX designer. I'm interested in growth design, research, and business strategy.</p>
-                  </div>
-                  <div class="py-8">
-                      <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Latest</h2>
-                      {% for post in site.categories.blog %}
-                    
-                      <div class="pb-4">
-                        
-                        <h3 class="text-lg lg:text-xl recent-post-header mb-0 mt-2">
-                              {% if post.external %}
-                              <a href="{{ post.external }}" class="no-underline hover:underline" target="_blank">{{ post.title }}</a>
-                              {% else %}
-                              <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ post.title }}</a>
-                              {% endif %}
-                            </h3>
-                            <span class="post-meta text-gray-700 text-sm">{{post.tags | join: ' '}}</span>
-                      </div>
-                    
-                    
-                  {% endfor %}
-                  </div>
-              </div>
+      <div class="container mx-auto px-4">
+          
+          <div>
+              
               <div class="col-span-2 py-8">
                   <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Projects</h2>
                   <div class="lg:mb-18">
                     
-                   <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                      {% for post in site.categories.casestudy %}
+                   <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                      {% for post in site.categories.project %}
                     
                         <div class="pb-8">
-                          <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">
-                            <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
-                          </a>
-                          <h3 class="text-lg lg:text-xl recent-post-header mb-0 mt-4">
-                                {% if post.external %}
-                                <a href="{{ post.external }}" class="no-underline hover:underline" target="_blank">{{ post.title }}</a>
-                                {% else %}
-                                <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ post.title }}</a>
-                                {% endif %}
-                              </h3>
+                          <div class="{{ post.bg-classes}}">
+                              <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">
+                                  <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
+                                </a>
+                          </div>
+                          <div>
                               <span class="post-meta text-gray-700 text-sm">{{post.tags | join: ' '}}</span>
+                              <h3 class="text-lg lg:text-xl recent-post-header mt-2">
+                                  {% if post.external %}
+                                  <a href="{{ post.external }}" class="no-underline hover:underline" target="_blank">{{ post.title }}</a>
+                                  {% else %}
+                                  <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ post.title }}</a>
+                                  {% endif %}
+                                </h3>
+                                
+                          </div>
                         </div>
                       
                       
