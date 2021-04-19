@@ -62,8 +62,20 @@ p {
   margin-bottom: 24px;
 }
 
-a, a:visited {
+/* a, a:visited {
   color: #3d4852;
+} */
+
+.post a {
+  @apply text-blue-600;
+}
+
+.post a:visited {
+  @apply text-blue-800;
+}
+
+.post a:hover{
+  @apply underline;
 }
 
 .hideout {

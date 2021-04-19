@@ -31900,8 +31900,22 @@ p {
   margin-bottom: 24px;
 }
 
-a, a:visited {
+/* a, a:visited {
   color: #3d4852;
+} */
+
+.post a {
+  --tw-text-opacity: 1;
+  color: rgba(37, 99, 235, var(--tw-text-opacity));
+}
+
+.post a:visited {
+  --tw-text-opacity: 1;
+  color: rgba(30, 64, 175, var(--tw-text-opacity));
+}
+
+.post a:hover{
+  text-decoration: underline;
 }
 
 .hideout {
