@@ -18,7 +18,7 @@
   "homepage": "https://github.com/nelsonJM/nelsonJM.github.io#readme",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.9",
+    "postcss": "^8.2.10",
     "tailwindcss": "^2.0.4",
     "vite": "^2.1.5"
   }
