@@ -6,13 +6,12 @@ exclude_from_nav: true
 ---
 
             <h1>Musings</h1>
-            <p>Thoughts and connections related to what I'm consuming lately.</p>
+            <p class="text-gray-700">Thoughts and connections related to what I've consumed.</p>
               
               {% for post in site.categories.musing %}
                <div class="recent-post mb-2em">
-                  
-
-                  <h3 class="recent-post-header mb-0 mt-8">
+                  <span class="post-meta text-gray-700 text-sm">{{post.tags | join: ' '}}</span>
+                  <h3 class="recent-post-header mb-0 mt-0">
                       <a href="{{ post.url | prepend: site.baseurl }}" class="teal-anchor mr-1em">{{ post.title }}</a>
                     
                   </h3>

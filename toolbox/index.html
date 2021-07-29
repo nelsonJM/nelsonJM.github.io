@@ -6,13 +6,12 @@ exclude_from_nav: true
 ---
 
             <h1>Toolbox</h1>
-            <p>Helpful tools for thinking and designing that I use or have used in the past.</p>
+            <p>Helpful tools for thinking and designing.</p>
               
               {% for post in site.categories.tools %}
                <div class="recent-post mb-2em">
-                  
-
-                  <h3 class="recent-post-header mb-0 mt-8">
+					<span class="post-meta text-gray-700 text-sm">{{post.tags | join: ' '}}</span>
+                  <h3 class="recent-post-header mb-0 mt-0">
 						<a href="{{ post.url | prepend: site.baseurl }}" class="teal-anchor mr-1em">{{ post.title }}</a>
                     
                   </h3>
