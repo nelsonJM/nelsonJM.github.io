@@ -1,41 +1,26 @@
 ---
 layout: default
-title: Projects
+title: Musings
 exclude_from_nav: true
 <!-- navigation_weight: 2 -->
 ---
 
-<div class="projects">
-  
-
-  
- <div class="intro">
-             
-            <h1>Projects</h1>
-            
-            
-          </div>
-  <div class="work">
+            <h1>Musings</h1>
+            <p>Thoughts and connections related to what I'm consuming lately.</p>
               
-              {% for post in site.categories.project %}
+              {% for post in site.categories.musing %}
                <div class="recent-post mb-2em">
                   
 
                   <h3 class="recent-post-header mb-0 mt-8">
-                    {{ post.title }}
+                      <a href="{{ post.url | prepend: site.baseurl }}" class="teal-anchor mr-1em">{{ post.title }}</a>
                     
                   </h3>
                   <!-- <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.categories | join: ' '}}</span> -->
                   <p>{{ post.excerpt }}</p>
-                  <a href="{{ post.url | prepend: site.baseurl }}" class="teal-anchor mr-1em">Learn more</a>
+                
                 </div>
               {% endfor %}
               
            <div class="clearfix mb-2em"></div>
   
-
-          
-       
-  
-</div>
-</div>
