@@ -5,37 +5,43 @@ exclude_from_nav: true
 <!-- navigation_weight: 2 -->
 ---
 
-<div class="projects">
-  
-
-  
- <div class="intro">
-             
-            <h1>Projects</h1>
-            
-            
-          </div>
-  <div class="work">
-              
-              {% for post in site.categories.project %}
-               <div class="recent-post mb-2em">
-                  
-
-                  <h3 class="recent-post-header mb-0 mt-8">
-                    {{ post.title }}
-                    
-                  </h3>
-                  <!-- <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }} | {{post.categories | join: ' '}}</span> -->
-                  <p>{{ post.excerpt }}</p>
-                  <a href="{{ post.url | prepend: site.baseurl }}" class="teal-anchor mr-1em">Learn more</a>
-                </div>
-              {% endfor %}
-              
-           <div class="clearfix mb-2em"></div>
-  
-
+<div class="container mx-auto px-4">
           
-       
-  
-</div>
-</div>
+    <div>
+        
+        <div class="col-span-2 py-8">
+            <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Side Projects</h2>
+            <div class="lg:mb-18">
+              
+             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {% for post in site.categories.project %}
+              
+                  <div class="pb-8">
+                    <div class="{{ post.bg-classes}}">
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">
+                            <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
+                          </a>
+                    </div>
+                    <div>
+                        <span class="post-meta text-gray-700 text-sm">{{post.tags | join: ' '}}</span>
+                        <h3 class="text-lg lg:text-xl recent-post-header mt-2">
+                            {% if post.external %}
+                            <a href="{{ post.external }}" class="no-underline hover:underline" target="_blank">{{ post.title }}</a>
+                            {% else %}
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ post.title }}</a>
+                            {% endif %}
+                          </h3>
+                          
+                    </div>
+                  </div>
+                
+                
+              {% endfor %}
+            </div>
+          </div>
+    </div>
+    
+    </div>
+    
+    
+  </div>
