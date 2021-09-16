@@ -10,7 +10,7 @@ navigation_weight: 1
       
           
               <div class="pt-8">
-              <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Side Projects</h2>
+              <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Projects</h2>
             
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     
@@ -45,7 +45,7 @@ navigation_weight: 1
               
           </div><!-- end grid -->
           </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <div class="pt-8">
                   <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Musings</h2>
                   <div>
@@ -77,9 +77,40 @@ navigation_weight: 1
                   
                 </div>
                 </div>
+                <div class="pt-8">
+                  <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Tools</h2>
+                  <div>
+                      {% for post in site.categories.tools limit: 4 %}
+                    
+                        <div class="">
+                          <div class="{{ post.bg-classes}} w-1/4">
+                              <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">
+                                  <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
+                                </a>
+                          </div>
+                          <div>
+                              <span class="post-meta text-gray-700 text-sm">{{post.tags | join: ' '}}</span>
+                              <h3 class="text-lg lg:text-xl recent-post-header mt-0">
+                                  {% if post.external %}
+                                  <a href="{{ post.external }}" class="no-underline hover:underline" target="_blank">{{ post.title }}</a>
+                                  {% else %}
+                                  <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ post.title }}</a>
+                                  {% endif %}
+                                </h3>
+                                
+                          </div>
+                        </div>
+                        
+                      
+                    {% endfor %}
+                  
+                </div>
+                  <a href="toolbox/" class="text-green-500">View tools</a>
+                
+                </div>
               <div class="pt-8">
                   
-                <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// About</h2>
+                <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// 👋🏽 Hey!</h2>
                   <div class="mb-16">
                       
                       <div class="sm:flex text-lg">
@@ -90,7 +121,7 @@ navigation_weight: 1
                           </div>
                           
                           <div class="md:w-3/4 md:pl-8">
-                            <h1 class="leading-tight mb-10 text-2xl">👋🏽 I'm Josh Nelson, a designer based in Austin, Texas.</h1>
+                            <h1 class="leading-tight mb-10 text-2xl">I'm Josh Nelson, a designer based in Austin, Texas.</h1>
                             
                             
                             <a href="mailto:josh@jmarknel.com" class="px-4 py-3 bg-black text-center text-white font-bold hover:bg-yellow">Get in touch</a>
