@@ -1,38 +1,60 @@
 ---
-layout: home
+layout: default
 title: Selected Work
 <!-- exclude_from_nav: true -->
 navigation_weight: 1
 ---
 
-      <div class="container mx-auto px-4">
+     
           
       
           
-              <div class="pt-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 sm:gap-10 mb-20">
-                  <div>
-                            <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// 👋🏽 Hey!</h2>
+             
+                 
+                      <div class="flex items-end space-x-4 mb-5 border-b">
+                          <h2 class="text-2xl font-bold my-0 pt-0">Projects</h2>
+                          <div>
+                              <a href="/projects" class="text-sm text-green-500 font-bold uppercase">View Projects</a>
+                          </div>
+                      </div>
+                   
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
+                      {% for post in site.categories.project limit: 2 %}
+                          <div>
+                              
+                              
+                            <div class="{{ post.bg-classes}}">
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">
+                                    <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
+                                  </a>
+                            </div>
+                            <div>
+                                <span class="post-meta text-gray-700 text-sm">{{post.tags | join: ' '}}</span>
+                                <h3 class="text-lg lg:text-xl recent-post-header mt-2">
+                                    {% if post.external %}
+                                    <a href="{{ post.external }}" class="no-underline hover:underline" target="_blank">{{ post.title }}</a>
+                                    {% else %}
+                                    <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ post.title }}</a>
+                                    {% endif %}
+                                  </h3>
                                   
-                                  <div class="sm:flex text-lg">
-                                      
-                                      <div class="w-1/4 mb-5">
-                                        <img src="../assets/jn-bw.JPG" class="mb-5"/>
-                                      
-                                      </div>
-                                      
-                                      <div class="md:w-3/4 sm:pl-4 md:pl-8">
-                                        <h1 class="leading-tight mb-10 text-2xl">I'm Josh Nelson, a designer based in Austin, Texas.</h1>
-                                        
-                                        
-                                        <a href="mailto:josh@jmarknel.com" class="px-4 py-3 bg-black text-center text-white font-bold inline-block">Get in touch</a>
-                                      
-                                      </div>
-                                    </div>
-                                  </div>
-                        <div>
+                            </div>
+                            
+                            
+                          </div>
+                          {% endfor %}
+                        </div>
                         
-                            <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Toolbox</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 sm:gap-10">
+                 
+                        <div>
+                            <div class="flex items-end space-x-4 mb-5 border-b">
+                                <h2 class="text-2xl font-bold my-0 pt-0">Toolbox</h2>
+                                <div>
+                                    <a href="/toolbox" class="text-sm text-green-500 font-bold uppercase">view toolbox</a>
+                                </div>
+                            </div>
+                            
                             <p class="text-gray-700 text-sm">Techniques, tips, & tricks</p>
                             <div>
                                 {% for post in site.categories.tools limit: 4 %}
@@ -60,53 +82,31 @@ navigation_weight: 1
                               {% endfor %}
                             
                           </div>
-                            <div class="text-right">
-                              <a href="toolbox/" class="text-green-500 font-bold">View toolbox</a>
-                            </div>
+                          
                           
                           </div>
-                        
+                          <div>
+                              
+                                    
+                                    <div class="sm:flex text-lg">
+                                        
+                                        <div class="w-1/4 mb-5">
+                                          <img src="../assets/jn-bw.JPG" class="mb-5"/>
+                                        
+                                        </div>
+                                        
+                                        <div class="md:w-3/4 sm:pl-4 md:pl-8">
+                                          <h1 class="leading-tight mb-10 text-xl">👋🏽 <strong>Hey!</strong> I'm Josh Nelson, a designer based in Austin, Texas.</h1>
+                                          
+                                          
+                                          <a href="mailto:josh@jmarknel.com" class="px-4 py-3 bg-black text-center text-white font-bold inline-block">Get in touch</a>
+                                        
+                                        </div>
+                                      </div>
+                                    </div>
                        
                       </div>
-                      <h2 class="text-2xl font-bold uppercase mt-0 pt-0">// Projects</h2>
-                      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                          {% for post in site.categories.project limit: 2 %}
-                              <div class="pb-8">
-                                  
-                                  
-                                <div class="{{ post.bg-classes}}">
-                                    <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">
-                                        <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
-                                      </a>
-                                </div>
-                                <div>
-                                    <span class="post-meta text-gray-700 text-sm">{{post.tags | join: ' '}}</span>
-                                    <h3 class="text-lg lg:text-xl recent-post-header mt-2">
-                                        {% if post.external %}
-                                        <a href="{{ post.external }}" class="no-underline hover:underline" target="_blank">{{ post.title }}</a>
-                                        {% else %}
-                                        <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ post.title }}</a>
-                                        {% endif %}
-                                      </h3>
-                                      
-                                </div>
-                                
-                                
-                              </div>
-                              {% endfor %}
-                            </div>
-                            <div class="text-right">
-                                <a href="projects/" class="text-green-500 font-bold">View Projects</a>
-                              </div>
+                      
                     
-          </div><!-- end grid -->
-          
-          </div>
-  
           
           
-        </div>
-    
-
-    <!-- </div> -->
- <!--  </div> -->
