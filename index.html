@@ -12,9 +12,9 @@ navigation_weight: 1
              
                  
                       <div class="flex items-end space-x-4 mb-5 border-b">
-                          <h2 class="text-2xl font-bold my-0 pt-0">Projects</h2>
+                          <h2 class="text-3xl font-bold my-0 pt-0">Projects</h2>
                           <div>
-                              <a href="/projects" class="text-sm text-green-500 font-bold uppercase">View Projects</a>
+                              <a href="/projects" class="text-sm text-green-500 font-bold uppercase">View all</a>
                           </div>
                       </div>
                    
@@ -49,13 +49,16 @@ navigation_weight: 1
                  
                         <div>
                             <div class="flex items-end space-x-4 mb-5 border-b">
-                                <h2 class="text-2xl font-bold my-0 pt-0">Toolbox</h2>
                                 <div>
-                                    <a href="/toolbox" class="text-sm text-green-500 font-bold uppercase">view toolbox</a>
+                                    <h2 class="text-3xl font-bold my-0 pt-0">Techniques, tips, & tricks</h2>
+                                    
+                                </div>
+                                <div>
+                                    <a href="/toolbox" class="text-sm text-green-500 font-bold uppercase">view all</a>
                                 </div>
                             </div>
                             
-                            <p class="text-gray-700 text-sm">Techniques, tips, & tricks</p>
+                            
                             <div>
                                 {% for post in site.categories.tools limit: 4 %}
                               
@@ -87,7 +90,12 @@ navigation_weight: 1
                           </div>
                           <div>
                               
-                                    
+                              <div class="mb-5 border-b">
+                              
+                                      <h2 class="text-3xl font-bold my-0 pt-0">👋🏽 Hey!</h2>
+                                      
+                                 
+                              </div>
                                     <div class="sm:flex text-lg">
                                         
                                         <div class="w-1/4 mb-5">
@@ -96,7 +104,7 @@ navigation_weight: 1
                                         </div>
                                         
                                         <div class="md:w-3/4 sm:pl-4 md:pl-8">
-                                          <h1 class="leading-tight mb-10 text-xl">👋🏽 <strong>Hey!</strong> I'm Josh Nelson, a designer based in Austin, Texas.</h1>
+                                          <h1 class="leading-tight mb-10 text-xl">I'm Josh Nelson, a designer based in Austin, Texas.</h1>
                                           
                                           
                                           <a href="mailto:josh@jmarknel.com" class="px-4 py-3 bg-black text-center text-white font-bold inline-block">Get in touch</a>
