@@ -1,10 +1,17 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./_includes/*.html",
+    "./_layouts/*.html",
+    "./projects/**/*.html",
+    "./toolbox/**/*.html",
+    "./writing/**/*.html",
+    "./*.html",
+  ],
   theme: {
-    extend: {},
-  },
-  variants: {
+    fontFamily: {
+      sans: ['urw-regular', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],
