@@ -6,7 +6,7 @@ module.exports = {
     "./projects/**/*.html",
     "./toolbox/**/*.html",
     "./writing/**/*.html",
-    "./*.html",
+    "./**/*.{html,js}",
   ],
   theme: {
     fontFamily: {
