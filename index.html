@@ -17,25 +17,26 @@ navigation_weight: 1
 
       <div class="flex items-end space-x-4 mb-5">
         
-        <h2 class="text-2xl font-bold my-0 pt-0">Projects</h2>
+        <h2 class="text-2xl font-bold my-0 pt-0">Selected Work</h2>
         
     </div>
-    {% for post in site.categories.projects %}
+    {% assign pages_in_category = site.pages | where: "category", "project" | sort: "order" %}
+    {% for page in pages_in_category %}
                     <div class="mb-20 space-x-4">
                         
                         
-                      <div class="{{ post.bg-classes}} md:w-3/4">
-                          <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">
-                              <img src="{{ post.previewImage }}" class="img-responsive {{ post.previewImageWidth }}" />
+                      <div class="{{ page.bg-classes}} md:w-3/4">
+                          <a href="{{ page.url | prepend: site.baseurl }}" class="no-underline hover:underline">
+                              <img src="{{ page.previewImage }}" class="img-responsive {{ page.previewImageWidth }}" />
                             </a>
                       </div>
                       <div>
-                          <span class="post-meta text-gray-700 text-sm">{{post.tags | join: ' '}}</span>
+                          <span class="page-meta text-gray-700 text-sm">{{page.tags | join: ' '}}</span>
                           <h3 class="text-lg lg:text-xl recent-post-header mt-2">
-                              {% if post.external %}
-                              <a href="{{ post.external }}" class="no-underline hover:underline" target="_blank">{{ post.title }}</a>
+                              {% if page.external %}
+                              <a href="{{ page.external }}" class="no-underline hover:underline" target="_blank">{{ page.title }}</a>
                               {% else %}
-                              <a href="{{ post.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ post.title }}</a>
+                              <a href="{{ page.url | prepend: site.baseurl }}" class="no-underline hover:underline">{{ page.title }}</a>
                               {% endif %}
                             </h3>
                             
